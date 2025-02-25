@@ -1,0 +1,51 @@
+---
+title: "About Me"
+subtitle: "Data Analytics Student"
+author: Boon Chin Look
+about: 
+    template: trestles #jolla, trestles, solana, marquee, broadside
+    links:
+        - icon: github
+          text: Github
+         # href: 
+        - icon: linkedin
+          text: Linkedin
+          #href: 
+        - icon: file-earmark-pdf
+          text: Download CV
+          href: Blank for cv tester.pdf
+#profile pic when have:
+#image: profile.jpg
+
+---
+<!--Bio -->
+## Short Biography
+🌱 I’m a Final year Business Studies student specializing in Data Analytics.
+
+⚡ I’m passionate about rock climbing, working out at the gym, exploring art, and constantly learning new things.
+
+🍕 I love cooking, baking and eating new foods.
+
+<!--New Years resolutions-->
+**New Years Resolutions:**
+
+New Year's Resolutions: For my New Year's resolutions, I aim to step outside of my comfort zone.
+
+This year, I started running 5 kilometers each week as a New Year's resolution. While I am generally an active person, I rarely engage in cardiovascular exercises beneficial for heart health, preferring weightlifting and non-cardio-intensive exercises. This year, I intend to change that.
+
+Furthermore, I am making an effort to broaden my horizons and engage with my local community. For example, I recently participated in the HSE "Healthy Food made Easy" programme, which consisted of cooking classes for 2.5 hours a week over six weeks.
+
+Additionally, as a follow on completion of the Healthy Food made easy programme, I hope to challenge myself by cooking all my college meals myself, as generally I would buy lunch outside.
+
+### Skills
+
+💻 Programming Languages:
+
+Tech Stack:  Python, HTML, CSS, JavaScript, GitHub and SQL. 
+Computer software:  Microsoft Office, Git, Alteryx, Tableau, Power BI. 
+
+### Food I baked
+
+### Food I cooked
+
+### Me Rock climbing
