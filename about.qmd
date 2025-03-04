@@ -1,23 +1,24 @@
 ---
-title: "About Me"
+title: "Boon Chin Look"
 subtitle: "Data Analytics Student"
-author: Boon Chin Look
 about: 
     template: trestles #jolla, trestles, solana, marquee, broadside
     links:
         - icon: github
           text: Github
           href: https://github.com/BoonChinLook
+          target: _blank
         - icon: linkedin
           text: Linkedin
           href: https://www.linkedin.com/in/boon-chin-l-13b104193/
+          target: _blank
         - icon: file-earmark-pdf
           text: Download CV
-          href: Blank for cv tester.pdf
-#profile pic when have:
-#image: profile.jpg
-
+          href: assets/Blankforcvtester.pdf
+          target: _blank
+image: assets/cat.jpg
 ---
+
 <!--Bio -->
 ## Short Biography
 🌱 I’m a Final year Business Studies student specializing in Data Analytics.
@@ -45,7 +46,21 @@ Tech Stack:  Python, HTML, CSS, JavaScript, GitHub and SQL.
 Computer software:  Microsoft Office, Git, Alteryx, Tableau, Power BI. 
 
 ### Food I baked
+🍪Below are examples of foods I baked while volunteering and in my free time:
+
+![red-velvet-cupcakes](assets/baked1.PNG){width=200}
+![fruit-scones](assets/baked2.PNG){width=200}
+![cinnamon-cookies](assets/baked3.PNG){width=200}
 
 ### Food I cooked
+🍛Below are examples of foods I cooked while volunteering and in my free time:`
 
-### Me Rock climbing
+![teryaki-stirfry](assets/food1.PNG){width=200}
+![satay-stirfry](assets/food2.PNG){width=200}
+![salmon-meal](assets/food3.PNG){width=200}
+![curry-meal](assets/food4.PNG){width=200}
+
+### Me Rock climbing 
+🪨Below is an example video of me rock climbing and some fun pictures of me in the sport:
+
+{{< video assets/video.mp4 >}}

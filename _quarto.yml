@@ -3,32 +3,25 @@ project:
   output-dir: docs
 
 website:
-  #Changed title from "BoonChinLook.github.io"
   title: "Boon Chin Look"
+  favicon: assets/logo1.PNG
   #back to top button - will get feedback and see should I create a button instead on it
   back-to-top-navigation: true
   navbar:
+    logo: assets/logo1.PNG
     left:
-      - href: index.qmd
-        text: Home
-        icon: house
+        #text: Home
+        #icon: house
       - href: about.qmd
         text: About
         icon: people
       - href: projects.qmd
         text: Projects
         icon: paperclip
-    right:
-      - test.qmd
-    tools:
-      - icon: github
-        text: Github
-       # href:
-      - icon: linkedin
-        text: Linkedin
-        #href: 
-      
-
+    #right:
+    
+   
+  
 
 format:
   html:
