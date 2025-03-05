@@ -43,6 +43,7 @@ Additionally, as a follow on completion of the Healthy Food made easy programme,
 💻 Programming Languages:
 
 Tech Stack:  Python, HTML, CSS, JavaScript, GitHub and SQL. 
+
 Computer software:  Microsoft Office, Git, Alteryx, Tableau, Power BI. 
 
 ### Food I baked

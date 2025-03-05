@@ -30,7 +30,7 @@ format:
     smooth-scroll: true
     fontcolor: "#242323"
     linkcolor: "#0077B5"
-    mainfont: "Aptos"
+    mainfont: "Verdana"
     fontsize: 15px
     theme:
       - darkly
