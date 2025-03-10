@@ -25,7 +25,7 @@ about:
 
 <div class="lead">
 
-🌱 I’m a **Final year Business Studies student** specializing in **Data Analytics**.
+🌱 I’m a Final year Business Studies student specializing in Data analytics.
 
 ⚡ I’m passionate about rock climbing, working out at the gym, exploring art, and constantly learning new things.
 
