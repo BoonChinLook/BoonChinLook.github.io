@@ -1,8 +1,10 @@
 ---
 title: "Boon Chin Look"
 subtitle: "Data Analytics Student"
+image: assets/cat.jpg
 about: 
-    template: trestles #jolla, trestles, solana, marquee, broadside
+    template: trestles
+    id: hero-heading
     links:
         - icon: github
           text: Github
@@ -16,19 +18,26 @@ about:
           text: Download CV
           href: assets/Blankforcvtester.pdf
           target: _blank
-image: assets/cat.jpg
 ---
 
-<!--Bio -->
-## Short Biography
-🌱 I’m a Final year Business Studies student specializing in Data Analytics.
+::: {#hero-heading}
+<div class="h1">🤗Hey !</div>
+
+<div class="lead">
+
+🌱 I’m a **Final year Business Studies student** specializing in **Data Analytics**.
 
 ⚡ I’m passionate about rock climbing, working out at the gym, exploring art, and constantly learning new things.
 
 🍕 I love cooking, baking and eating new foods.
 
+
+</div>
+:::
+
+
 <!--New Years resolutions-->
-**New Years Resolutions:**
+### New Years Resolutions:
 
 New Year's Resolutions: For my New Year's resolutions, I aim to step outside of my comfort zone.
 
@@ -46,22 +55,22 @@ Tech Stack:  Python, HTML, CSS, JavaScript, GitHub and SQL.
 
 Computer software:  Microsoft Office, Git, Alteryx, Tableau, Power BI. 
 
-### Food I baked
+### Food I baked:
 🍪Below are examples of foods I baked while volunteering and in my free time:
 
 ![red-velvet-cupcakes](assets/baked1.PNG){width=200}
 ![fruit-scones](assets/baked2.PNG){width=200}
 ![cinnamon-cookies](assets/baked3.PNG){width=200}
 
-### Food I cooked
-🍛Below are examples of foods I cooked while volunteering and in my free time:`
+### Food I cooked:
+🍛Below are examples of foods I cooked while volunteering and in my free time:
 
 ![teryaki-stirfry](assets/food1.PNG){width=200}
 ![satay-stirfry](assets/food2.PNG){width=200}
 ![salmon-meal](assets/food3.PNG){width=200}
 ![curry-meal](assets/food4.PNG){width=200}
 
-### Me Rock climbing 
+### Me Rock climbing:
 🪨Below is an example video of me rock climbing and some fun pictures of me in the sport:
 
 {{< video assets/video.mp4 >}}

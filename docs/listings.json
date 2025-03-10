@@ -1,9 +1,10 @@
 [
   {
-    "listing": "/projects.html",
+    "listing": "/projects/index.html",
     "items": [
-      "/about.html",
-      "/test.html"
+      "/projects/project1/project1.html",
+      "/projects/project2/project2.html",
+      "/projects/project3/project3.html"
     ]
   }
 ]

@@ -4,94 +4,39 @@ project:
 
 website:
   title: "Boon Chin Look"
-  favicon: assets/logo1.PNG
+  favicon: assets/sitelogo.PNG
   #back to top button - will get feedback and see should I create a button instead on it
   back-to-top-navigation: true
   navbar:
-    logo: assets/logo1.PNG
-    left:
+    background: "#d4c35a"
+    logo: assets/sitelogo.PNG
+    right:
         #text: Home
         #icon: house
+      - href: projects/index.qmd
+        text: Projects
+        icon: paperclip
+
       - href: about.qmd
         text: About
         icon: people
-      - href: projects.qmd
-        text: Projects
-        icon: paperclip
-    #right:
-    
-   
-  
 
+      - icon: github
+        href: https://github.com/BoonChinLook
+        target: _blank
+        
+      - icon: file-earmark-pdf
+        text: CV
+        href: assets/Blankforcvtester.pdf
+        target: _blank
+  page-footer: 
+    left: "Boon Chin Look, 2025"    
+    right: "Built with [Quarto](https://quarto.org/)" 
+
+        
 format:
   html:
-    code-link: true
-    html-math-method: katex
-    smooth-scroll: true
-    fontcolor: "#242323"
-    linkcolor: "#0077B5"
-    mainfont: "Verdana"
-    fontsize: 15px
     theme:
-      - darkly
-      - brand
-    css: styles.css
+      light: flatly
+      dark: darkly
     toc: true
-    include-in-header:
-      text: |
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
-        <script>
-            document.addEventListener("DOMContentLoaded", function() {
-                const button = document.createElement("button");
-                const icon = document.createElement("i");
-
-                // Set default Bootstrap icon
-                icon.className = "bi bi-sun-fill"; // Default to light mode icon
-                button.appendChild(icon);
-
-                // Button Styling
-                button.style.position = "fixed";
-                button.style.bottom = "15px";
-                button.style.right = "15px";
-                button.style.padding = "10px";
-                button.style.borderRadius = "50%";
-                button.style.border = "none";
-                button.style.cursor = "pointer";
-                button.style.fontSize = "20px";
-                button.style.width = "45px";
-                button.style.height = "45px";
-                button.style.display = "flex";
-                button.style.alignItems = "center";
-                button.style.justifyContent = "center";
-                button.style.background = "#0077B5"; // Bootstrap blue
-                button.style.color = "white";
-
-                document.body.appendChild(button);
-
-                // Function to apply theme styles
-                function applyTheme(theme) {
-                    document.documentElement.setAttribute("data-bs-theme", theme);
-                    localStorage.setItem("theme", theme);
-                    icon.className = theme === "dark" ? "bi bi-moon-fill" : "bi bi-sun-fill";
-
-                    // Change background and text colors manually
-                    if (theme === "dark") {
-                        document.body.style.background = "#121212"; // Dark background
-                        document.body.style.color = "#ffffff"; // Light text
-                    } else {
-                        document.body.style.background = "#ffffff"; // Light background
-                        document.body.style.color = "#242323"; // Dark text
-                    }
-                }
-
-                // Load saved theme preference
-                const savedTheme = localStorage.getItem("theme") || "light";
-                applyTheme(savedTheme);
-
-                // Toggle theme on click
-                button.onclick = function() {
-                    const newTheme = document.documentElement.getAttribute("data-bs-theme") === "dark" ? "light" : "dark";
-                    applyTheme(newTheme);
-                };
-            });
-        </script>

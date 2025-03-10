@@ -1,5 +1,40 @@
 [
   {
+    "objectID": "projects/index.html",
+    "href": "projects/index.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Project1\n\n\n\n\n\n\nCode\n\n\nAnalysis\n\n\n\n\n\n\n\n\n\nBoon Chin Look\n\n\n\n\n\n\n\n\n\n\n\n\nProject2\n\n\n\n\n\n\nCode\n\n\nAnalysis\n\n\n\n\n\n\n\n\n\nBoon Chin Look\n\n\n\n\n\n\n\n\n\n\n\n\nProject3\n\n\n\n\n\n\nCode\n\n\nAnalysis\n\n\n\n\n\n\n\n\n\nBoon Chin Look\n\n\n\n\n\n\nNo matching items\n\n Back to top"
+  },
+  {
+    "objectID": "projects/project1/project1.html",
+    "href": "projects/project1/project1.html",
+    "title": "Project1",
+    "section": "",
+    "text": "Back to top"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Boon Chin Look",
+    "section": "",
+    "text": "Github\n  \n  \n    \n     Linkedin\n  \n  \n    \n     Download CV\n  \n\n  \n  \n\n🤗Hey !\n\n\n🌱 I’m a Final year Business Studies student specializing in Data Analytics.\n⚡ I’m passionate about rock climbing, working out at the gym, exploring art, and constantly learning new things.\n🍕 I love cooking, baking and eating new foods.\n\n\n\n\n\n\nNew Years Resolutions:\nNew Year’s Resolutions: For my New Year’s resolutions, I aim to step outside of my comfort zone.\nThis year, I started running 5 kilometers each week as a New Year’s resolution. While I am generally an active person, I rarely engage in cardiovascular exercises beneficial for heart health, preferring weightlifting and non-cardio-intensive exercises. This year, I intend to change that.\nFurthermore, I am making an effort to broaden my horizons and engage with my local community. For example, I recently participated in the HSE “Healthy Food made Easy” programme, which consisted of cooking classes for 2.5 hours a week over six weeks.\nAdditionally, as a follow on completion of the Healthy Food made easy programme, I hope to challenge myself by cooking all my college meals myself, as generally I would buy lunch outside.\n\n\nSkills\n💻 Programming Languages:\nTech Stack: Python, HTML, CSS, JavaScript, GitHub and SQL.\nComputer software: Microsoft Office, Git, Alteryx, Tableau, Power BI.\n\n\nFood I baked:\n🍪Below are examples of foods I baked while volunteering and in my free time:\n  \n\n\nFood I cooked:\n🍛Below are examples of foods I cooked while volunteering and in my free time:\n   \n\n\nMe Rock climbing:\n🪨Below is an example video of me rock climbing and some fun pictures of me in the sport:\n\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "projects/project3/project3.html",
+    "href": "projects/project3/project3.html",
+    "title": "Project3",
+    "section": "",
+    "text": "Back to top"
+  },
+  {
+    "objectID": "projects/project2/project2.html",
+    "href": "projects/project2/project2.html",
+    "title": "Project2",
+    "section": "",
+    "text": "Back to top"
+  },
+  {
     "objectID": "test.html",
     "href": "test.html",
     "title": "Boon Chin Look",
@@ -7,24 +42,10 @@
     "text": "import numpy as np\nimport matplotlib.pyplot as plt\nr = np.arange(0, 2, 0.01)\ntheta = 2 * np.pi * r\nfig, ax = plt.subplots(\n  subplot_kw = {'projection': 'polar'} \n)\nax.plot(theta, r)\nax.set_rticks([0.5, 1, 1.5, 2])\nax.grid(True)\nplt.show()\n\n\n\n\n\n\n\n\n\n\n\n Back to top"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "Boon Chin Look",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "BoonChinLook.github.io",
     "section": "",
-    "text": "🌱 I’m a Final year Business Studies student specializing in Data Analytics.\n⚡ I’m passionate about rock climbing, working out at the gym, exploring art, and constantly learning new things.\n🍕 I love cooking, baking and eating new foods.\n\nNew Years Resolutions:\nNew Year’s Resolutions: For my New Year’s resolutions, I aim to step outside of my comfort zone.\nThis year, I started running 5 kilometers each week as a New Year’s resolution. While I am generally an active person, I rarely engage in cardiovascular exercises beneficial for heart health, preferring weightlifting and non-cardio-intensive exercises. This year, I intend to change that.\nFurthermore, I am making an effort to broaden my horizons and engage with my local community. For example, I recently participated in the HSE “Healthy Food made Easy” programme, which consisted of cooking classes for 2.5 hours a week over six weeks.\nAdditionally, as a follow on completion of the Healthy Food made easy programme, I hope to challenge myself by cooking all my college meals myself, as generally I would buy lunch outside.\n\n\n💻 Programming Languages:\nTech Stack: Python, HTML, CSS, JavaScript, GitHub and SQL. Computer software: Microsoft Office, Git, Alteryx, Tableau, Power BI.\n\n\n\n🍪Below are examples of foods I baked while volunteering and in my free time:\n  \n\n\n\n🍛Below are examples of foods I cooked while volunteering and in my free time:`\n   \n\n\n\n🪨Below is an example video of me rock climbing and some fun pictures of me in the sport:"
-  },
-  {
-    "objectID": "about.html#short-biography",
-    "href": "about.html#short-biography",
-    "title": "Boon Chin Look",
-    "section": "",
-    "text": "🌱 I’m a Final year Business Studies student specializing in Data Analytics.\n⚡ I’m passionate about rock climbing, working out at the gym, exploring art, and constantly learning new things.\n🍕 I love cooking, baking and eating new foods.\n\nNew Years Resolutions:\nNew Year’s Resolutions: For my New Year’s resolutions, I aim to step outside of my comfort zone.\nThis year, I started running 5 kilometers each week as a New Year’s resolution. While I am generally an active person, I rarely engage in cardiovascular exercises beneficial for heart health, preferring weightlifting and non-cardio-intensive exercises. This year, I intend to change that.\nFurthermore, I am making an effort to broaden my horizons and engage with my local community. For example, I recently participated in the HSE “Healthy Food made Easy” programme, which consisted of cooking classes for 2.5 hours a week over six weeks.\nAdditionally, as a follow on completion of the Healthy Food made easy programme, I hope to challenge myself by cooking all my college meals myself, as generally I would buy lunch outside.\n\n\n💻 Programming Languages:\nTech Stack: Python, HTML, CSS, JavaScript, GitHub and SQL. Computer software: Microsoft Office, Git, Alteryx, Tableau, Power BI.\n\n\n\n🍪Below are examples of foods I baked while volunteering and in my free time:\n  \n\n\n\n🍛Below are examples of foods I cooked while volunteering and in my free time:`\n   \n\n\n\n🪨Below is an example video of me rock climbing and some fun pictures of me in the sport:"
-  },
-  {
-    "objectID": "projects.html",
-    "href": "projects.html",
-    "title": "Projects",
-    "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nBoon Chin Look\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items\n\n Back to top"
+    "text": "This is a Quarto website. To learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n\n\n Back to top"
   }
 ]
