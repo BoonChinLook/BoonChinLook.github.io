@@ -4,14 +4,14 @@
     "href": "projects/index.html",
     "title": "Projects",
     "section": "",
-    "text": "Project1\n\n\n\n\n\n\nCode\n\n\nAnalysis\n\n\n\n\n\n\n\n\n\nBoon Chin Look\n\n\n\n\n\n\n\n\n\n\n\n\nProject2\n\n\n\n\n\n\nCode\n\n\nAnalysis\n\n\n\n\n\n\n\n\n\nBoon Chin Look\n\n\n\n\n\n\n\n\n\n\n\n\nProject3\n\n\n\n\n\n\nCode\n\n\nAnalysis\n\n\n\n\n\n\n\n\n\nBoon Chin Look\n\n\n\n\n\n\nNo matching items\n\n Back to top"
+    "text": "Project2\n\n\n\n\n\n\nCode\n\n\nAnalysis\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProject3\n\n\n\n\n\n\nCode\n\n\nAnalysis\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSQL Project\n\n\n\n\n\n\nSQL\n\n\n\nSQL Restaurant order management project\n\n\n\n\n\nNov 20, 2023\n\n\n\n\n\n\nNo matching items\n\n Back to top"
   },
   {
     "objectID": "projects/project1/project1.html",
     "href": "projects/project1/project1.html",
     "title": "Project1",
     "section": "",
-    "text": "Back to top"
+    "text": "This project was developed during an 8-week course introducing SQL by Girls Code First. Through this course, I acquired fundamental SQL skills and completed an individual assignment covering various topics, including:\n\nSQL coding and database management techniques.\nData analysis.\nAnalyzing data from complex structures.\nData manipulation with SQL programming language.\nData management using SQL coding techniques.\nDatabase design and data visualisation.\nProject presentation.\n\nFor my project, I designed a database focused on restaurant order management. This involved implementing foreign and primary keys and creating an Entity-Relationship (EER) diagram.\n\n\n\n Back to top"
   },
   {
     "objectID": "about.html",
@@ -44,7 +44,7 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "BoonChinLook.github.io",
+    "title": "Boon Chin Look",
     "section": "",
     "text": "This is a Quarto website. To learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n\n\n Back to top"
   }
