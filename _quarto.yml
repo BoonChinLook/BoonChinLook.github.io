@@ -8,7 +8,6 @@ website:
   #back to top button - will get feedback and see should I create a button instead on it
   back-to-top-navigation: true
   navbar:
-    background: "#d4c35a"
     logo: assets/sitelogo.PNG
     right:
         #text: Home
@@ -36,7 +35,6 @@ website:
         
 format:
   html:
-    theme:
-      light: flatly
-      dark: darkly
+    theme: style.scss
+    mainfont: Poppins
     toc: true

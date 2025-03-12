@@ -1,6 +1,28 @@
 ---
-pagetitle: "Boon Chin Look"
+title: "Boon Chin Look, Bachelors"
+subtitle: "Final year Data Analytics student"
+image: assets/analytics.JPG
 
+about:
+  template: solana
+  image-width: 28em
+  id: hero-heading
+  links:
+        - icon: github
+          text: Github
+          href: https://github.com/BoonChinLook
+          target: _blank
+        - icon: linkedin
+          text: Linkedin
+          href: https://www.linkedin.com/in/boon-chin-l-13b104193/
+          target: _blank
+      
+page-layout: full
 ---
-This is a Quarto website.
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+
+::: {#hero-heading}
+
+Welcome to my Portfolio! <br>Here you will find out about me, my hobbies, what I do, what I aspire to be and what project I have done.
+[Learn more about me &rarr;](about.qmd)
+
+:::

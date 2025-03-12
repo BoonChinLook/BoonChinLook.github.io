@@ -1,7 +1,6 @@
 ---
 title: "SQL Project"
 categories: [SQL]
-description: "SQL Restaurant order management project"
 image: "/assets/restaurant.jpg"
 date: '2023-11-20'
 

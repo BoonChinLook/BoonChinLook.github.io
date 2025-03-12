@@ -1,8 +1,23 @@
 ---
-title: "Project2"
+title: "Fruit Basket Project"
 author: "Boon Chin Look"
 categories: [Code, Analysis]
 #description: ""
 #summary:
-#date: '2024-09-20'
+image: "/assets/fruitshop.jpg"
+date: '2023-12-10'
+
 ---
+This project was developed during an 8-week introduction to JavaScript course offered by Girls Code First. Throughout the course, I gained proficiency in JavaScript fundamentals and collaborated on a group project covering various topics, including:
+
+*   Conditional logical and functions.
+*   Arrays and loops.
+*   JavaScript for websites: DOM part 1.
+*   JavaScript for websites: DOM part 2.
+*   Project Initiation.
+*   Building your app.
+*   Project Presentation.
+
+Our final pair, a [fruit shop basket](https://codepen.io/Boon-Chin-Look/pen/qBgdpPz){target="_blank"}, was completed within a 2-week deadline.
+
+In this project, a interactive shopping experience was created. Upon entering the interface, users are greeted by their name and prompted to give an item they would like to purchase. If an item is unavailable, an apology message is displayed. Furthermore, the shop dynamically calculates the contents of the user's basket.
