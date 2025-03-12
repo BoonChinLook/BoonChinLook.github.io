@@ -4,12 +4,16 @@
     "href": "projects/index.html",
     "title": "Projects",
     "section": "",
+<<<<<<< HEAD
+    "text": "Project3\n\n\n\n\n\n\nCode\n\n\nAnalysis\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFruit Basket Project\n\n\n\n\n\n\nCode\n\n\nAnalysis\n\n\n\n\n\n\n\n\n\nDec 10, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nSQL Project\n\n\n\n\n\n\nSQL\n\n\n\n\n\n\n\n\n\nNov 20, 2023\n\n\n\n\n\n\nNo matching items\n\n Back to top"
+=======
     "text": "Project2\n\n\n\n\n\n\nCode\n\n\nAnalysis\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProject3\n\n\n\n\n\n\nCode\n\n\nAnalysis\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSQL Project\n\n\n\n\n\n\nSQL\n\n\n\nSQL Restaurant order management project\n\n\n\n\n\nNov 20, 2023\n\n\n\n\n\n\nNo matching items\n\n Back to top"
+>>>>>>> b998885bc87dd9f5be257e1944a8001d5b8e61bf
   },
   {
     "objectID": "projects/project1/project1.html",
     "href": "projects/project1/project1.html",
-    "title": "Project1",
+    "title": "SQL Project",
     "section": "",
     "text": "This project was developed during an 8-week course introducing SQL by Girls Code First. Through this course, I acquired fundamental SQL skills and completed an individual assignment covering various topics, including:\n\nSQL coding and database management techniques.\nData analysis.\nAnalyzing data from complex structures.\nData manipulation with SQL programming language.\nData management using SQL coding techniques.\nDatabase design and data visualisation.\nProject presentation.\n\nFor my project, I designed a database focused on restaurant order management. This involved implementing foreign and primary keys and creating an Entity-Relationship (EER) diagram.\n\n\n\n Back to top"
   },
@@ -30,9 +34,9 @@
   {
     "objectID": "projects/project2/project2.html",
     "href": "projects/project2/project2.html",
-    "title": "Javascript fruit shop project",
+    "title": "Fruit Basket Project",
     "section": "",
-    "text": "This project was developed during an 8-week introduction to JavaScript course offered by Girls Code First. Throughout the course, I gained proficiency in JavaScript fundamentals and collaborated on a group project covering various topics, including:\n\nConditional logical and functions.\nArrays and loops.\nJavaScript for websites: DOM part 1.\nJavaScript for websites: DOM part 2.\nProject Initiation.\nBuilding your app.\nProject Presentation.\n\nThe final pair project was a fruit shop basket. This was completed within a 2-week deadline. This was completed within a 2-week deadline.\nIn this project, my group of 2 members created an interactive shopping experience. Upon entering the interface, users are greeted by their name and prompted to give an item they would like to purchase. If an item is unavailable, an apology message is displayed. Furthermore, the shop dynamically calculates the contents of the user’s basket.\n\n\n Back to top"
+    "text": "This project was developed during an 8-week introduction to JavaScript course offered by Girls Code First. Throughout the course, I gained proficiency in JavaScript fundamentals and collaborated on a group project covering various topics, including:\n\nConditional logical and functions.\nArrays and loops.\nJavaScript for websites: DOM part 1.\nJavaScript for websites: DOM part 2.\nProject Initiation.\nBuilding your app.\nProject Presentation.\n\nOur final pair, a fruit shop basket, was completed within a 2-week deadline.\nIn this project, a interactive shopping experience was created. Upon entering the interface, users are greeted by their name and prompted to give an item they would like to purchase. If an item is unavailable, an apology message is displayed. Furthermore, the shop dynamically calculates the contents of the user’s basket.\n\n\n\n Back to top"
   },
   {
     "objectID": "test.html",
@@ -44,8 +48,12 @@
   {
     "objectID": "index.html",
     "href": "index.html",
+<<<<<<< HEAD
+    "title": "Boon Chin Look, Bachelors",
+=======
     "title": "Boon Chin Look",
+>>>>>>> b998885bc87dd9f5be257e1944a8001d5b8e61bf
     "section": "",
-    "text": "This is a Quarto website. To learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n\n\n Back to top"
+    "text": "Github\n  \n  \n    \n     Linkedin\n  \n\n      \nWelcome to my Portfolio! Here you will find out about me, my hobbies, what I do, what I aspire to be and what project I have done. Learn more about me →\n\n    \n    \n  \n\n\n\n\n\n\n Back to top"
   }
 ]

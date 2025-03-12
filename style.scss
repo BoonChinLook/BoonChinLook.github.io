@@ -1,0 +1,10 @@
+/*-- scss:defaults --*/
+
+$orange: #d4c35a;
+$navbar-bg: $orange;
+
+/*-- scss:custom --*/
+.navbar-brand img { 
+    max-height: 40px;
+    width: auto;
+}

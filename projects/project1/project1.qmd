@@ -1,7 +1,10 @@
 ---
 title: "SQL Project"
 categories: [SQL]
+<<<<<<< HEAD
+=======
 description: "SQL Restaurant order management project"
+>>>>>>> b998885bc87dd9f5be257e1944a8001d5b8e61bf
 image: "/assets/restaurant.jpg"
 date: '2023-11-20'
 
