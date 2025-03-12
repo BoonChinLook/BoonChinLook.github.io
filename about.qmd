@@ -1,4 +1,5 @@
 ---
+pagetitle: "About Me"
 title: "Boon Chin Look"
 subtitle: "Data Analytics Student"
 image: assets/cat.jpg
