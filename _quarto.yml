@@ -35,6 +35,9 @@ website:
         
 format:
   html:
-    theme: style.scss
+    theme: 
+      - cosmo
+      - style.scss
     mainfont: Poppins
-    toc: true
+    toc: false
+    page-layout: full
