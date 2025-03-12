@@ -4,7 +4,11 @@
     "href": "projects/index.html",
     "title": "Projects",
     "section": "",
+<<<<<<< HEAD
     "text": "Project3\n\n\n\n\n\n\nCode\n\n\nAnalysis\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFruit Basket Project\n\n\n\n\n\n\nCode\n\n\nAnalysis\n\n\n\n\n\n\n\n\n\nDec 10, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nSQL Project\n\n\n\n\n\n\nSQL\n\n\n\n\n\n\n\n\n\nNov 20, 2023\n\n\n\n\n\n\nNo matching items\n\n Back to top"
+=======
+    "text": "Project2\n\n\n\n\n\n\nCode\n\n\nAnalysis\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProject3\n\n\n\n\n\n\nCode\n\n\nAnalysis\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSQL Project\n\n\n\n\n\n\nSQL\n\n\n\nSQL Restaurant order management project\n\n\n\n\n\nNov 20, 2023\n\n\n\n\n\n\nNo matching items\n\n Back to top"
+>>>>>>> b998885bc87dd9f5be257e1944a8001d5b8e61bf
   },
   {
     "objectID": "projects/project1/project1.html",
@@ -44,7 +48,11 @@
   {
     "objectID": "index.html",
     "href": "index.html",
+<<<<<<< HEAD
     "title": "Boon Chin Look, Bachelors",
+=======
+    "title": "Boon Chin Look",
+>>>>>>> b998885bc87dd9f5be257e1944a8001d5b8e61bf
     "section": "",
     "text": "Github\n  \n  \n    \n     Linkedin\n  \n\n      \nWelcome to my Portfolio! Here you will find out about me, my hobbies, what I do, what I aspire to be and what project I have done. Learn more about me →\n\n    \n    \n  \n\n\n\n\n\n\n Back to top"
   }

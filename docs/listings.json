@@ -2,8 +2,13 @@
   {
     "listing": "/projects/index.html",
     "items": [
+<<<<<<< HEAD
       "/projects/project3/project3.html",
       "/projects/project2/project2.html",
+=======
+      "/projects/project2/project2.html",
+      "/projects/project3/project3.html",
+>>>>>>> b998885bc87dd9f5be257e1944a8001d5b8e61bf
       "/projects/project1/project1.html"
     ]
   }
