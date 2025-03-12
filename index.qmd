@@ -1,5 +1,4 @@
 ---
-<<<<<<< HEAD
 title: "Boon Chin Look, Bachelors"
 subtitle: "Final year Data Analytics student"
 image: assets/analytics.JPG
@@ -19,10 +18,6 @@ about:
           target: _blank
       
 page-layout: full
-=======
-pagetitle: "Boon Chin Look"
-
->>>>>>> b998885bc87dd9f5be257e1944a8001d5b8e61bf
 ---
 
 ::: {#hero-heading}
