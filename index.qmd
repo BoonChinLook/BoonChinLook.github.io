@@ -6,6 +6,7 @@ image: assets/analytics.JPG
 about:
   template: solana
   image-width: 28em
+  image-shape: rectangle
   id: hero-heading
   links:
         - icon: github
