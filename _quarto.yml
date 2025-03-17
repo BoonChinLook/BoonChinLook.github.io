@@ -1,6 +1,10 @@
 project:
   type: website
   output-dir: docs
+  resources:
+    - assets/report1.pdf 
+    - assets/report2.pdf 
+    - assets/report3.pdf
 
 website:
   title: "Boon Chin Look"
@@ -12,9 +16,13 @@ website:
     right:
         #text: Home
         #icon: house
-      - href: projects/index.qmd
-        text: Projects
+      - text: Projects
         icon: paperclip
+        menu:
+          - text: Code Projects
+            href: code_projects/index.qmd
+          - text: Written Projects
+            href: reports/index.qmd
 
       - href: about.qmd
         text: About
@@ -29,7 +37,7 @@ website:
         href: assets/Blankforcvtester.pdf
         target: _blank
   page-footer: 
-    left: "Boon Chin Look, 2025"    
+    left: "© Boon Chin Look, 2025"    
     right: "Built with [Quarto](https://quarto.org/)" 
 
         

@@ -1,0 +1,20 @@
+---
+title: "Botswana's Economic Transformation through mineral wealth"
+categories: [Economics]
+image: "/assets/report2.jpg"
+date: '2024-10-20'
+author: 
+    - Assa Babissagana
+    - Boon Chin Look
+    - Daniela Groza
+    - Fatima Contreiras' 
+
+about:
+  template: solana
+  links:
+    - icon: file-earmark-pdf
+      text: Botswana Analysis pdf
+      href: assets/report2.pdf
+---
+
+This group project had critically explored the contrasting perspectives of the Stages of Growth ("modernization") and Dependency schools of thought regarding economic development. It examined the historical, social, and political contexts that shaped each theory, highlighting how these foundations inform their differing understandings of development processes. The analysis also delves into their core arguments and policy recommendations, drawing attention to the unique implications of each perspective for global economic strategies. 

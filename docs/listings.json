@@ -1,10 +1,18 @@
 [
   {
-    "listing": "/projects/index.html",
+    "listing": "/code_projects/index.html",
     "items": [
-      "/projects/project3/project3.html",
-      "/projects/project2/project2.html",
-      "/projects/project1/project1.html"
+      "/code_projects/project3/project3.html",
+      "/code_projects/project2/project2.html",
+      "/code_projects/project1/project1.html"
+    ]
+  },
+  {
+    "listing": "/reports/index.html",
+    "items": [
+      "/reports/report3/report3.html",
+      "/reports/report1/report1.html",
+      "/reports/report2/report2.html"
     ]
   }
 ]

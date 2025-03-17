@@ -1,0 +1,25 @@
+---
+title: "SQL Project"
+categories: [SQL]
+image: "/assets/restaurant.jpg"
+date: '2023-11-20'
+
+about:
+  template: solana
+  links:
+    - icon: github
+      text: Github
+      href: https://github.com/BoonChinLook
+---
+
+This project was developed during an 8-week course introducing SQL by Girls Code First. Through this course, I acquired fundamental SQL skills and completed an individual assignment covering various topics, including:
+
+*   SQL coding and database management techniques.
+*   Data analysis.
+*   Analyzing data from complex structures.
+*   Data manipulation with SQL programming language.
+*   Data management using SQL coding techniques.
+*   Database design and data visualisation.
+*   Project presentation.
+
+For my project, I designed a database focused on restaurant order management. This involved implementing foreign and primary keys and creating an Entity-Relationship (EER) diagram.

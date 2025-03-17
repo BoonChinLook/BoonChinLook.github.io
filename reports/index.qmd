@@ -1,0 +1,15 @@
+---
+title: Reports
+description: |
+  Reports, analysis and written assignments.
+listing:
+    contents: /
+    sort: "date desc"
+    type: default
+    categories: true
+    sort-ui: true
+    filter-ui: true
+    feed: true
+page-layout: full
+title-block-banner: false
+---
