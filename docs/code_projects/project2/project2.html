@@ -6,9 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2023-11-20">
+<meta name="author" content="Boon Chin Look">
+<meta name="dcterms.date" content="2023-12-10">
 
-<title>SQL Project – Boon Chin Look</title>
+<title>Fruit Basket Project – Boon Chin Look</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -40,7 +41,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-cf43ef0bb5a96cd5ab9e9f954ffcfda2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-7aaddba9e7460a363d4cec57bf7bd2d8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -92,11 +93,23 @@ ul.task-list li input[type="checkbox"] {
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="../../projects/index.html"> <i class="bi bi-paperclip" role="img">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-projects" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-paperclip" role="img">
 </i> 
-<span class="menu-text">Projects</span></a>
+ <span class="menu-text">Projects</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-projects">    
+        <li>
+    <a class="dropdown-item" href="../../projects/index.qmd">
+ <span class="dropdown-text">Code Projects</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="../../reports/index.html">
+ <span class="dropdown-text">Written Projects</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item">
     <a class="nav-link" href="../../about.html"> <i class="bi bi-people" role="img">
 </i> 
@@ -129,9 +142,10 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">SQL Project</h1>
+<h1 class="title">Fruit Basket Project</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">SQL</div>
+    <div class="quarto-category">Code</div>
+    <div class="quarto-category">Analysis</div>
   </div>
   </div>
 
@@ -139,11 +153,17 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="quarto-title-meta column-page">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Boon Chin Look </p>
+          </div>
+  </div>
     
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">November 20, 2023</p>
+      <p class="date">December 10, 2023</p>
     </div>
   </div>
   
@@ -155,17 +175,18 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This project was developed during an 8-week course introducing SQL by Girls Code First. Through this course, I acquired fundamental SQL skills and completed an individual assignment covering various topics, including:</p>
+<p>This project was developed during an 8-week introduction to JavaScript course offered by Girls Code First. Throughout the course, I gained proficiency in JavaScript fundamentals and collaborated on a group project covering various topics, including:</p>
 <ul>
-<li>SQL coding and database management techniques.</li>
-<li>Data analysis.</li>
-<li>Analyzing data from complex structures.</li>
-<li>Data manipulation with SQL programming language.</li>
-<li>Data management using SQL coding techniques.</li>
-<li>Database design and data visualisation.</li>
-<li>Project presentation.</li>
+<li>Conditional logical and functions.</li>
+<li>Arrays and loops.</li>
+<li>JavaScript for websites: DOM part 1.</li>
+<li>JavaScript for websites: DOM part 2.</li>
+<li>Project Initiation.</li>
+<li>Building your app.</li>
+<li>Project Presentation.</li>
 </ul>
-<p>For my project, I designed a database focused on restaurant order management. This involved implementing foreign and primary keys and creating an Entity-Relationship (EER) diagram.</p>
+<p>Our final pair, a <a href="https://codepen.io/Boon-Chin-Look/pen/qBgdpPz" target="_blank">fruit shop basket</a>, was completed within a 2-week deadline.</p>
+<p>In this project, a interactive shopping experience was created. Upon entering the interface, users are greeted by their name and prompted to give an item they would like to purchase. If an item is unavailable, an apology message is displayed. Furthermore, the shop dynamically calculates the contents of the user’s basket.</p>
 
 
 
@@ -591,7 +612,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>Boon Chin Look, 2025</p>
+<p>© Boon Chin Look, 2025</p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;

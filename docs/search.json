@@ -1,5 +1,12 @@
 [
   {
+    "objectID": "reports/report1/report1.html",
+    "href": "reports/report1/report1.html",
+    "title": "Analysis Comparison Modernization and Dependency Theories",
+    "section": "",
+    "text": "This project had critically explored the contrasting perspectives of the Stages of Growth (“modernization”) and Dependency schools of thought regarding economic development. It examined the historical, social, and political contexts that shaped each theory, highlighting how these foundations inform their differing understandings of development processes. The analysis also delves into their core arguments and policy recommendations, drawing attention to the unique implications of each perspective for global economic strategies.\n\n\n\n Back to top"
+  },
+  {
     "objectID": "test.html",
     "href": "test.html",
     "title": "Boon Chin Look",
@@ -7,18 +14,18 @@
     "text": "import numpy as np\nimport matplotlib.pyplot as plt\nr = np.arange(0, 2, 0.01)\ntheta = 2 * np.pi * r\nfig, ax = plt.subplots(\n  subplot_kw = {'projection': 'polar'} \n)\nax.plot(theta, r)\nax.set_rticks([0.5, 1, 1.5, 2])\nax.grid(True)\nplt.show()\n\n\n\n\n\n\n\n\n\n\n\n Back to top"
   },
   {
-    "objectID": "projects/project2/project2.html",
-    "href": "projects/project2/project2.html",
-    "title": "Fruit Basket Project",
+    "objectID": "code_projects/project3/project3.html",
+    "href": "code_projects/project3/project3.html",
+    "title": "Project3",
     "section": "",
-    "text": "This project was developed during an 8-week introduction to JavaScript course offered by Girls Code First. Throughout the course, I gained proficiency in JavaScript fundamentals and collaborated on a group project covering various topics, including:\n\nConditional logical and functions.\nArrays and loops.\nJavaScript for websites: DOM part 1.\nJavaScript for websites: DOM part 2.\nProject Initiation.\nBuilding your app.\nProject Presentation.\n\nOur final pair, a fruit shop basket, was completed within a 2-week deadline.\nIn this project, a interactive shopping experience was created. Upon entering the interface, users are greeted by their name and prompted to give an item they would like to purchase. If an item is unavailable, an apology message is displayed. Furthermore, the shop dynamically calculates the contents of the user’s basket.\n\n\n\n Back to top"
+    "text": "Back to top"
   },
   {
-    "objectID": "projects/index.html",
-    "href": "projects/index.html",
-    "title": "Projects",
+    "objectID": "code_projects/project1/project1.html",
+    "href": "code_projects/project1/project1.html",
+    "title": "SQL Project",
     "section": "",
-    "text": "Project3\n\n\n\n\n\n\nCode\n\n\nAnalysis\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFruit Basket Project\n\n\n\n\n\n\nCode\n\n\nAnalysis\n\n\n\n\n\n\n\n\n\nDec 10, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nSQL Project\n\n\n\n\n\n\nSQL\n\n\n\n\n\n\n\n\n\nNov 20, 2023\n\n\n\n\n\n\nNo matching items\n\n Back to top"
+    "text": "This project was developed during an 8-week course introducing SQL by Girls Code First. Through this course, I acquired fundamental SQL skills and completed an individual assignment covering various topics, including:\n\nSQL coding and database management techniques.\nData analysis.\nAnalyzing data from complex structures.\nData manipulation with SQL programming language.\nData management using SQL coding techniques.\nDatabase design and data visualisation.\nProject presentation.\n\nFor my project, I designed a database focused on restaurant order management. This involved implementing foreign and primary keys and creating an Entity-Relationship (EER) diagram.\n\n\n\n Back to top"
   },
   {
     "objectID": "about.html",
@@ -28,24 +35,31 @@
     "text": "Github\n  \n  \n    \n     Linkedin\n  \n  \n    \n     Download CV\n  \n\n  \n  \n\n🤗Hey !\n\n\n🌱 I’m a Final year Business Studies student specializing in Data analytics.\n⚡ I’m passionate about rock climbing, working out at the gym, exploring art, and constantly learning new things.\n🍕 I love cooking, baking and eating new foods.\n\n\n\n\n\n\nNew Years Resolutions:\nNew Year’s Resolutions: For my New Year’s resolutions, I aim to step outside of my comfort zone.\nThis year, I started running 5 kilometers each week as a New Year’s resolution. While I am generally an active person, I rarely engage in cardiovascular exercises beneficial for heart health, preferring weightlifting and non-cardio-intensive exercises. This year, I intend to change that.\nFurthermore, I am making an effort to broaden my horizons and engage with my local community. For example, I recently participated in the HSE “Healthy Food made Easy” programme, which consisted of cooking classes for 2.5 hours a week over six weeks.\nAdditionally, as a follow on completion of the Healthy Food made easy programme, I hope to challenge myself by cooking all my college meals myself, as generally I would buy lunch outside.\n\n\nSkills\n💻 Programming Languages:\nTech Stack: Python, HTML, CSS, JavaScript, GitHub and SQL.\nComputer software: Microsoft Office, Git, Alteryx, Tableau, Power BI.\n\n\nFood I baked:\n🍪Below are examples of foods I baked while volunteering and in my free time:\n  \n\n\nFood I cooked:\n🍛Below are examples of foods I cooked while volunteering and in my free time:\n   \n\n\nMe Rock climbing:\n🪨Below is an example video of me rock climbing and some fun pictures of me in the sport:\n\n\n\n\n\n\n Back to top"
   },
   {
+    "objectID": "code_projects/index.html",
+    "href": "code_projects/index.html",
+    "title": "Code Projects",
+    "section": "",
+    "text": "Project3\n\n\n\n\n\n\nCode\n\n\nAnalysis\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFruit Basket Project\n\n\n\n\n\n\nCode\n\n\nAnalysis\n\n\n\n\n\n\n\n\n\nDec 10, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nSQL Project\n\n\n\n\n\n\nSQL\n\n\n\n\n\n\n\n\n\nNov 20, 2023\n\n\n\n\n\n\nNo matching items\n\n Back to top"
+  },
+  {
+    "objectID": "code_projects/project2/project2.html",
+    "href": "code_projects/project2/project2.html",
+    "title": "Fruit Basket Project",
+    "section": "",
+    "text": "This project was developed during an 8-week introduction to JavaScript course offered by Girls Code First. Throughout the course, I gained proficiency in JavaScript fundamentals and collaborated on a group project covering various topics, including:\n\nConditional logical and functions.\nArrays and loops.\nJavaScript for websites: DOM part 1.\nJavaScript for websites: DOM part 2.\nProject Initiation.\nBuilding your app.\nProject Presentation.\n\nOur final pair, a fruit shop basket, was completed within a 2-week deadline.\nIn this project, a interactive shopping experience was created. Upon entering the interface, users are greeted by their name and prompted to give an item they would like to purchase. If an item is unavailable, an apology message is displayed. Furthermore, the shop dynamically calculates the contents of the user’s basket.\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "reports/index.html",
+    "href": "reports/index.html",
+    "title": "Reports",
+    "section": "",
+    "text": "Analysis Comparison Modernization and Dependency Theories\n\n\n\n\n\n\nEconomics\n\n\n\n\n\n\n\n\n\nOct 20, 2024\n\n\n\n\n\n\nNo matching items\n\n Back to top"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Boon Chin Look, Bachelors",
     "section": "",
     "text": "Github\n  \n  \n    \n     Linkedin\n  \n\n      \nWelcome to my Portfolio! Here you will find out about me, my hobbies, what I do, what I aspire to be and what project I have done. Learn more about me →\n\n    \n    \n  \n\n\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "projects/project1/project1.html",
-    "href": "projects/project1/project1.html",
-    "title": "SQL Project",
-    "section": "",
-    "text": "This project was developed during an 8-week course introducing SQL by Girls Code First. Through this course, I acquired fundamental SQL skills and completed an individual assignment covering various topics, including:\n\nSQL coding and database management techniques.\nData analysis.\nAnalyzing data from complex structures.\nData manipulation with SQL programming language.\nData management using SQL coding techniques.\nDatabase design and data visualisation.\nProject presentation.\n\nFor my project, I designed a database focused on restaurant order management. This involved implementing foreign and primary keys and creating an Entity-Relationship (EER) diagram.\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "projects/project3/project3.html",
-    "href": "projects/project3/project3.html",
-    "title": "Project3",
-    "section": "",
-    "text": "Back to top"
   }
 ]

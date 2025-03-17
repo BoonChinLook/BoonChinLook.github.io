@@ -1,7 +1,7 @@
 ---
-title: Projects
+title: Reports
 description: |
-  Projects completed
+  Reports, analysis and written assignments.
 listing:
     contents: /
     sort: "date desc"
