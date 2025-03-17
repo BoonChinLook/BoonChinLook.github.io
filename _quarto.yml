@@ -3,6 +3,8 @@ project:
   output-dir: docs
   resources:
     - assets/report1.pdf 
+    - assets/report2.pdf 
+    - assets/report3.pdf
 
 website:
   title: "Boon Chin Look"

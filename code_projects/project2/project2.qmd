@@ -7,6 +7,9 @@ categories: [Code, Analysis]
 image: "/assets/fruitshop.jpg"
 date: '2023-12-10'
 
+about:
+  template: solana
+
 ---
 This project was developed during an 8-week introduction to JavaScript course offered by Girls Code First. Throughout the course, I gained proficiency in JavaScript fundamentals and collaborated on a group project covering various topics, including:
 

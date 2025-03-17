@@ -7,9 +7,8 @@ listing:
     sort: "date desc"
     type: default
     categories: true
-    sort-ui: false
-    filter-ui: false
-    fields: [date, image, title, description, categories]
+    sort-ui: true
+    filter-ui: true
     feed: true
 page-layout: full
 title-block-banner: false

@@ -80,7 +80,7 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-image','listing-title','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
       searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
     };
@@ -196,7 +196,7 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RWNvbm9taWNz">Economics <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(3)</span></div><div class="category" data-category="RWNvbm9taWNz">Economics <span class="quarto-category-count">(3)</span></div></div></div>
 <!-- main -->
 <main class="content column-page-left" id="quarto-document-content">
 
@@ -229,11 +229,69 @@ window.Quarto = {
 
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+     <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+       <option value="" disabled="" selected="" hidden="">Order By</option>
+       <option value="index" data-direction="asc">Default</option>
+         <option value="listing-title" data-direction="asc">
+          Title
+        </option>
+         <option value="listing-date-sort" data-direction="asc">
+          Date - Oldest
+        </option>
+         <option value="listing-date-sort" data-direction="desc">
+          Date - Newest
+        </option>
+         <option value="listing-author" data-direction="asc">
+          Author
+        </option>
+     </select>
+  </div>
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
+</div>
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="RWNvbm9taWNz" data-listing-date-sort="1729378800000" data-listing-file-modified-sort="1742224000201" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="70">
+<div class="quarto-post image-right" data-index="0" data-categories="RWNvbm9taWNz" data-listing-date-sort="1736121600000" data-listing-file-modified-sort="1742229245169" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="72">
+<div class="thumbnail">
+<p><a href="../reports/report3/report3.html" class="no-external"></a></p><a href="../reports/report3/report3.html" class="no-external">
+<p><img loading="lazy" src="../assets/report3.png" class="thumbnail-image"></p>
+</a><p><a href="../reports/report3/report3.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../reports/report3/report3.html" class="no-external">Analysis Comparison Modernization and Dependency Theories</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../reports/report3/report3.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('RWNvbm9taWNz'); return false;">
+Economics
+</div>
+</div>
+<div class="listing-description">
+<a href="../reports/report3/report3.html" class="no-external">This report reflected on the Solow model of economic growth, exploring its significant insights and limitations. It highlights the model’s emphasis on capital accumulation…</a>
+</div>
+</div>
+<div class="metadata">
+<a href="../reports/report3/report3.html" class="no-external">
+<div class="listing-date">
+Jan 6, 2025
+</div>
+<div class="listing-author">
+Boon Chin Look
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="RWNvbm9taWNz" data-listing-date-sort="1729378800000" data-listing-file-modified-sort="1742228109450" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="70">
 <div class="thumbnail">
 <p><a href="../reports/report1/report1.html" class="no-external"></a></p><a href="../reports/report1/report1.html" class="no-external">
-<p><img loading="lazy" src="../assets/restaurant.jpg" class="thumbnail-image"></p>
+<p><img loading="lazy" src="../assets/report1.jpg" class="thumbnail-image"></p>
 </a><p><a href="../reports/report1/report1.html" class="no-external"></a></p>
 </div>
 <div class="body">
@@ -256,6 +314,42 @@ Economics
 <a href="../reports/report1/report1.html" class="no-external">
 <div class="listing-date">
 Oct 20, 2024
+</div>
+<div class="listing-author">
+Boon Chin Look
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-categories="RWNvbm9taWNz" data-listing-date-sort="1729378800000" data-listing-file-modified-sort="1742228660075" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="71">
+<div class="thumbnail">
+<p><a href="../reports/report2/report2.html" class="no-external"></a></p><a href="../reports/report2/report2.html" class="no-external">
+<p><img loading="lazy" src="../assets/report2.jpg" class="thumbnail-image"></p>
+</a><p><a href="../reports/report2/report2.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../reports/report2/report2.html" class="no-external">Botswana’s Economic Transformation through mineral wealth</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../reports/report2/report2.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('RWNvbm9taWNz'); return false;">
+Economics
+</div>
+</div>
+<div class="listing-description">
+<a href="../reports/report2/report2.html" class="no-external">This group project had critically explored the contrasting perspectives of the Stages of Growth (“modernization”) and Dependency schools of thought regarding economic…</a>
+</div>
+</div>
+<div class="metadata">
+<a href="../reports/report2/report2.html" class="no-external">
+<div class="listing-date">
+Oct 20, 2024
+</div>
+<div class="listing-author">
+Assa Babissagana, Boon Chin Look, Daniela Groza, Fatima Contreiras’
 </div>
 </a>
 </div>

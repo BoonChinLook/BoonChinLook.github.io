@@ -4,13 +4,12 @@ categories: [SQL]
 image: "/assets/restaurant.jpg"
 date: '2023-11-20'
 
-links:
-        - icon: github
-          text: Github
-          href: https://github.com/BoonChinLook
-        - icon: file-text-fill
-          text: Documentationq
-          href: /assets/sqlproject.txt
+about:
+  template: solana
+  links:
+    - icon: github
+      text: Github
+      href: https://github.com/BoonChinLook
 ---
 
 This project was developed during an 8-week course introducing SQL by Girls Code First. Through this course, I acquired fundamental SQL skills and completed an individual assignment covering various topics, including:
