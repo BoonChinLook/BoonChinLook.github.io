@@ -59,19 +59,41 @@ Computer software:  Microsoft Office, Git, Alteryx, Tableau, Power BI.
 ### Food I baked:
 🍪Below are examples of foods I baked while volunteering and in my free time:
 
-![red-velvet-cupcakes](assets/baked1.PNG){width=200}
-![fruit-scones](assets/baked2.PNG){width=200}
-![cinnamon-cookies](assets/baked3.PNG){width=200}
+<div class="gallery">
+  <a href="assets/baked1.PNG" target="_blank">
+    ![Red Velvet Cupcakes](assets/baked1.PNG){.gallery}
+  </a>
+  <a href="assets/baked2.PNG" target="_blank">
+    ![Fruit Scones](assets/baked2.PNG){.gallery}
+  </a>
+  <a href="assets/baked3.PNG" target="_blank">
+    ![Cinnamon Cookies](assets/baked3.PNG){.gallery}
+  </a>
+</div>
+
+
 
 ### Food I cooked:
 🍛Below are examples of foods I cooked while volunteering and in my free time:
 
-![teryaki-stirfry](assets/food1.PNG){width=200}
-![satay-stirfry](assets/food2.PNG){width=200}
-![salmon-meal](assets/food3.PNG){width=200}
-![curry-meal](assets/food4.PNG){width=200}
+<div class="gallery">
+  <a href="assets/food1.PNG" target="_blank">
+    ![Teryaki Stir-fry](assets/food1.PNG){.gallery}
+  </a>
+  <a href="assets/food2.PNG" target="_blank">
+    ![Satay Stir-fry](assets/food2.PNG){.gallery}
+  </a>
+  <a href="assets/food3.PNG" target="_blank">
+    ![Salmon Meal](assets/food3.PNG){.gallery}
+  </a>
+  <a href="assets/food4.PNG" target="_blank">
+    ![Curry Meal](assets/food4.PNG){.gallery}
+  </a>
+</div>
 
-### Me Rock climbing:
-🪨Below is an example video of me rock climbing and some fun pictures of me in the sport:
 
-{{< video assets/video.mp4 >}}
+
+### Rock climbing:
+🪨Through out my years in college, I have taken up rock climbing as a sport I am passionate about.Below a video of the rock climbing club at DCU which I have taken part of and am featured in the video a few times:
+
+{{< video https://www.youtube.com/watch?v=lwPNShbrzSA&ab_channel=DCURockClimbingClub>}}
