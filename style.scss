@@ -28,6 +28,42 @@ img {
     transform: scale(2); /* Slightly enlarge the image on hover */
     cursor: pointer;
   }
-  
 
-  
+/* Container style for the SQL ERD */
+.sql-erd {
+  display: flex; /* Enables flexible box layout */
+  justify-content: center; /* Centers the image horizontally */
+  align-items: center; /* Centers the image vertically (optional) */
+  padding: 20px; /* Adds padding around the container */
+  background-color: #f9f9f9; /* Optional: Adds a background color */
+}
+
+/* Style for the SQL ERD image */
+.sql-erd img {
+  width: 500px; /* Adjust width to make the image bigger */
+  height: auto; /* Maintains the image's aspect ratio */
+  object-fit: contain; /* Ensures the entire image is displayed */
+  border-radius: 10px; /* Optional: Adds rounded edges */
+  transition: transform 0.3s ease; /* Smooth hover effect */
+  margin: 10px; /* Adds spacing around the image */
+}
+
+/* Hover effect for interactivity */
+.sql-erd img:hover {
+  transform: scale(1.1); /* Slightly enlarge the image on hover */
+  cursor: pointer;
+}
+
+
+/* Increase left and right borders */
+.page-layout-full {
+  max-width: 80%; /* Adjust to set the page content width (e.g., 80% of the viewport) */
+  margin: 0 auto; /* Centers the content horizontally */
+  padding: 20px; /* Adds internal spacing inside the layout */
+  border-left: 10px; /* Creates a wider border on the left */
+  border-right: 10px; /* Creates a wider border on the right */
+  background-color: #f9f9f9; /* Optional: set a background color for content area */
+  box-sizing: border-box; /* Includes borders and padding in element's width */
+}
+
+

@@ -42,7 +42,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-c5b5c30ece3d800c80653958e5fc53fe.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-a227a11e46b296da9aa8eabbe32f974f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -80,7 +80,7 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-image','listing-title','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
       searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
     };
@@ -229,6 +229,31 @@ window.Quarto = {
 
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+     <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+       <option value="" disabled="" selected="" hidden="">Order By</option>
+       <option value="index" data-direction="asc">Default</option>
+         <option value="listing-title" data-direction="asc">
+          Title
+        </option>
+         <option value="listing-date-sort" data-direction="asc">
+          Date - Oldest
+        </option>
+         <option value="listing-date-sort" data-direction="desc">
+          Date - Newest
+        </option>
+         <option value="listing-author" data-direction="asc">
+          Author
+        </option>
+     </select>
+  </div>
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
+</div>
 <div class="list quarto-listing-default">
 <div class="quarto-post image-right" data-index="0" data-categories="Q29kZSUyQ0FuYWx5c2lz" data-listing-file-modified-sort="1742229960312" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
 <div class="thumbnail">
@@ -257,6 +282,9 @@ Analysis
 </div>
 <div class="metadata">
 <p><a href="../code_projects/project3/project3.html" class="no-external"></a></p><a href="../code_projects/project3/project3.html" class="no-external">
+<div class="listing-author">
+Boon Chin Look
+</div>
 </a>
 </div>
 </div>
@@ -290,13 +318,16 @@ Analysis
 <div class="listing-date">
 Dec 10, 2023
 </div>
+<div class="listing-author">
+Boon Chin Look
+</div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="U1FM" data-listing-date-sort="1700438400000" data-listing-file-modified-sort="1742229960311" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="101">
+<div class="quarto-post image-right" data-index="2" data-categories="U1FM" data-listing-date-sort="1700438400000" data-listing-file-modified-sort="1742306660042" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="113">
 <div class="thumbnail">
 <p><a href="../code_projects/project1/project1.html" class="no-external"></a></p><a href="../code_projects/project1/project1.html" class="no-external">
-<p><img loading="lazy" src="../assets/restaurant.jpg" class="thumbnail-image"></p>
+<p><img loading="lazy" src="../code_projects/project1/restaurant.jpg" class="thumbnail-image"></p>
 </a><p><a href="../code_projects/project1/project1.html" class="no-external"></a></p>
 </div>
 <div class="body">
@@ -319,6 +350,9 @@ SQL
 <a href="../code_projects/project1/project1.html" class="no-external">
 <div class="listing-date">
 Nov 20, 2023
+</div>
+<div class="listing-author">
+Boon Chin Look
 </div>
 </a>
 </div>

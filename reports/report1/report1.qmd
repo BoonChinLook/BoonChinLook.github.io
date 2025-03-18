@@ -2,7 +2,7 @@
 title: "Analysis Comparison Modernization and Dependency Theories"
 categories: [Economics]
 image: "/assets/report1.jpg"
-date: '2024-10-20'
+date: '2024-11-13'
 author: "Boon Chin Look"
 
 about:

@@ -5,6 +5,8 @@ project:
     - assets/report1.pdf 
     - assets/report2.pdf 
     - assets/report3.pdf
+    - reports/report4/report4.pdf
+
 
 website:
   title: "Boon Chin Look"
@@ -48,4 +50,4 @@ format:
       - style.scss
     mainfont: Poppins
     toc: false
-    page-layout: full
+    page-layout: custom                      
