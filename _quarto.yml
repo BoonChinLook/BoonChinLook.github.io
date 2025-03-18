@@ -50,4 +50,4 @@ format:
       - style.scss
     mainfont: Poppins
     toc: false
-    page-layout: full
+    page-layout: custom                      

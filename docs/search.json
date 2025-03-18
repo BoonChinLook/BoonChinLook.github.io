@@ -25,7 +25,7 @@
     "href": "index.html",
     "title": "Boon Chin Look, Bachelors",
     "section": "",
-    "text": "Github\n  \n  \n    \n     Linkedin\n  \n\n      \nWelcome to my Portfolio! Here you will find out about me, my hobbies, what I do, what I aspire to be and what project I have done. Learn more about me →"
+    "text": "## Latest Written Projects"
   },
   {
     "objectID": "index.html#latest-written-projects",
@@ -60,7 +60,7 @@
     "href": "code_projects/project1/project1.html",
     "title": "SQL Project",
     "section": "",
-    "text": "This project was developed during an 8-week course introducing SQL by Girls Code First. Through this course, I acquired fundamental SQL skills and completed an individual assignment covering various topics, including:\n\nSQL coding and database management techniques.\nData analysis.\nAnalyzing data from complex structures.\nData manipulation with SQL programming language.\nData management using SQL coding techniques.\nDatabase design and data visualisation.\nProject presentation.\n\n\n\n\n\nSQL ERD\n\n\nFor my project, I designed a database focused on restaurant order management. This involved implementing foreign and primary keys and creating an Entity-Relationship (EER) diagram.\n\n\n Back to top"
+    "text": "This project was developed during an 8-week course introducing SQL by Girls Code First. Through this course, I acquired fundamental SQL skills and completed an individual assignment covering various topics, including:\n\nSQL coding and database management techniques.\nData analysis.\nAnalyzing data from complex structures.\nData manipulation with SQL programming language.\nData management using SQL coding techniques.\nDatabase design and data visualisation.\nProject presentation.\n\n\n  \n\nFor my project, I designed a database focused on restaurant order management. This involved implementing foreign and primary keys and creating an Entity-Relationship (EER) diagram.\n\n\n Back to top"
   },
   {
     "objectID": "code_projects/project3/project3.html",
@@ -89,5 +89,19 @@
     "title": "Analysis of the Impact of Technological Change and Shifting Consumer Behaviour on the Global Automobile Industry",
     "section": "",
     "text": "This assignment involved exploring how advancements in technology and evolving consumer preferences influence the global automobile industry’s structure, strategies, and market dynamics.\n\n\n Back to top"
+  },
+  {
+    "objectID": "index.html#latest-written-projects-1",
+    "href": "index.html#latest-written-projects-1",
+    "title": "Boon Chin Look, Bachelors",
+    "section": "Latest Written Projects",
+    "text": "Latest Written Projects"
+  },
+  {
+    "objectID": "index.html#latest-code-projects",
+    "href": "index.html#latest-code-projects",
+    "title": "Boon Chin Look, Bachelors",
+    "section": "Latest Code Projects",
+    "text": "Latest Code Projects\n\n\n\n\n\n\n\n\nProject3\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFruit Basket Project\n\n\n\n\n\n\nDec 10, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSQL Project\n\n\n\n\n\n\nNov 20, 2023\n\n\n\n\n\n\n\n\nNo matching items"
   }
 ]

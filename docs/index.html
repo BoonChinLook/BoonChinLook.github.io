@@ -40,7 +40,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-91c327522bdfba99667ad9530c446eb6.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-a227a11e46b296da9aa8eabbe32f974f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -86,6 +86,34 @@ ul.task-list li input[type="checkbox"] {
 
     window['quarto-listings'] = window['quarto-listings'] || {};
     window['quarto-listings']['listing-reports-listing'] = new List('listing-reports-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-code-projects-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-image','listing-description','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-code-projects-listing'] = new List('listing-code-projects-listing', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -201,6 +229,7 @@ window.Quarto = {
 
 
 
+<hr>
 <div class="quarto-about-solana column-page">
   <div class="about-entity">
     <div class="entity-contents">
@@ -230,7 +259,7 @@ window.Quarto = {
   </div>
 </div>
 
-<p><br> <br> <br></p>
+<p><br></p>
 <section id="latest-written-projects" class="level2">
 <h2 data-anchor-id="latest-written-projects">Latest <a href=".\reports">Written Projects</a></h2>
 <div id="listing-reports-listing" class="quarto-listing quarto-listing-container-grid">
@@ -330,6 +359,76 @@ No matching items
 <nav id="reports-listing-pagination" class="listing-pagination" aria-label="Page Navigation">
   <ul class="pagination"></ul>
 </nav>
+</div>
+<p><br> <br> <br></p>
+</section>
+<section id="latest-code-projects" class="level2">
+<h2 data-anchor-id="latest-code-projects">Latest <a href=".\reports">Code Projects</a></h2>
+<div id="listing-code-projects-listing" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="Q29kZSUyQ0FuYWx5c2lz" data-listing-file-modified-sort="1742229960312" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<a href="./code_projects/project3/project3.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Project3
+</h5>
+<div class="card-text listing-description">
+
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="Q29kZSUyQ0FuYWx5c2lz" data-listing-date-sort="1702166400000" data-listing-file-modified-sort="1742229960311" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="137">
+<a href="./code_projects/project2/project2.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./assets/fruitshop.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Fruit Basket Project
+</h5>
+<div class="card-text listing-description">
+This project was developed during an 8-week introduction to JavaScript course offered by Girls Code First. Throughout the course, I gained proficiency in JavaScript…
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Dec 10, 2023
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="U1FM" data-listing-date-sort="1700438400000" data-listing-file-modified-sort="1742306660042" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="113">
+<a href="./code_projects/project1/project1.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./code_projects/project1/restaurant.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+SQL Project
+</h5>
+<div class="card-text listing-description">
+This project was developed during an 8-week course introducing SQL by Girls Code First. Through this course, I acquired fundamental SQL skills and completed an individual…
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Nov 20, 2023
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
 </div>
 
 

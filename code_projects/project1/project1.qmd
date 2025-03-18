@@ -2,7 +2,7 @@
 title: "SQL Project"
 author: "Boon Chin Look"
 categories: [SQL]
-image: "/assets/restaurant.jpg"
+image: "/code_projects/project1/restaurant.jpg"
 date: '2023-11-20'
 
 about:
@@ -10,7 +10,7 @@ about:
   links:
     - icon: filetype-sql
       text: SQL Code File
-      href: assets/restuarant.sql
+      href: code_projects/project1/restuarant.sql
       target: _blank
         
 ---
@@ -26,9 +26,13 @@ This project was developed during an 8-week course introducing SQL by Girls Code
 *   Project presentation.
 
 
-<img src="assets/erd.png" alt="SQL ERD diagram" width="70%">
 
-![SQL ERD](assets/erd.png){.gallery}
+<div class="sql-erd">
+  <a href="/code_projects/project1/erd.png" target="_blank">
+    ![SQL ERD](/code_projects/project1/erd.png){.gallery}
+  </a>
+</div>
+
 
 
 For my project, I designed a database focused on restaurant order management. This involved implementing foreign and primary keys and creating an Entity-Relationship (EER) diagram.
