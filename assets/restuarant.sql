@@ -226,7 +226,6 @@ BEFORE UPDATE ON cashier
 FOR EACH ROW 
 SET NEW.SALARY = (NEW.hourly_wage * 37.5 * 52);
 
-
 show triggers;
  
 Update cashier
@@ -241,3 +240,4 @@ Select * from cashier;
 
 ALTER TABLE cashier
 DROP COLUMN salary;
+DROP DATABASE restaurant;

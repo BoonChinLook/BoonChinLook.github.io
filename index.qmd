@@ -18,6 +18,20 @@ about:
           href: https://www.linkedin.com/in/boon-chin-l-13b104193/
           target: _blank
 page-layout: full
+
+listing:
+  - id: reports-listing
+    contents:
+      - "reports/*/*.qmd"
+      - "reports/*/*.md"
+    sort: "date desc"
+    type: grid
+    max-items: 9
+    page-size: 3
+    categories: false
+    sort-ui: false
+    filter-ui: false
+    fields: [title, image, description, date]
 ---
 
 ::: {#hero-heading}
@@ -26,3 +40,15 @@ Welcome to my Portfolio! <br>Here you will find out about me, my hobbies, what I
 [Learn more about me &rarr;](about.qmd)
 
 :::
+
+
+
+<br>
+<br>
+<br>
+
+## Latest [Written Projects](/reports)
+
+::: {#reports-listing}
+:::
+
