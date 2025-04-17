@@ -4,10 +4,10 @@ categories: [Economics]
 image: "/assets/report2.jpg"
 date: '2024-10-20'
 author: 
-    - Assa Babissagana
-    - Boon Chin Look
-    - Daniela Groza
-    - Fatima Contreiras' 
+    - "Assa Babissagana"
+    - "Boon Chin Look"
+    - "Daniela Groza"
+    - "Fatima Contreiras"
 
 about:
   template: solana
@@ -17,4 +17,6 @@ about:
       href: assets/report2.pdf
 ---
 
-This group project had critically explored the contrasting perspectives of the Stages of Growth ("modernization") and Dependency schools of thought regarding economic development. It examined the historical, social, and political contexts that shaped each theory, highlighting how these foundations inform their differing understandings of development processes. The analysis also delves into their core arguments and policy recommendations, drawing attention to the unique implications of each perspective for global economic strategies. 
+This group project examined how Botswana successfully leveraged its mineral wealth—especially diamonds to transform from one of the world’s poorest nations into a stable, middle-income economy. It highlights the government's effective resource management, investments in social services, and infrastructure development.
+
+The study also explores the risks of overreliance on diamonds and the rise of synthetic alternatives, emphasizing Botswana's strategic shift toward economic diversification. Through initiatives like Vision 2036 and the Economic Reform and Transformation Plan, Botswana is promoting growth in tourism, agriculture, and manufacturing to build a more resilient and inclusive economy.
