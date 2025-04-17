@@ -1,12 +1,62 @@
 ---
-title: "Project3"
+title: "Product Proposal"
+code-fold: true
 author: "Boon Chin Look"
-categories: [Code, Analysis]
-#description: ""
-#summary:
-#date: '2024-09-20'
+categories: [Python]
 
+image: "/code_projects/project3/project3.jpg"
+date: '2025-10-04'
 
 about:
   template: solana
+  links:
+    - icon: file-earmark-pdf
+      text: Product proposal report pdf
+      href: code_projects/project3/individual_report.pdf
+      target: _blank
 ---
+This project consisted of group and individual elements. 
+
+Within the group side we agreed on a product idea and found a dataset related to our product idea, we had to pitch our product in the form of a video presentation which is embedded within the first page of our pdf of our individual report. This had to be an application for students with finance, innovation and entriprise elements.
+
+Within the individual side we had to write the main technicialities about our pitch such as the data analysis, the gap within the market, our customers and how we'll sell our product. We could have shared elements within the group, however we'd to have our own touches too within the assignment.
+
+Below is snipets of code that aided our decisions for identifying the gap within the market:
+
+# Importing Data and Intial Analysis
+```{python}
+#| code-summary: librarys
+import pandas as pd
+import plotly.express as px
+```
+
+use pd.read_csv to load the data:
+```{python}
+#| code-summary: import
+df = pd.read_csv("UberDataset.csv")
+df.head()
+```
+
+```{python}
+#Checkec for missing values & data types of columns
+df.info()
+#no missing values found
+```
+
+```{python}
+# Standardize column names to lowercase for consistency
+df.columns = df.columns.str.lower()
+df.head()
+```
+
+```{python}
+# Check for missing values in the dataset
+df.isnull().sum()
+```
+
+```{python}
+#Quick descriptive statistics of each numerical column
+df.describe()
+```
+
+# Data Cleaning
