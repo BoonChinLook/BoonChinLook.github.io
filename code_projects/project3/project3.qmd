@@ -21,16 +21,17 @@ Within the group side we agreed on a product idea and found a dataset related to
 
 Within the individual side we had to write the main technicialities about our pitch such as the data analysis, the gap within the market, our customers and how we'll sell our product. We could have shared elements within the group, however we'd to have our own touches too within the assignment.
 
-Below is snipets of code that aided our decisions for identifying the gap within the market:
+Below are the main snipets of code that aided our teamsdecisions for identifying the gap within the market:
 
 # Importing Data and Intial Analysis
 ```{python}
 #| code-summary: librarys
+import matplotlib.pyplot as plt
 import pandas as pd
 import plotly.express as px
+import seaborn as sns
 ```
 
-use pd.read_csv to load the data:
 ```{python}
 #| code-summary: import
 df = pd.read_csv("UberDataset.csv")
@@ -60,3 +61,125 @@ df.describe()
 ```
 
 # Data Cleaning
+```{python}
+#Checked & removed duplicates
+duplicated_data = df[df.duplicated()]
+print(duplicated_data.shape)
+
+df = df.drop_duplicates(keep='first')
+```
+
+```{python}
+# Encode categorical variables using one-hot encoding
+data_encoded = pd.get_dummies(df, columns=['category', 'purpose'], drop_first=True)
+```
+
+```{python}
+#convert date columns into date time
+df["start_date"] = pd.to_datetime(df["start_date"], errors="coerce")
+df["end_date"] = pd.to_datetime(df["end_date"], errors="coerce")
+```
+
+```{python}
+# Handle missing values by dropping rows with missing 'start' or 'stop' and filling 'purpose' with 'unknown'
+df.dropna(subset=['start', 'stop'], inplace=True)
+df['purpose'] = df['purpose'].fillna("Unknown") 
+```
+
+
+```{python}
+# Create a new column for trip date
+df["date"] = df["start_date"].dt.date
+```
+
+```{python}
+# Ensure the dataset is sorted by date
+df = df.sort_values('start_date')
+df.set_index('start_date', inplace=True)
+```
+
+# Analysis
+
+```{python}
+df.head()
+```
+
+```{python}
+# Plot trip frequency over time
+plt.figure(figsize=(6, 4))
+sns.lineplot(x=df["date"].value_counts().sort_index().index,
+             y=df["date"].value_counts().sort_index().values, marker="o")
+plt.xlabel("date")
+plt.ylabel("Number of Trips")
+plt.title("Uber Trips Over Time")
+plt.xticks(rotation=45)
+plt.show()
+```
+
+```{python}
+# Top 10 most common pickup and drop-off locations
+top_pickups = df["start"].value_counts().head(10)
+top_dropoffs = df["stop"].value_counts().head(10)
+
+fig, axes = plt.subplots(1, 2, figsize=(6, 6))
+
+sns.barplot(x=top_pickups.values, y=top_pickups.index, ax=axes[0], palette="Blues_r", hue=top_pickups.index, dodge=False)  
+axes[0].set_title("Top 10 Pickup Locations")
+axes[0].set_xlabel("Number of Trips")
+axes[0].legend([],[], frameon=False)  
+sns.barplot(x=top_dropoffs.values, y=top_dropoffs.index, ax=axes[1], palette="Greens_r", hue=top_dropoffs.index, dodge=False)
+axes[1].set_title("Top 10 Drop-off Locations")
+axes[1].set_xlabel("Number of Trips")
+axes[1].legend([],[], frameon=False) 
+
+plt.tight_layout()
+plt.show()
+```
+
+```{python}
+# Plotted count of trips by purpose
+trip_purpose_counts = df["purpose"].value_counts()
+plt.figure(figsize=(6, 2.5))
+sns.barplot(x=trip_purpose_counts.index, y=trip_purpose_counts.values, hue=trip_purpose_counts.index, palette="Oranges", legend=False) 
+plt.xlabel("Purpose of Trip")
+plt.ylabel("Number of Trips")
+plt.title("Trip Purpose Distribution")
+plt.xticks(rotation=45)
+plt.show()
+
+#Main purpose isn't known but second is a meeting which could be relative to commuting with commuting having little, below we see it has the highest average distance by purpose, which backs up our product in relation a student carpooling application which would aid in their commute.
+```
+
+```{python}
+# Plot average trip distance by purpose
+avg_miles_purpose = df.groupby("purpose")["miles"].mean().sort_values()
+plt.figure(figsize=(6, 2.5))
+sns.barplot(x=avg_miles_purpose.index, y=avg_miles_purpose.values, hue=avg_miles_purpose.index, dodge=False, palette="Blues", legend=False)  
+plt.xlabel("Purpose of Trip")
+plt.ylabel("Average Miles Traveled")
+plt.title("Average Trip Distance by Purpose")
+plt.xticks(rotation=45)
+plt.show()
+```
+
+```{python}
+# Hourly trip analysis of the day
+df["hour"] = df.index.hour
+plt.figure(figsize=(6, 2.5))
+sns.countplot(x=df["hour"], hue=df["hour"], dodge=False, palette="coolwarm", legend=False) 
+plt.xlabel("Hour of the Day")
+plt.ylabel("Number of Trips")
+plt.title("Trips by Hour of the Day")
+plt.show()
+#hours align similarly with college hours.
+```
+
+```{python}
+# Category-wise trip distribution
+plt.figure(figsize=(4, 2.5))
+sns.countplot(x=df["category"], hue=df["category"], palette="viridis", legend=False)
+plt.xlabel("Trip Category")
+plt.ylabel("Number of Trips")
+plt.title("Business vs Personal Trips")
+plt.show()
+```
