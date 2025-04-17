@@ -211,24 +211,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>This project consisted of group and individual elements.</p>
 <p>Within the group side we agreed on a product idea and found a dataset related to our product idea, we had to pitch our product in the form of a video presentation which is embedded within the first page of our pdf of our individual report. This had to be an application for students with finance, innovation and entriprise elements.</p>
 <p>Within the individual side we had to write the main technicialities about our pitch such as the data analysis, the gap within the market, our customers and how we’ll sell our product. We could have shared elements within the group, however we’d to have our own touches too within the assignment.</p>
-<p>Below is snipets of code that aided our decisions for identifying the gap within the market:</p>
+<p>Below are the main snipets of code that aided our teamsdecisions for identifying the gap within the market:</p>
 <section id="importing-data-and-intial-analysis" class="level1">
 <h1>Importing Data and Intial Analysis</h1>
-<div id="8fa4c193" class="cell" data-execution_count="1">
+<div id="95481fe0" class="cell" data-execution_count="1">
 <details class="code-fold">
 <summary>librarys</summary>
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> plotly.express <span class="im">as</span> px</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> plotly.express <span class="im">as</span> px</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<p>use pd.read_csv to load the data:</p>
-<div id="1f2c5b2f" class="cell" data-execution_count="2">
+<div id="c3eabd43" class="cell" data-execution_count="2">
 <details class="code-fold">
 <summary>import</summary>
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="st">"UberDataset.csv"</span>)</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>df.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<div class="cell-output cell-output-display" data-execution_count="2">
+<div class="cell-output cell-output-display" data-execution_count="32">
 <div>
 
 <table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
@@ -300,7 +301,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<div id="e9f168cd" class="cell" data-execution_count="3">
+<div id="5f0c05f8" class="cell" data-execution_count="3">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Checkec for missing values &amp; data types of columns</span></span>
@@ -324,14 +325,14 @@ dtypes: float64(1), object(6)
 memory usage: 63.3+ KB</code></pre>
 </div>
 </div>
-<div id="6badf5de" class="cell" data-execution_count="4">
+<div id="455bb644" class="cell" data-execution_count="4">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Standardize column names to lowercase for consistency</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>df.columns <span class="op">=</span> df.columns.<span class="bu">str</span>.lower()</span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>df.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<div class="cell-output cell-output-display" data-execution_count="4">
+<div class="cell-output cell-output-display" data-execution_count="34">
 <div>
 
 <table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
@@ -403,13 +404,13 @@ memory usage: 63.3+ KB</code></pre>
 </div>
 </div>
 </div>
-<div id="f0038d96" class="cell" data-execution_count="5">
+<div id="16e4b9ff" class="cell" data-execution_count="5">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Check for missing values in the dataset</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>df.isnull().<span class="bu">sum</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<div class="cell-output cell-output-display" data-execution_count="5">
+<div class="cell-output cell-output-display" data-execution_count="35">
 <pre><code>start_date      0
 end_date        0
 category        0
@@ -420,13 +421,13 @@ purpose       502
 dtype: int64</code></pre>
 </div>
 </div>
-<div id="5990c4af" class="cell" data-execution_count="6">
+<div id="a6c438e0" class="cell" data-execution_count="6">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Quick descriptive statistics of each numerical column</span></span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>df.describe()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<div class="cell-output cell-output-display" data-execution_count="6">
+<div class="cell-output cell-output-display" data-execution_count="36">
 <div>
 
 <table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
@@ -477,6 +478,281 @@ dtype: int64</code></pre>
 </section>
 <section id="data-cleaning" class="level1">
 <h1>Data Cleaning</h1>
+<div id="e92cb112" class="cell" data-execution_count="7">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Checked &amp; removed duplicates</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>duplicated_data <span class="op">=</span> df[df.duplicated()]</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(duplicated_data.shape)</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> df.drop_duplicates(keep<span class="op">=</span><span class="st">'first'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>(1, 7)</code></pre>
+</div>
+</div>
+<div id="412e0f05" class="cell" data-execution_count="8">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Encode categorical variables using one-hot encoding</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>data_encoded <span class="op">=</span> pd.get_dummies(df, columns<span class="op">=</span>[<span class="st">'category'</span>, <span class="st">'purpose'</span>], drop_first<span class="op">=</span><span class="va">True</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<div id="723402b8" class="cell" data-execution_count="9">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co">#convert date columns into date time</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"start_date"</span>] <span class="op">=</span> pd.to_datetime(df[<span class="st">"start_date"</span>], errors<span class="op">=</span><span class="st">"coerce"</span>)</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"end_date"</span>] <span class="op">=</span> pd.to_datetime(df[<span class="st">"end_date"</span>], errors<span class="op">=</span><span class="st">"coerce"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<div id="0d1f7858" class="cell" data-execution_count="10">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Handle missing values by dropping rows with missing 'start' or 'stop' and filling 'purpose' with 'unknown'</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>df.dropna(subset<span class="op">=</span>[<span class="st">'start'</span>, <span class="st">'stop'</span>], inplace<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>df[<span class="st">'purpose'</span>] <span class="op">=</span> df[<span class="st">'purpose'</span>].fillna(<span class="st">"Unknown"</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<div id="7140207a" class="cell" data-execution_count="11">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a new column for trip date</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"date"</span>] <span class="op">=</span> df[<span class="st">"start_date"</span>].dt.date</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<div id="d57cce14" class="cell" data-execution_count="12">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Ensure the dataset is sorted by date</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> df.sort_values(<span class="st">'start_date'</span>)</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>df.set_index(<span class="st">'start_date'</span>, inplace<span class="op">=</span><span class="va">True</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+</section>
+<section id="analysis" class="level1">
+<h1>Analysis</h1>
+<div id="f40bbccd" class="cell" data-execution_count="13">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>df.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display" data-execution_count="43">
+<div>
+
+<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">end_date</th>
+<th data-quarto-table-cell-role="th">category</th>
+<th data-quarto-table-cell-role="th">start</th>
+<th data-quarto-table-cell-role="th">stop</th>
+<th data-quarto-table-cell-role="th">miles</th>
+<th data-quarto-table-cell-role="th">purpose</th>
+<th data-quarto-table-cell-role="th">date</th>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">start_date</th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2016-01-01 21:11:00</td>
+<td>2016-01-01 21:17:00</td>
+<td>Business</td>
+<td>Fort Pierce</td>
+<td>Fort Pierce</td>
+<td>5.1</td>
+<td>Meal/Entertain</td>
+<td>2016-01-01</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">2016-01-02 01:25:00</td>
+<td>2016-01-02 01:37:00</td>
+<td>Business</td>
+<td>Fort Pierce</td>
+<td>Fort Pierce</td>
+<td>5.0</td>
+<td>Unknown</td>
+<td>2016-01-02</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2016-01-02 20:25:00</td>
+<td>2016-01-02 20:38:00</td>
+<td>Business</td>
+<td>Fort Pierce</td>
+<td>Fort Pierce</td>
+<td>4.8</td>
+<td>Errand/Supplies</td>
+<td>2016-01-02</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">2016-01-05 17:31:00</td>
+<td>2016-01-05 17:45:00</td>
+<td>Business</td>
+<td>Fort Pierce</td>
+<td>Fort Pierce</td>
+<td>4.7</td>
+<td>Meeting</td>
+<td>2016-01-05</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2016-01-06 14:42:00</td>
+<td>2016-01-06 15:49:00</td>
+<td>Business</td>
+<td>Fort Pierce</td>
+<td>West Palm Beach</td>
+<td>63.7</td>
+<td>Customer Visit</td>
+<td>2016-01-06</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="96d610e8" class="cell" data-execution_count="14">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot trip frequency over time</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">6</span>, <span class="dv">4</span>))</span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>sns.lineplot(x<span class="op">=</span>df[<span class="st">"date"</span>].value_counts().sort_index().index,</span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>             y<span class="op">=</span>df[<span class="st">"date"</span>].value_counts().sort_index().values, marker<span class="op">=</span><span class="st">"o"</span>)</span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">"date"</span>)</span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">"Number of Trips"</span>)</span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">"Uber Trips Over Time"</span>)</span>
+<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a>plt.xticks(rotation<span class="op">=</span><span class="dv">45</span>)</span>
+<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="project3_files/figure-html/cell-15-output-1.png" width="515" height="411" class="figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<div id="ce71406e" class="cell" data-execution_count="15">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Top 10 most common pickup and drop-off locations</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>top_pickups <span class="op">=</span> df[<span class="st">"start"</span>].value_counts().head(<span class="dv">10</span>)</span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>top_dropoffs <span class="op">=</span> df[<span class="st">"stop"</span>].value_counts().head(<span class="dv">10</span>)</span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>fig, axes <span class="op">=</span> plt.subplots(<span class="dv">1</span>, <span class="dv">2</span>, figsize<span class="op">=</span>(<span class="dv">6</span>, <span class="dv">6</span>))</span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a>sns.barplot(x<span class="op">=</span>top_pickups.values, y<span class="op">=</span>top_pickups.index, ax<span class="op">=</span>axes[<span class="dv">0</span>], palette<span class="op">=</span><span class="st">"Blues_r"</span>, hue<span class="op">=</span>top_pickups.index, dodge<span class="op">=</span><span class="va">False</span>)  </span>
+<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">0</span>].set_title(<span class="st">"Top 10 Pickup Locations"</span>)</span>
+<span id="cb18-9"><a href="#cb18-9" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">0</span>].set_xlabel(<span class="st">"Number of Trips"</span>)</span>
+<span id="cb18-10"><a href="#cb18-10" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">0</span>].legend([],[], frameon<span class="op">=</span><span class="va">False</span>)  </span>
+<span id="cb18-11"><a href="#cb18-11" aria-hidden="true" tabindex="-1"></a>sns.barplot(x<span class="op">=</span>top_dropoffs.values, y<span class="op">=</span>top_dropoffs.index, ax<span class="op">=</span>axes[<span class="dv">1</span>], palette<span class="op">=</span><span class="st">"Greens_r"</span>, hue<span class="op">=</span>top_dropoffs.index, dodge<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb18-12"><a href="#cb18-12" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">1</span>].set_title(<span class="st">"Top 10 Drop-off Locations"</span>)</span>
+<span id="cb18-13"><a href="#cb18-13" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">1</span>].set_xlabel(<span class="st">"Number of Trips"</span>)</span>
+<span id="cb18-14"><a href="#cb18-14" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">1</span>].legend([],[], frameon<span class="op">=</span><span class="va">False</span>) </span>
+<span id="cb18-15"><a href="#cb18-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-16"><a href="#cb18-16" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
+<span id="cb18-17"><a href="#cb18-17" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="project3_files/figure-html/cell-16-output-1.png" width="609" height="566" class="figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<div id="a58b5001" class="cell" data-execution_count="16">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Plotted count of trips by purpose</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>trip_purpose_counts <span class="op">=</span> df[<span class="st">"purpose"</span>].value_counts()</span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">6</span>, <span class="fl">2.5</span>))</span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>sns.barplot(x<span class="op">=</span>trip_purpose_counts.index, y<span class="op">=</span>trip_purpose_counts.values, hue<span class="op">=</span>trip_purpose_counts.index, palette<span class="op">=</span><span class="st">"Oranges"</span>, legend<span class="op">=</span><span class="va">False</span>) </span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">"Purpose of Trip"</span>)</span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">"Number of Trips"</span>)</span>
+<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">"Trip Purpose Distribution"</span>)</span>
+<span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a>plt.xticks(rotation<span class="op">=</span><span class="dv">45</span>)</span>
+<span id="cb19-9"><a href="#cb19-9" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
+<span id="cb19-10"><a href="#cb19-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-11"><a href="#cb19-11" aria-hidden="true" tabindex="-1"></a><span class="co">#Main purpose isn't known but second is a meeting which could be relative to commuting with commuting having little, below we see it has the highest average distance by purpose, which backs up our product in relation a student carpooling application which would aid in their commute.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="project3_files/figure-html/cell-17-output-1.png" width="528" height="338" class="figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<div id="516a138d" class="cell" data-execution_count="17">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot average trip distance by purpose</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>avg_miles_purpose <span class="op">=</span> df.groupby(<span class="st">"purpose"</span>)[<span class="st">"miles"</span>].mean().sort_values()</span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">6</span>, <span class="fl">2.5</span>))</span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>sns.barplot(x<span class="op">=</span>avg_miles_purpose.index, y<span class="op">=</span>avg_miles_purpose.values, hue<span class="op">=</span>avg_miles_purpose.index, dodge<span class="op">=</span><span class="va">False</span>, palette<span class="op">=</span><span class="st">"Blues"</span>, legend<span class="op">=</span><span class="va">False</span>)  </span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">"Purpose of Trip"</span>)</span>
+<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">"Average Miles Traveled"</span>)</span>
+<span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">"Average Trip Distance by Purpose"</span>)</span>
+<span id="cb20-8"><a href="#cb20-8" aria-hidden="true" tabindex="-1"></a>plt.xticks(rotation<span class="op">=</span><span class="dv">45</span>)</span>
+<span id="cb20-9"><a href="#cb20-9" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="project3_files/figure-html/cell-18-output-1.png" width="526" height="338" class="figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<div id="19b69714" class="cell" data-execution_count="18">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Hourly trip analysis of the day</span></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"hour"</span>] <span class="op">=</span> df.index.hour</span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">6</span>, <span class="fl">2.5</span>))</span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>sns.countplot(x<span class="op">=</span>df[<span class="st">"hour"</span>], hue<span class="op">=</span>df[<span class="st">"hour"</span>], dodge<span class="op">=</span><span class="va">False</span>, palette<span class="op">=</span><span class="st">"coolwarm"</span>, legend<span class="op">=</span><span class="va">False</span>) </span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">"Hour of the Day"</span>)</span>
+<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">"Number of Trips"</span>)</span>
+<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">"Trips by Hour of the Day"</span>)</span>
+<span id="cb21-8"><a href="#cb21-8" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
+<span id="cb21-9"><a href="#cb21-9" aria-hidden="true" tabindex="-1"></a><span class="co">#hours align similarly with college hours.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="project3_files/figure-html/cell-19-output-1.png" width="519" height="265" class="figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<div id="1b236c1c" class="cell" data-execution_count="19">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Category-wise trip distribution</span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">4</span>, <span class="fl">2.5</span>))</span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>sns.countplot(x<span class="op">=</span>df[<span class="st">"category"</span>], hue<span class="op">=</span>df[<span class="st">"category"</span>], palette<span class="op">=</span><span class="st">"viridis"</span>, legend<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">"Trip Category"</span>)</span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">"Number of Trips"</span>)</span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">"Business vs Personal Trips"</span>)</span>
+<span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="project3_files/figure-html/cell-20-output-1.png" width="378" height="265" class="figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
 
 
 </section>
