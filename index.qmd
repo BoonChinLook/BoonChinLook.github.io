@@ -68,7 +68,7 @@ Welcome to my Portfolio! <br>Here you will find out about me, my hobbies, what I
 <br>
 
 
-## Latest [Code Projects](/reports)
+## Latest [Code Projects](/code_projects)
 
 ::: {#code-projects-listing}
 :::
