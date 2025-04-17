@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Boon Chin Look">
-<meta name="dcterms.date" content="2025-10-04">
+<meta name="dcterms.date" content="2025-04-11">
 
 <title>Product Proposal – Boon Chin Look</title>
 <style>
@@ -197,7 +197,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">October 4, 2025</p>
+      <p class="date">April 11, 2025</p>
     </div>
   </div>
   </div>
@@ -214,7 +214,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Below are the main snipets of code that aided our teamsdecisions for identifying the gap within the market:</p>
 <section id="importing-data-and-intial-analysis" class="level1">
 <h1>Importing Data and Intial Analysis</h1>
-<div id="95481fe0" class="cell" data-execution_count="1">
+<div id="cdfe12e6" class="cell" data-execution_count="1">
 <details class="code-fold">
 <summary>librarys</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
@@ -223,13 +223,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<div id="c3eabd43" class="cell" data-execution_count="2">
+<div id="93684d52" class="cell" data-execution_count="2">
 <details class="code-fold">
 <summary>import</summary>
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="st">"UberDataset.csv"</span>)</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>df.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<div class="cell-output cell-output-display" data-execution_count="32">
+<div class="cell-output cell-output-display" data-execution_count="173">
 <div>
 
 <table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
@@ -301,7 +301,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<div id="5f0c05f8" class="cell" data-execution_count="3">
+<div id="594bac68" class="cell" data-execution_count="3">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Checkec for missing values &amp; data types of columns</span></span>
@@ -325,14 +325,14 @@ dtypes: float64(1), object(6)
 memory usage: 63.3+ KB</code></pre>
 </div>
 </div>
-<div id="455bb644" class="cell" data-execution_count="4">
+<div id="ed80a4e9" class="cell" data-execution_count="4">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Standardize column names to lowercase for consistency</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>df.columns <span class="op">=</span> df.columns.<span class="bu">str</span>.lower()</span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>df.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<div class="cell-output cell-output-display" data-execution_count="34">
+<div class="cell-output cell-output-display" data-execution_count="175">
 <div>
 
 <table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
@@ -404,13 +404,13 @@ memory usage: 63.3+ KB</code></pre>
 </div>
 </div>
 </div>
-<div id="16e4b9ff" class="cell" data-execution_count="5">
+<div id="c64e72c5" class="cell" data-execution_count="5">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Check for missing values in the dataset</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>df.isnull().<span class="bu">sum</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<div class="cell-output cell-output-display" data-execution_count="35">
+<div class="cell-output cell-output-display" data-execution_count="176">
 <pre><code>start_date      0
 end_date        0
 category        0
@@ -421,13 +421,13 @@ purpose       502
 dtype: int64</code></pre>
 </div>
 </div>
-<div id="a6c438e0" class="cell" data-execution_count="6">
+<div id="731e4cc5" class="cell" data-execution_count="6">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Quick descriptive statistics of each numerical column</span></span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>df.describe()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<div class="cell-output cell-output-display" data-execution_count="36">
+<div class="cell-output cell-output-display" data-execution_count="177">
 <div>
 
 <table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
@@ -478,7 +478,7 @@ dtype: int64</code></pre>
 </section>
 <section id="data-cleaning" class="level1">
 <h1>Data Cleaning</h1>
-<div id="e92cb112" class="cell" data-execution_count="7">
+<div id="15a7e916" class="cell" data-execution_count="7">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Checked &amp; removed duplicates</span></span>
@@ -491,14 +491,14 @@ dtype: int64</code></pre>
 <pre><code>(1, 7)</code></pre>
 </div>
 </div>
-<div id="412e0f05" class="cell" data-execution_count="8">
+<div id="eeb6b4c2" class="cell" data-execution_count="8">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Encode categorical variables using one-hot encoding</span></span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>data_encoded <span class="op">=</span> pd.get_dummies(df, columns<span class="op">=</span>[<span class="st">'category'</span>, <span class="st">'purpose'</span>], drop_first<span class="op">=</span><span class="va">True</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<div id="723402b8" class="cell" data-execution_count="9">
+<div id="493ae374" class="cell" data-execution_count="9">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co">#convert date columns into date time</span></span>
@@ -506,7 +506,7 @@ dtype: int64</code></pre>
 <span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"end_date"</span>] <span class="op">=</span> pd.to_datetime(df[<span class="st">"end_date"</span>], errors<span class="op">=</span><span class="st">"coerce"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<div id="0d1f7858" class="cell" data-execution_count="10">
+<div id="2e662ec2" class="cell" data-execution_count="10">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Handle missing values by dropping rows with missing 'start' or 'stop' and filling 'purpose' with 'unknown'</span></span>
@@ -514,14 +514,14 @@ dtype: int64</code></pre>
 <span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>df[<span class="st">'purpose'</span>] <span class="op">=</span> df[<span class="st">'purpose'</span>].fillna(<span class="st">"Unknown"</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<div id="7140207a" class="cell" data-execution_count="11">
+<div id="40e93339" class="cell" data-execution_count="11">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a new column for trip date</span></span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"date"</span>] <span class="op">=</span> df[<span class="st">"start_date"</span>].dt.date</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<div id="d57cce14" class="cell" data-execution_count="12">
+<div id="73c569b0" class="cell" data-execution_count="12">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Ensure the dataset is sorted by date</span></span>
@@ -532,12 +532,12 @@ dtype: int64</code></pre>
 </section>
 <section id="analysis" class="level1">
 <h1>Analysis</h1>
-<div id="f40bbccd" class="cell" data-execution_count="13">
+<div id="d4af6ab4" class="cell" data-execution_count="13">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>df.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<div class="cell-output cell-output-display" data-execution_count="43">
+<div class="cell-output cell-output-display" data-execution_count="184">
 <div>
 
 <table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
@@ -619,11 +619,11 @@ dtype: int64</code></pre>
 </div>
 </div>
 </div>
-<div id="96d610e8" class="cell" data-execution_count="14">
+<div id="b1c432e9" class="cell" data-execution_count="14">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot trip frequency over time</span></span>
-<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">6</span>, <span class="dv">4</span>))</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">11</span>, <span class="dv">7</span>))</span>
 <span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>sns.lineplot(x<span class="op">=</span>df[<span class="st">"date"</span>].value_counts().sort_index().index,</span>
 <span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>             y<span class="op">=</span>df[<span class="st">"date"</span>].value_counts().sort_index().values, marker<span class="op">=</span><span class="st">"o"</span>)</span>
 <span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">"date"</span>)</span>
@@ -635,19 +635,19 @@ dtype: int64</code></pre>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="project3_files/figure-html/cell-15-output-1.png" width="515" height="411" class="figure-img"></p>
+<p><img src="project3_files/figure-html/cell-15-output-1.png" width="882" height="633" class="figure-img"></p>
 </figure>
 </div>
 </div>
 </div>
-<div id="ce71406e" class="cell" data-execution_count="15">
+<div id="1826c371" class="cell" data-execution_count="15">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Top 10 most common pickup and drop-off locations</span></span>
 <span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>top_pickups <span class="op">=</span> df[<span class="st">"start"</span>].value_counts().head(<span class="dv">10</span>)</span>
 <span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>top_dropoffs <span class="op">=</span> df[<span class="st">"stop"</span>].value_counts().head(<span class="dv">10</span>)</span>
 <span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>fig, axes <span class="op">=</span> plt.subplots(<span class="dv">1</span>, <span class="dv">2</span>, figsize<span class="op">=</span>(<span class="dv">6</span>, <span class="dv">6</span>))</span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>fig, axes <span class="op">=</span> plt.subplots(<span class="dv">1</span>, <span class="dv">2</span>, figsize<span class="op">=</span>(<span class="dv">9</span>, <span class="dv">3</span>))</span>
 <span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a>sns.barplot(x<span class="op">=</span>top_pickups.values, y<span class="op">=</span>top_pickups.index, ax<span class="op">=</span>axes[<span class="dv">0</span>], palette<span class="op">=</span><span class="st">"Blues_r"</span>, hue<span class="op">=</span>top_pickups.index, dodge<span class="op">=</span><span class="va">False</span>)  </span>
 <span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">0</span>].set_title(<span class="st">"Top 10 Pickup Locations"</span>)</span>
@@ -664,17 +664,17 @@ dtype: int64</code></pre>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="project3_files/figure-html/cell-16-output-1.png" width="609" height="566" class="figure-img"></p>
+<p><img src="project3_files/figure-html/cell-16-output-1.png" width="853" height="278" class="figure-img"></p>
 </figure>
 </div>
 </div>
 </div>
-<div id="a58b5001" class="cell" data-execution_count="16">
+<div id="3f88ec46" class="cell" data-execution_count="16">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Plotted count of trips by purpose</span></span>
 <span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>trip_purpose_counts <span class="op">=</span> df[<span class="st">"purpose"</span>].value_counts()</span>
-<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">6</span>, <span class="fl">2.5</span>))</span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">9</span>, <span class="dv">5</span>))</span>
 <span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>sns.barplot(x<span class="op">=</span>trip_purpose_counts.index, y<span class="op">=</span>trip_purpose_counts.values, hue<span class="op">=</span>trip_purpose_counts.index, palette<span class="op">=</span><span class="st">"Oranges"</span>, legend<span class="op">=</span><span class="va">False</span>) </span>
 <span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">"Purpose of Trip"</span>)</span>
 <span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">"Number of Trips"</span>)</span>
@@ -687,17 +687,17 @@ dtype: int64</code></pre>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="project3_files/figure-html/cell-17-output-1.png" width="528" height="338" class="figure-img"></p>
+<p><img src="project3_files/figure-html/cell-17-output-1.png" width="742" height="522" class="figure-img"></p>
 </figure>
 </div>
 </div>
 </div>
-<div id="516a138d" class="cell" data-execution_count="17">
+<div id="cb798573" class="cell" data-execution_count="17">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot average trip distance by purpose</span></span>
 <span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>avg_miles_purpose <span class="op">=</span> df.groupby(<span class="st">"purpose"</span>)[<span class="st">"miles"</span>].mean().sort_values()</span>
-<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">6</span>, <span class="fl">2.5</span>))</span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">9</span>, <span class="dv">5</span>))</span>
 <span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>sns.barplot(x<span class="op">=</span>avg_miles_purpose.index, y<span class="op">=</span>avg_miles_purpose.values, hue<span class="op">=</span>avg_miles_purpose.index, dodge<span class="op">=</span><span class="va">False</span>, palette<span class="op">=</span><span class="st">"Blues"</span>, legend<span class="op">=</span><span class="va">False</span>)  </span>
 <span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">"Purpose of Trip"</span>)</span>
 <span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">"Average Miles Traveled"</span>)</span>
@@ -708,17 +708,17 @@ dtype: int64</code></pre>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="project3_files/figure-html/cell-18-output-1.png" width="526" height="338" class="figure-img"></p>
+<p><img src="project3_files/figure-html/cell-18-output-1.png" width="742" height="522" class="figure-img"></p>
 </figure>
 </div>
 </div>
 </div>
-<div id="19b69714" class="cell" data-execution_count="18">
+<div id="f049c160" class="cell" data-execution_count="18">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Hourly trip analysis of the day</span></span>
 <span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"hour"</span>] <span class="op">=</span> df.index.hour</span>
-<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">6</span>, <span class="fl">2.5</span>))</span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">9</span>, <span class="dv">5</span>))</span>
 <span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>sns.countplot(x<span class="op">=</span>df[<span class="st">"hour"</span>], hue<span class="op">=</span>df[<span class="st">"hour"</span>], dodge<span class="op">=</span><span class="va">False</span>, palette<span class="op">=</span><span class="st">"coolwarm"</span>, legend<span class="op">=</span><span class="va">False</span>) </span>
 <span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">"Hour of the Day"</span>)</span>
 <span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">"Number of Trips"</span>)</span>
@@ -729,16 +729,16 @@ dtype: int64</code></pre>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="project3_files/figure-html/cell-19-output-1.png" width="519" height="265" class="figure-img"></p>
+<p><img src="project3_files/figure-html/cell-19-output-1.png" width="742" height="449" class="figure-img"></p>
 </figure>
 </div>
 </div>
 </div>
-<div id="1b236c1c" class="cell" data-execution_count="19">
+<div id="16a7f476" class="cell" data-execution_count="19">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Category-wise trip distribution</span></span>
-<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">4</span>, <span class="fl">2.5</span>))</span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">9</span>, <span class="dv">5</span>))</span>
 <span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>sns.countplot(x<span class="op">=</span>df[<span class="st">"category"</span>], hue<span class="op">=</span>df[<span class="st">"category"</span>], palette<span class="op">=</span><span class="st">"viridis"</span>, legend<span class="op">=</span><span class="va">False</span>)</span>
 <span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">"Trip Category"</span>)</span>
 <span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">"Number of Trips"</span>)</span>
@@ -748,7 +748,7 @@ dtype: int64</code></pre>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="project3_files/figure-html/cell-20-output-1.png" width="378" height="265" class="figure-img"></p>
+<p><img src="project3_files/figure-html/cell-20-output-1.png" width="750" height="449" class="figure-img"></p>
 </figure>
 </div>
 </div>

@@ -5,7 +5,7 @@ author: "Boon Chin Look"
 categories: [Python]
 
 image: "/code_projects/project3/project3.jpg"
-date: '2025-10-04'
+date: '2025-04-11'
 
 about:
   template: solana
@@ -106,7 +106,7 @@ df.head()
 
 ```{python}
 # Plot trip frequency over time
-plt.figure(figsize=(6, 4))
+plt.figure(figsize=(11, 7))
 sns.lineplot(x=df["date"].value_counts().sort_index().index,
              y=df["date"].value_counts().sort_index().values, marker="o")
 plt.xlabel("date")
@@ -121,7 +121,7 @@ plt.show()
 top_pickups = df["start"].value_counts().head(10)
 top_dropoffs = df["stop"].value_counts().head(10)
 
-fig, axes = plt.subplots(1, 2, figsize=(6, 6))
+fig, axes = plt.subplots(1, 2, figsize=(9, 3))
 
 sns.barplot(x=top_pickups.values, y=top_pickups.index, ax=axes[0], palette="Blues_r", hue=top_pickups.index, dodge=False)  
 axes[0].set_title("Top 10 Pickup Locations")
@@ -139,7 +139,7 @@ plt.show()
 ```{python}
 # Plotted count of trips by purpose
 trip_purpose_counts = df["purpose"].value_counts()
-plt.figure(figsize=(6, 2.5))
+plt.figure(figsize=(9, 5))
 sns.barplot(x=trip_purpose_counts.index, y=trip_purpose_counts.values, hue=trip_purpose_counts.index, palette="Oranges", legend=False) 
 plt.xlabel("Purpose of Trip")
 plt.ylabel("Number of Trips")
@@ -153,7 +153,7 @@ plt.show()
 ```{python}
 # Plot average trip distance by purpose
 avg_miles_purpose = df.groupby("purpose")["miles"].mean().sort_values()
-plt.figure(figsize=(6, 2.5))
+plt.figure(figsize=(9, 5))
 sns.barplot(x=avg_miles_purpose.index, y=avg_miles_purpose.values, hue=avg_miles_purpose.index, dodge=False, palette="Blues", legend=False)  
 plt.xlabel("Purpose of Trip")
 plt.ylabel("Average Miles Traveled")
@@ -165,7 +165,7 @@ plt.show()
 ```{python}
 # Hourly trip analysis of the day
 df["hour"] = df.index.hour
-plt.figure(figsize=(6, 2.5))
+plt.figure(figsize=(9, 5))
 sns.countplot(x=df["hour"], hue=df["hour"], dodge=False, palette="coolwarm", legend=False) 
 plt.xlabel("Hour of the Day")
 plt.ylabel("Number of Trips")
@@ -176,7 +176,7 @@ plt.show()
 
 ```{python}
 # Category-wise trip distribution
-plt.figure(figsize=(4, 2.5))
+plt.figure(figsize=(9, 5))
 sns.countplot(x=df["category"], hue=df["category"], palette="viridis", legend=False)
 plt.xlabel("Trip Category")
 plt.ylabel("Number of Trips")
