@@ -25,36 +25,24 @@ about:
 <div class="h1">🤗Hey !</div>
 
 <div class="lead">
+🌱 Final-year Business Studies student specializing in Data Analytics
+I thrive on problem-solving, data-driven insights, and love continuous learning.
 
-🌱 I’m a Final year Business Studies student specializing in Data analytics.
+⚡ Beyond academics
+Passionate about rock climbing, fitness, and artistic exploration. I enjoy pushing boundaries both mentally and physically.
 
-⚡ I’m passionate about rock climbing, working out at the gym, exploring art, and constantly learning new things.
-
-🍕 I love cooking, baking and eating new foods.
-
-
+🍕 Cookery enthusiast
+Cooking, baking, and discovering new cuisines fuel my creativity and appreciation for culture.
 </div>
 :::
 
 
 <!--New Years resolutions-->
-### New Years Resolutions:
-
-New Year's Resolutions: For my New Year's resolutions, I aim to step outside of my comfort zone.
-
-This year, I started running 5 kilometers each week as a New Year's resolution. While I am generally an active person, I rarely engage in cardiovascular exercises beneficial for heart health, preferring weightlifting and non-cardio-intensive exercises. This year, I intend to change that.
-
-Furthermore, I am making an effort to broaden my horizons and engage with my local community. For example, I recently participated in the HSE "Healthy Food made Easy" programme, which consisted of cooking classes for 2.5 hours a week over six weeks.
-
-Additionally, as a follow on completion of the Healthy Food made easy programme, I hope to challenge myself by cooking all my college meals myself, as generally I would buy lunch outside.
-
 ### Skills
 
 💻 Programming Languages:
-
-Tech Stack:  Python, HTML, CSS, JavaScript, GitHub and SQL. 
-
-Computer software:  Microsoft Office, Git, Alteryx, Tableau, Power BI. 
+- Programming Languages: Python, HTML, CSS, JavaScript, SQL.
+- Software & Tools: Microsoft Office, GitHub, Alteryx, Tableau, Power BI, Quarto.
 
 ### Food I baked:
 🍪Below are examples of foods I baked while volunteering and in my free time:
