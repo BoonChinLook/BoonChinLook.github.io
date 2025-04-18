@@ -5,7 +5,7 @@ author: "Boon Chin Look"
 categories: [Python]
 
 image: "/code_projects/project3/project3.jpg"
-date: '2025-10-04'
+date: '2025-04-11'
 
 about:
   template: solana
@@ -25,7 +25,7 @@ Below are the main snipets of code that aided our teamsdecisions for identifying
 
 # Importing Data and Intial Analysis
 ```{python}
-#| code-summary: librarys
+#| code-summary: Importing librarys
 import matplotlib.pyplot as plt
 import pandas as pd
 import plotly.express as px
@@ -33,36 +33,36 @@ import seaborn as sns
 ```
 
 ```{python}
-#| code-summary: import
+#| code-summary: Importing dataset 
 df = pd.read_csv("UberDataset.csv")
 df.head()
 ```
 
 ```{python}
-#Checkec for missing values & data types of columns
+#| code-summary: Looking at data types of columns
 df.info()
-#no missing values found
 ```
 
 ```{python}
-# Standardize column names to lowercase for consistency
+#| code-summary: Standardize column names to lowercase for consistency
 df.columns = df.columns.str.lower()
 df.head()
 ```
 
 ```{python}
-# Check for missing values in the dataset
+#| code-summary: Checking for missing values in the dataset
 df.isnull().sum()
+#no missing values found
 ```
 
 ```{python}
-#Quick descriptive statistics of each numerical column
+#| code-summary: Simple descriptive statistics of each numerical column
 df.describe()
 ```
 
 # Data Cleaning
 ```{python}
-#Checked & removed duplicates
+#| code-summary: Checked & removed duplicates
 duplicated_data = df[df.duplicated()]
 print(duplicated_data.shape)
 
@@ -70,17 +70,18 @@ df = df.drop_duplicates(keep='first')
 ```
 
 ```{python}
-# Encode categorical variables using one-hot encoding
+#| code-summary: Encode categorical variables using one-hot encoding
 data_encoded = pd.get_dummies(df, columns=['category', 'purpose'], drop_first=True)
 ```
 
 ```{python}
-#convert date columns into date time
+#| code-summary: Converted date columns into date time
 df["start_date"] = pd.to_datetime(df["start_date"], errors="coerce")
 df["end_date"] = pd.to_datetime(df["end_date"], errors="coerce")
 ```
 
 ```{python}
+#| code-summary: Handling missing values
 # Handle missing values by dropping rows with missing 'start' or 'stop' and filling 'purpose' with 'unknown'
 df.dropna(subset=['start', 'stop'], inplace=True)
 df['purpose'] = df['purpose'].fillna("Unknown") 
@@ -88,12 +89,12 @@ df['purpose'] = df['purpose'].fillna("Unknown")
 
 
 ```{python}
-# Create a new column for trip date
+#| code-summary: Feature engineering, created new column for trip date
 df["date"] = df["start_date"].dt.date
 ```
 
 ```{python}
-# Ensure the dataset is sorted by date
+#| code-summary: Ensured the dataset is sorted by date
 df = df.sort_values('start_date')
 df.set_index('start_date', inplace=True)
 ```
@@ -101,12 +102,13 @@ df.set_index('start_date', inplace=True)
 # Analysis
 
 ```{python}
+#| code-summary: Returns first few rows of dataset to check
 df.head()
 ```
 
 ```{python}
-# Plot trip frequency over time
-plt.figure(figsize=(6, 4))
+#| code-summary: Plot trip frequency over time plot code
+plt.figure(figsize=(11, 7))
 sns.lineplot(x=df["date"].value_counts().sort_index().index,
              y=df["date"].value_counts().sort_index().values, marker="o")
 plt.xlabel("date")
@@ -117,11 +119,11 @@ plt.show()
 ```
 
 ```{python}
-# Top 10 most common pickup and drop-off locations
+#| code-summary: Top 10 most common pickup and drop-off locations plot code
 top_pickups = df["start"].value_counts().head(10)
 top_dropoffs = df["stop"].value_counts().head(10)
 
-fig, axes = plt.subplots(1, 2, figsize=(6, 6))
+fig, axes = plt.subplots(1, 2, figsize=(9, 3))
 
 sns.barplot(x=top_pickups.values, y=top_pickups.index, ax=axes[0], palette="Blues_r", hue=top_pickups.index, dodge=False)  
 axes[0].set_title("Top 10 Pickup Locations")
@@ -137,9 +139,9 @@ plt.show()
 ```
 
 ```{python}
-# Plotted count of trips by purpose
+#| code-summary: code for plot of count of trips by purpose 
 trip_purpose_counts = df["purpose"].value_counts()
-plt.figure(figsize=(6, 2.5))
+plt.figure(figsize=(9, 5))
 sns.barplot(x=trip_purpose_counts.index, y=trip_purpose_counts.values, hue=trip_purpose_counts.index, palette="Oranges", legend=False) 
 plt.xlabel("Purpose of Trip")
 plt.ylabel("Number of Trips")
@@ -151,9 +153,9 @@ plt.show()
 ```
 
 ```{python}
-# Plot average trip distance by purpose
+#| code-summary: code for plot of average trip distance by purpose
 avg_miles_purpose = df.groupby("purpose")["miles"].mean().sort_values()
-plt.figure(figsize=(6, 2.5))
+plt.figure(figsize=(9, 5))
 sns.barplot(x=avg_miles_purpose.index, y=avg_miles_purpose.values, hue=avg_miles_purpose.index, dodge=False, palette="Blues", legend=False)  
 plt.xlabel("Purpose of Trip")
 plt.ylabel("Average Miles Traveled")
@@ -163,9 +165,9 @@ plt.show()
 ```
 
 ```{python}
-# Hourly trip analysis of the day
+#| code-summary: Plot for hourly trip analysis of the day
 df["hour"] = df.index.hour
-plt.figure(figsize=(6, 2.5))
+plt.figure(figsize=(9, 5))
 sns.countplot(x=df["hour"], hue=df["hour"], dodge=False, palette="coolwarm", legend=False) 
 plt.xlabel("Hour of the Day")
 plt.ylabel("Number of Trips")
@@ -175,8 +177,8 @@ plt.show()
 ```
 
 ```{python}
-# Category-wise trip distribution
-plt.figure(figsize=(4, 2.5))
+#| code-summary: Code for plot of Trip category to number of trips distribution
+plt.figure(figsize=(9, 5))
 sns.countplot(x=df["category"], hue=df["category"], palette="viridis", legend=False)
 plt.xlabel("Trip Category")
 plt.ylabel("Number of Trips")
