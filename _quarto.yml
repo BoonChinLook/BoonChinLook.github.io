@@ -17,8 +17,6 @@ website:
   navbar:
     logo: assets/sitelogo.PNG
     right:
-        #text: Home
-        #icon: house
       - text: Projects
         icon: paperclip
         menu:
@@ -27,10 +25,14 @@ website:
           - text: Written Projects
             href: reports/index.qmd
 
-      - href: about.qmd
-        text: About
-        icon: people
+      - text: Future Aspirations
+        icon: rocket
+        href: future_aspirations.qmd
 
+      - text: About
+        icon: people
+        href: about.qmd
+        
       - icon: github
         href: https://github.com/BoonChinLook
         target: _blank
