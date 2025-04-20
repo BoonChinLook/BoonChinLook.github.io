@@ -23,7 +23,7 @@ img {
     transition: transform 0.2s ease; /* Smooth hover effect */
   }
   
-  /* Add hover effect for interactivity */
+/* Add hover effect for interactivity */
   .gallery img:hover {
     transform: scale(1.1); /* Slightly enlarge the image on hover */
     cursor: pointer;
@@ -54,3 +54,107 @@ img {
   cursor: pointer;
 }
 
+
+/*-- future aspiration --*/
+$primary-color: #d4c35a;
+$secondary-color: #6c757d;
+$background-color: #f8f9fa;
+$text-color: #333;
+$timeline-line-color: #e9ecef;
+$icon-circle-color: #007bff;
+
+body {
+  background-color: $background-color;
+  color: $text-color;
+  margin: 0;
+  padding: 0;
+}
+
+.timeline {
+  position: relative;
+  padding: 20px 0;
+  max-width: 800px;
+  margin: auto;
+}
+
+.timeline h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  width: 2px;
+  background-color: $timeline-line-color;
+  height: 100%;
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  position: relative;
+  padding: 20px 40px;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+}
+
+
+.timeline-content {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.timeline-content h2 {
+  margin: 0;
+  font-size: 1.5em;
+  color: $primary-color;
+}
+
+.timeline-content h3 {
+  margin: 0.5em 0;
+  font-size: 1.2em;
+  color: $secondary-color;
+}
+
+.timeline-content p {
+  margin: 0.5em 0;
+  font-size: 1em;
+}
+
+.timeline-date {
+  font-size: 0.8em;
+  color: $secondary-color;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.timeline-icon {
+  flex: 0 0 100px;
+  text-align: center;
+}
+
+.icon-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: $icon-circle-color;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8em;
+  margin: 0 auto;
+}
+
+.timeline-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

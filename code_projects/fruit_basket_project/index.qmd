@@ -2,7 +2,7 @@
 title: "Fruit Basket Project"
 author: "Boon Chin Look"
 categories: [Javascript]
-image: "/assets/fruitshop.jpg"
+image: "/code_projects/fruit_basket_project/fruitshop.jpg"
 date: '2023-12-10'
 
 about:

@@ -2,7 +2,7 @@
 title: "SQL Project"
 author: "Boon Chin Look"
 categories: [SQL]
-image: "/code_projects/project1/restaurant.jpg"
+image: "/code_projects/sql_project/restaurant.jpg"
 date: '2023-11-20'
 
 about:
@@ -10,7 +10,7 @@ about:
   links:
     - icon: filetype-sql
       text: SQL Code File
-      href: code_projects/project1/restuarant.sql
+      href: code_projects/sql_project/restuarant.sql
       target: _blank
         
 ---
@@ -28,8 +28,8 @@ This project was developed during an 8-week course introducing SQL by Girls Code
 
 
 <div class="sql-erd">
-  <a href="/code_projects/project1/erd.png" target="_blank">
-    ![SQL ERD](/code_projects/project1/erd.png){.gallery}
+  <a href="/code_projects/sql_project/erd.png" target="_blank">
+    ![SQL ERD](/code_projects/sql_project/erd.png){.gallery}
   </a>
 </div>
 

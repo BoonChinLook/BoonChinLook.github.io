@@ -1,0 +1,50 @@
+---
+title: "My Interests"
+format: html
+---
+
+```{=html}
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-icon">
+        <img src="rock_climbing.jpg" alt="rock-climbing">
+      </div>
+      <div class="timeline-content">
+        <div class="timeline-header">
+          <h2>Rock Climbing</h2>
+          <h3>Competitive Sport</h3>
+        </div>
+        <p></p>
+        <span class="timeline-date">2021–Present, Dublin, Ireland</span>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-icon">
+        <img src="running-icon.jpg" alt="Running">
+      </div>
+      <div class="timeline-content">
+        <div class="timeline-header">
+          <h2>Running</h2>
+          <h3>Fitness</h3>
+        </div>
+        <p></p>
+        <span class="timeline-date">2025–Present, Dublin, Ireland</span>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-icon">
+        <img src="cooking-icon.jpg" alt="Baking & Cooking">
+      </div>
+      <div class="timeline-content">
+        <div class="timeline-header">
+          <h2>Baking & Cooking</h2>
+          <h3>Passion</h3>
+        </div>
+        <p></p>
+        <span class="timeline-date">2023–Present, Dublin, Ireland</span>
+      </div>
+    </div>
+  </div>
+```
