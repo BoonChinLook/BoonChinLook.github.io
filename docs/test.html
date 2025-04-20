@@ -20,40 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -73,7 +39,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-a227a11e46b296da9aa8eabbe32f974f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-226009a4fb941763e41f9a5bd5a72f0b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -105,7 +71,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -143,6 +109,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </ul>
   </li>
   <li class="nav-item">
+    <a class="nav-link" href="./future_aspirations.html"> <i class="bi bi-rocket" role="img">
+</i> 
+<span class="menu-text">Future Aspirations</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="./about.html"> <i class="bi bi-people" role="img">
 </i> 
 <span class="menu-text">About</span></a>
@@ -151,6 +122,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <a class="nav-link" href="https://github.com/BoonChinLook" target="_blank"> <i class="bi bi-github" role="img">
 </i> 
 <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./test.html" aria-current="page"> <i class="bi bi-file-earmark-pdf" role="img">
+</i> 
+<span class="menu-text">Test</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./assets/Blankforcvtester.pdf" target="_blank"> <i class="bi bi-file-earmark-pdf" role="img">
@@ -165,38 +141,84 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-layout-custom page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
+    
 <!-- main -->
+<main class="content column-page" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
 
-<div id="c5d846d8" class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>r <span class="op">=</span> np.arange(<span class="dv">0</span>, <span class="dv">2</span>, <span class="fl">0.01</span>)</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>theta <span class="op">=</span> <span class="dv">2</span> <span class="op">*</span> np.pi <span class="op">*</span> r</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  subplot_kw <span class="op">=</span> {<span class="st">'projection'</span>: <span class="st">'polar'</span>} </span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>ax.plot(theta, r)</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>ax.set_rticks([<span class="fl">0.5</span>, <span class="dv">1</span>, <span class="fl">1.5</span>, <span class="dv">2</span>])</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>ax.grid(<span class="va">True</span>)</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="test_files/figure-html/cell-2-output-1.png" width="450" height="439" class="figure-img"></p>
-</figure>
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+<div class="bg-gradient_solid">
+<div class="container">
+<pre><code>&lt;div class="section-header"&gt;
+  &lt;h2&gt;Our story&lt;/h2&gt;
+  &lt;hr&gt;
+&lt;/div&gt;
+&lt;div class="steps"&gt;
+  &lt;div class="steps-container"&gt;
+    &lt;div class="content"&gt;
+      &lt;h2&gt;Lorem ipsum dolor&lt;/h2&gt;
+      &lt;p&gt;Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;i class="step-line"&gt;&lt;/i&gt;
+    &lt;div class="date"&gt;2000&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="steps-container"&gt;
+    &lt;div class="content"&gt;
+      &lt;h2&gt;Lorem ipsum dolor&lt;/h2&gt;
+      &lt;p&gt;Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;i class="step-line"&gt;&lt;/i&gt;
+    &lt;div class="date"&gt;2001&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="steps-container"&gt;
+    &lt;div class="content"&gt;
+      &lt;h2&gt;Lorem ipsum dolor&lt;/h2&gt;
+      &lt;p&gt;Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;i class="step-line"&gt;&lt;/i&gt;
+    &lt;div class="date"&gt;2002&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="steps-container"&gt;
+    &lt;div class="content"&gt;
+      &lt;h2&gt;Lorem ipsum dolor&lt;/h2&gt;
+      &lt;p&gt;Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;i class="step-line"&gt;&lt;/i&gt;
+    &lt;div class="date"&gt;2003&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="steps-container"&gt;
+    &lt;div class="content"&gt;
+      &lt;h2&gt;Lorem ipsum dolor&lt;/h2&gt;
+      &lt;p&gt;Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;i class="step-line"&gt;&lt;/i&gt;
+    &lt;div class="date"&gt;2004&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="steps-container"&gt;
+    &lt;div class="content"&gt;
+      &lt;h2&gt;Lorem ipsum dolor&lt;/h2&gt;
+      &lt;p&gt;Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;i class="step-line"&gt;&lt;/i&gt;
+    &lt;div class="date"&gt;2005&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
 </div>
 </div>
-</div>
 
 
 
 
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

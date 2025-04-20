@@ -1,24 +1,5 @@
 ---
-pagetitle: "About Me"
-title: "Boon Chin Look"
-subtitle: "Data Analytics Student"
-image: assets/cat.jpg
-about: 
-    template: trestles
-    id: hero-heading
-    links:
-        - icon: github
-          text: Github
-          href: https://github.com/BoonChinLook
-          target: _blank
-        - icon: linkedin
-          text: Linkedin
-          href: https://www.linkedin.com/in/boon-chin-l-13b104193/
-          target: _blank
-        - icon: file-earmark-pdf
-          text: Download CV
-          href: assets/Blankforcvtester.pdf
-          target: _blank
+pagetitle: "Hobbies"
 ---
 
 ::: {#hero-heading}
@@ -38,30 +19,6 @@ about:
 * Cooking, baking, and discovering new cuisines fuel my creativity and appreciation for culture.
 </div>
 :::
-
-
-<!--New Years resolutions-->
-### Skills
-
-💻 Programming Languages:
-
-* Programming Languages: Python, HTML, CSS, JavaScript, SQL.
-* Software & Tools: Microsoft Office, GitHub, Alteryx, Tableau, Power BI, Quarto.
-
-### Food I baked:
-🍪Below are examples of foods I baked while volunteering and in my free time:
-
-<div class="gallery">
-  <a href="assets/baked1.PNG" target="_blank">
-    ![Red Velvet Cupcakes](assets/baked1.PNG){.gallery}
-  </a>
-  <a href="assets/baked2.PNG" target="_blank">
-    ![Fruit Scones](assets/baked2.PNG){.gallery}
-  </a>
-  <a href="assets/baked3.PNG" target="_blank">
-    ![Cinnamon Cookies](assets/baked3.PNG){.gallery}
-  </a>
-</div>
 
 
 

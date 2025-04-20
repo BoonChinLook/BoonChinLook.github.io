@@ -1,0 +1,10 @@
+---
+title: "My Resume"
+format: 
+  html:
+    toc: true
+    embed-resources: true
+    allow-html: true 
+page-layout: full
+---
+
