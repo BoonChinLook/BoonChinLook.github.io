@@ -3,8 +3,7 @@ title: "Product Proposal"
 code-fold: true
 author: "Boon Chin Look"
 categories: [Python]
-
-image: "/code_projects/project3/project3.jpg"
+image: "/code_projects/product_proposal/proposal.jpg"
 date: '2025-04-11'
 
 about:
@@ -12,7 +11,7 @@ about:
   links:
     - icon: file-earmark-pdf
       text: Product proposal report pdf
-      href: code_projects/project3/individual_report.pdf
+      href: code_projects/product_proposal/individual_report.pdf
       target: _blank
 ---
 This project consisted of group and individual elements. 
