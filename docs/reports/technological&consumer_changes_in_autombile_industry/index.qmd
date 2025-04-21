@@ -1,0 +1,16 @@
+---
+title: "Analysis of the Impact of Technological Change and Shifting Consumer Behaviour on the Global Automobile Industry"
+categories: [Economics]
+image: "/reports/technological&consumer_changes_in_autombile_industry/automobile.jpg"
+date: '2024-03-20'
+author: "Boon Chin Look"
+
+about:
+  template: solana
+  links:
+    - icon: file-earmark-pdf
+      text: Automobile Industry Analysis pdf
+      href: reports/technological&consumer_changes_in_autombile_industry/autombile.pdf
+---
+This assignment involved exploring how advancements in technology and evolving consumer preferences influence the global automobile industry's structure, strategies, and market dynamics.
+

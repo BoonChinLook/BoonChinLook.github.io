@@ -1,0 +1,17 @@
+---
+title: "Analysis Comparison Modernization and Dependency Theories"
+categories: [Economics]
+image: "/reports/modernization&dependecy_theories/modernization_dependency.jpg"
+date: '2024-11-13'
+author: "Boon Chin Look"
+
+about:
+  template: solana
+  links:
+    - icon: file-earmark-pdf
+      text: Theories Analysis pdf
+      href: /reports/modernization&dependecy_theories/modernization_dependency.pdf
+---
+
+This project had critically explored the contrasting perspectives of the Stages of Growth ("modernization") and Dependency schools of thought regarding economic development. It examined the historical, social, and political contexts that shaped each theory, highlighting how these foundations inform their differing understandings of development processes. The analysis also delves into their core arguments and policy recommendations, drawing attention to the unique implications of each perspective for global economic strategies. 
+

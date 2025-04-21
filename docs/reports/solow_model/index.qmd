@@ -1,0 +1,17 @@
+---
+title: "The Solow Model"
+categories: [Economics]
+image: "/reports/solow_model/solow.png"
+date: '2025-01-06'
+author: "Boon Chin Look"
+
+about:
+  template: solana
+  links:
+    - icon: file-earmark-pdf
+      text: Theories Analysis pdf
+      href: reports/solow_model/solow.pdf
+---
+
+This report reflected on the Solow model of economic growth, exploring its significant insights and limitations. It highlights the model's emphasis on capital accumulation, labor, and technological progress as key drivers of growth, while also addressing its shortcomings, such as the exogeneity of technological progress and its limited consideration of trade, inequality, and human capital. By integrating academic readings, this work provides a nuanced critique of the model's theoretical and practical relevance.
+

@@ -1,0 +1,131 @@
+---
+title: "Hobbies & Interests"
+format: html
+---
+test words
+dddd
+```{=html}
+<button class="accordion">
+  My Interests
+  <span class="dropdown-icon">+</span> <!-- Plus icon -->
+</button>
+<div class="panel">
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-icon">
+        <img src="/assets/cat.jpg" alt="rock-climbing">
+      </div>
+      <div class="timeline-content">
+        <div class="timeline-header">
+          <h2>Rock Climbing</h2>
+          <h3>Competitive Sport</h3>
+        </div>
+        <p>test test</p>
+        <span class="timeline-date">2021–Present, Dublin, Ireland</span>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-icon">
+        <img src="/assets/baked2.PNG" alt="Running">
+      </div>
+      <div class="timeline-content">
+        <div class="timeline-header">
+          <h2>Running</h2>
+          <h3>Fitness</h3>
+        </div>
+        <p>test test</p>
+        <span class="timeline-date">2025–Present, Dublin, Ireland</span>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-icon">
+        <img src="cooking-icon.jpg" alt="Baking & Cooking">
+      </div>
+      <div class="timeline-content">
+        <div class="timeline-header">
+          <h2>Baking & Cooking</h2>
+          <h3>Passion</h3>
+        </div>
+        <p>test test</p>
+        <span class="timeline-date">2023–Present, Dublin, Ireland</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<button class="accordion">
+  My Interests
+  <span class="dropdown-icon">+</span> <!-- Plus icon -->
+</button>
+<div class="panel">
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-icon">
+        <img src="/assets/cat.jpg" alt="rock-climbing">
+      </div>
+      <div class="timeline-content">
+        <div class="timeline-header">
+          <h2>Rock Climbing</h2>
+          <h3>Competitive Sport</h3>
+        </div>
+        <p>test test</p>
+        <span class="timeline-date">2021–Present, Dublin, Ireland</span>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-icon">
+        <img src="/assets/baked2.PNG" alt="Running">
+      </div>
+      <div class="timeline-content">
+        <div class="timeline-header">
+          <h2>Running</h2>
+          <h3>Fitness</h3>
+        </div>
+        <p>test test</p>
+        <span class="timeline-date">2025–Present, Dublin, Ireland</span>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-icon">
+        <img src="cooking-icon.jpg" alt="Baking & Cooking">
+      </div>
+      <div class="timeline-content">
+        <div class="timeline-header">
+          <h2>Baking & Cooking</h2>
+          <h3>Passion</h3>
+        </div>
+        <p>test test</p>
+        <span class="timeline-date">2023–Present, Dublin, Ireland</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+const acc = document.getElementsByClassName("accordion");
+for (let i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        const panel = this.nextElementSibling;
+        const icon = this.querySelector(".dropdown-icon");
+        if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+            icon.textContent = "+"; // Change to plus icon
+        } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+            icon.textContent = "-"; // Change to minus icon
+        }
+    });
+}
+
+</script>
+
+
+
+
+```
