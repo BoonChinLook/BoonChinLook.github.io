@@ -10,7 +10,7 @@ project:
 
 
 website:
-  title: "Boon Chin Look"
+  title: "**Boon Chin Look**"
   favicon: assets/sitelogo.PNG
   #back to top button - will get feedback and see should I create a button instead on it
   back-to-top-navigation: true
@@ -25,8 +25,8 @@ website:
           - text: Written Projects
             href: reports/index.qmd
 
-      - text: Work Experience
-        icon: briefcase
+      - text: Experiences & Growth
+        icon: lightbulb
         href: experience.qmd
 
       - text: About
@@ -51,7 +51,7 @@ format:
     theme: 
       - cosmo
       - style.scss
-    mainfont: Poppins
+    mainfont: sans-serif
     toc: false
     page-layout: full
             

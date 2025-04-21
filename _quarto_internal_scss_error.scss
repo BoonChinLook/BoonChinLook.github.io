@@ -1042,15 +1042,22 @@ $theme-name: null !default;
 $orange: #d4c35a;
 $navbar-bg: $orange;
 
+.navbar-nav .nav-link {
+  font-weight: bold;
+}
+
+
+If you want to make only specific navbar items bold, you can use their unique classes or IDs to target them individually.
+Let me know if you need help refining it further!
+
 
 .navbar-brand img { 
     max-height: 50px;
     width: auto;
 }
 
-
 img {
-    border-radius: 40px; /* Adjust this value as needed */
+    border-radius: 5px; /* Adjust this value as needed */
 }
 
 /* Style for consistent image size */
@@ -1093,113 +1100,138 @@ img {
   transform: scale(1.1); /* Slightly enlarge the image on hover */
   cursor: pointer;
 }
-body {
-  background-color: #1D1D1D;
-  min-height: 100vh;
-  margin: 0;
-  font-family: 'Droid Sans', sans-serif;
 
-  &\:before {
+/*-- future aspiration --*/
+$primary-color: #d4c35a;
+$secondary-color: #6c757d;
+$background-color: #f8f9fa;
+$text-color: #333;
+$timeline-line-color: #e9ecef;
+$icon-circle-color: #59ff00;
+
+body {
+  background-color: $background-color;
+  color: $text-color;
+  margin: 0;
+  padding: 0;
+}
+
+.accordion {
+  background-color: #d4c35a;
+  color: $text-color;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 12px;
+  transition: 0.4s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.panel {
+  padding: 0 12px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.timeline {
+  position: relative;
+  padding: 10px 0;
+  max-width: 100%;
+  margin: auto;
+
+  &::before {
     content: '';
-    position: fixed;
-    top: 0px;
-    left: 50%;
-    bottom: 0px;
-    transform: translateX(-50%);
+    position: absolute;
+    left: 52%;
     width: 4px;
-    background-color: #fff;
+    background-color: $timeline-line-color;
+    height: 85%;
   }
 
-  .entries {
-    width: calc(100% - 80px);
-    max-width: 800px;
-    margin: auto;
-    position: relative;
-    left: -5px;
-
-    .entry {
-      width: calc(50% - 80px);
-      float: left;
-      padding: 20px;
-      clear: both;
-      text-align: right;
-
-      &:not(:first-child) {
-        margin-top: -60px;
-      }
-
-      .title {
-        font-size: 32px;
-        margin-bottom: 12px;
-        position: relative;
-        color: #fff;
-
-        &\:before {
-          content: '';
-          position: absolute;
-          width: 8px;
-          height: 8px;
-          border: 4px solid #ffffff;
-          background-color: #1D1D1D;
-          border-radius: 100%;
-          top: 50%;
-          transform: translateY(-50%);
-          right: -73px;
-          z-index: 1000;
-        }
-
-        &.big\:before {
-          width: 24px;
-          height: 24px;
-          transform: translate(8px, -50%);
-        }
-      }
-
-      .body {
-        color: #aaa;
-
-        p {
-          line-height: 1.4em;
-        }
-      }
-
-      &:nth-child(2n) {
-        text-align: left;
-        float: right;
-
-        .title {
-          &:before {
-            left: -63px;
-          }
-
-          &.big\:before {
-            transform: translate(-8px, -50%);
-          }
-        }
-      }
-
-      .timeline-icon {
-        flex: 0 0 60px;
-        text-align: center;
-
-        img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          border-radius: 50%;
-        }
-      }
-
-      .timeline-date {
-        font-size: 0.7em;
-        color: #aaa;
-        position: absolute;
-        top: 10px;
-        right: 10px;
-      }
-    }
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
   }
 }
+
+.timeline-item {
+  position: relative;
+  padding: 10px 20px;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  transition: opacity 0.5s ease-in-out;
+}
+
+
+
+.timeline-content {
+  flex: 1;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+
+  h2 {
+    margin: 0;
+    font-size: 1em;
+    color: $primary-color;
+  }
+
+  h3 {
+    margin: 0.3em 0;
+    font-size: .9em;
+    color: $secondary-color;
+  }
+
+  p {
+    margin: 0.5em 0;
+    font-size: .8em;
+  }
+}
+
+.timeline-date {
+  font-size: 1em;
+  color: $secondary-color;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.timeline-icon {
+  flex: 0 0 60px;
+  text-align: center;
+
+  .icon-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: $icon-circle-color;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8em;
+    margin: 0 auto;
+  }
+}
+
+.timeline-icon img {
+  width: 150px;
+  height: 150px;
+  padding: 12px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
 
 
 // Heading font size customization
@@ -3442,7 +3474,7 @@ $nested-kbd-font-weight:            null !default; // Deprecated in v5.2.0, remo
 $pre-bg:                            $code-bg  !default;
 $pre-color:                         $body-emphasis-color !default;
 $pre-line-height:                   $line-height-base !default;
-$font-family-base: Poppins;
+$font-family-base: sans-serif;
 
 
 
