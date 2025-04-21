@@ -2,10 +2,16 @@
 $orange: #d4c35a;
 $navbar-bg: $orange;
 
+
+/*-- scss:colors --*/
+$body-color: #3d3b2f;
+$body-bg: white; 
+
 .navbar-brand img { 
     max-height: 50px;
     width: auto;
 }
+
 
 img {
     border-radius: 5px; /* Adjust this value as needed */
@@ -52,13 +58,13 @@ img {
   cursor: pointer;
 }
 
-/*-- future aspiration --*/
+/*-- Growth & Experiences --*/
 $primary-color: #d4c35a;
 $secondary-color: #6c757d;
 $background-color: #f8f9fa;
 $text-color: #333;
 $timeline-line-color: #e9ecef;
-$icon-circle-color: #59ff00;
+$icon-circle-color: #090908;
 
 body {
   background-color: $background-color;
@@ -118,9 +124,13 @@ body {
   margin: 10px 0;
   display: flex;
   align-items: center;
-  transition: opacity 0.5s ease-in-out;
-}
+  transition: opacity 0.5s ease-in-out, transform 0.3s;
 
+  &:hover {
+    opacity: 0.9;
+    transform: scale(1.02);
+  }
+}
 
 
 .timeline-content {
@@ -183,3 +193,13 @@ body {
   object-fit: cover;
 }
 
+
+/* listing hover and effects */
+.quarto-grid-item {
+  transition: transform 0.3s, box-shadow 0.3s;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+}

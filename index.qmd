@@ -2,6 +2,9 @@
 title: "Boon Chin Look, Bachelors"
 subtitle: "Final year Data Analytics student"
 image: assets/analytics.JPG
+format:
+  html:
+    css: styles.scss
 
 about:
   template: solana
@@ -17,7 +20,7 @@ about:
           text: Linkedin
           href: https://www.linkedin.com/in/boon-chin-l-13b104193/
           target: _blank
-page-layout: full
+page-layout: article
 
 listing:
   - id: reports-listing
@@ -52,6 +55,7 @@ listing:
 ::: {#hero-heading}
 
 Welcome to my Portfolio! <br>Here you will find out about me, my hobbies, what I do, what I aspire to be and what project I have done.
+
 [Learn more about me &rarr;](about.qmd)
 
 :::
@@ -67,11 +71,7 @@ Welcome to my Portfolio! <br>Here you will find out about me, my hobbies, what I
 <br>
 <br>
 
-
 ## Latest [Code Projects](/code_projects)
 
 ::: {#code-projects-listing}
 :::
-
-
-

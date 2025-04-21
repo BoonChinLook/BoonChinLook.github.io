@@ -2,7 +2,7 @@
 title: "Experiences & growth"
 format:
   html:
-    page-layout: full
+    page-layout: article
 image: assets/flower.jpg
 
 about: 
@@ -64,7 +64,7 @@ My passion for continuous learning led me to participate in Dell Technologies’
         </div>
         <p>I am an active member of the DCU rock climbing club. I find it a fantastic way to go outside of my comfort zone. I mainly do bouldering which is climbing around up to 2 metres to then climb down safely if you can. It is a great way to meet new friendly people who have the same passion.
         <br>
-        Additionally, as part of DCU rock climbing, I competed in the intervertisites in 2024 and came in 3rd place of the begineers females.
+        Additionally, as part of DCU rock climbing, I competed in the intervertisites in 2024 and came in 3rd place of the beginners females.
         </p>
         <span class="timeline-date">2022-Present, Dublin, Ireland</span>
       </div>
