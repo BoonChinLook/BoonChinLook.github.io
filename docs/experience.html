@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>My Interests – Boon Chin Look</title>
+<title>Hobbies &amp; Interests – Boon Chin Look</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -39,7 +39,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-38211d36898c84d249741beed5e0f9f9.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-f6967989db5a325d0ac488a014313d69.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -145,7 +145,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">My Interests</h1>
+<h1 class="title">Hobbies &amp; Interests</h1>
 </div>
 
 
@@ -162,31 +162,37 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p>test words dddd</p>
+<button class="accordion">
+  My Interests
+  <span class="dropdown-icon">+</span> <!-- Plus icon -->
+</button>
+<div class="panel">
   <div class="timeline">
     <div class="timeline-item">
       <div class="timeline-icon">
-        <img src="rock_climbing.jpg" alt="rock-climbing">
+        <img src="./assets/cat.jpg" alt="rock-climbing">
       </div>
       <div class="timeline-content">
         <div class="timeline-header">
           <h2 class="anchored">Rock Climbing</h2>
           <h3 class="anchored">Competitive Sport</h3>
         </div>
-        <p></p>
+        <p>test test</p>
         <span class="timeline-date">2021–Present, Dublin, Ireland</span>
       </div>
     </div>
 
     <div class="timeline-item">
       <div class="timeline-icon">
-        <img src="running-icon.jpg" alt="Running">
+        <img src="./assets/baked2.PNG" alt="Running">
       </div>
       <div class="timeline-content">
         <div class="timeline-header">
           <h2 class="anchored">Running</h2>
           <h3 class="anchored">Fitness</h3>
         </div>
-        <p></p>
+        <p>test test</p>
         <span class="timeline-date">2025–Present, Dublin, Ireland</span>
       </div>
     </div>
@@ -200,11 +206,86 @@ ul.task-list li input[type="checkbox"] {
           <h2 class="anchored">Baking &amp; Cooking</h2>
           <h3 class="anchored">Passion</h3>
         </div>
-        <p></p>
+        <p>test test</p>
         <span class="timeline-date">2023–Present, Dublin, Ireland</span>
       </div>
     </div>
   </div>
+</div>
+
+<br>
+
+<button class="accordion">
+  My Interests
+  <span class="dropdown-icon">+</span> <!-- Plus icon -->
+</button>
+<div class="panel">
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-icon">
+        <img src="./assets/cat.jpg" alt="rock-climbing">
+      </div>
+      <div class="timeline-content">
+        <div class="timeline-header">
+          <h2 class="anchored">Rock Climbing</h2>
+          <h3 class="anchored">Competitive Sport</h3>
+        </div>
+        <p>test test</p>
+        <span class="timeline-date">2021–Present, Dublin, Ireland</span>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-icon">
+        <img src="./assets/baked2.PNG" alt="Running">
+      </div>
+      <div class="timeline-content">
+        <div class="timeline-header">
+          <h2 class="anchored">Running</h2>
+          <h3 class="anchored">Fitness</h3>
+        </div>
+        <p>test test</p>
+        <span class="timeline-date">2025–Present, Dublin, Ireland</span>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-icon">
+        <img src="cooking-icon.jpg" alt="Baking &amp; Cooking">
+      </div>
+      <div class="timeline-content">
+        <div class="timeline-header">
+          <h2 class="anchored">Baking &amp; Cooking</h2>
+          <h3 class="anchored">Passion</h3>
+        </div>
+        <p>test test</p>
+        <span class="timeline-date">2023–Present, Dublin, Ireland</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+const acc = document.getElementsByClassName("accordion");
+for (let i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        const panel = this.nextElementSibling;
+        const icon = this.querySelector(".dropdown-icon");
+        if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+            icon.textContent = "+"; // Change to plus icon
+        } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+            icon.textContent = "-"; // Change to minus icon
+        }
+    });
+}
+
+</script>
+
+
+
+
 
 
 
