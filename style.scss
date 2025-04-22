@@ -1,9 +1,21 @@
 /*-- scss:defaults --*/
-$orange: #d4c35a;
-$navbar-bg: $orange;
+$yellow: #d4c35a;
+$navbar-bg: $yellow;
+$footer-bg: #e8dc92;
+$navbar-link-color: #3a3931;
 
+.navbar a {
+  color: $navbar-link-color;
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
 
-/*-- scss:colors --*/
+  &:hover {
+    color: darken($navbar-link-color, 5%);
+    text-decoration: underline;
+    transform: scale(1.05);
+  }
+}
+
 $body-color: #3d3b2f;
 $body-bg: white; 
 
@@ -16,22 +28,6 @@ $body-bg: white;
 img {
     border-radius: 5px; /* Adjust this value as needed */
 }
-
-/* Style for consistent image size */
-.gallery img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover; /* Ensures images are cropped uniformly */
-    border-radius: 5px; /* Optional: Rounded edges */
-    margin: 5px; /* Spacing between images */
-    transition: transform 0.2s ease; /* Smooth hover effect */
-  }
-  
-/* Add hover effect for interactivity */
-  .gallery img:hover {
-    transform: scale(1.1); /* Slightly enlarge the image on hover */
-    cursor: pointer;
-  }
 
 /* Container style for the SQL ERD */
 .sql-erd {
@@ -203,3 +199,5 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
 }
+
+
