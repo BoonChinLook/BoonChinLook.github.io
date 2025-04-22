@@ -16,76 +16,40 @@ about:
           href: https://www.linkedin.com/in/boon-chin-l-13b104193/
           target: _blank
         - icon: file-earmark-pdf
-          text: Download CV
+          text: CV
           href: assets/Blankforcvtester.pdf
           target: _blank
+page-layout: article
 ---
 
 ::: {#hero-heading}
-<div class="h1">🤗Hey !</div>
-
+<div class="h1">Hi, nice to meet you!</div>
 <div class="lead">
-🌱 I am a final-year Business Studies student specializing in Data Analytics.
+I am a final-year Business Studies student specializing in Data Analytics.</div>
 
-* I thrive on problem-solving, data-driven insights, and love continuous learning.
+* I thrive on problem-solving, data-driven insights, and love continuously learning.
 
-⚡ Beyond academics
+[Beyond Academics:]{.mark .underline}
 
-* Passionate about rock climbing, fitness, and artistic exploration. I enjoy pushing boundaries both mentally and physically.
+* I am passionate about rock climbing, fitness, and artistic exploration. I enjoy pushing boundaries both mentally and physically.
 
-🍕 Cookery enthusiast
+[Cookery Enthusiast:]{.mark .underline}
 
 * Cooking, baking, and discovering new cuisines fuel my creativity and appreciation for culture.
-</div>
 :::
 
-
-<!--New Years resolutions-->
-### Skills
-
-💻 Programming Languages:
-
+### [My Skills:]{.mark}
 * Programming Languages: Python, HTML, CSS, JavaScript, SQL.
 * Software & Tools: Microsoft Office, GitHub, Alteryx, Tableau, Power BI, Quarto.
 
-### Food I baked:
-🍪Below are examples of foods I baked while volunteering and in my free time:
-
-<div class="gallery">
-  <a href="assets/baked1.PNG" target="_blank">
-    ![Red Velvet Cupcakes](assets/baked1.PNG){.gallery}
-  </a>
-  <a href="assets/baked2.PNG" target="_blank">
-    ![Fruit Scones](assets/baked2.PNG){.gallery}
-  </a>
-  <a href="assets/baked3.PNG" target="_blank">
-    ![Cinnamon Cookies](assets/baked3.PNG){.gallery}
-  </a>
+### [Music that I like:]{.mark}
+<div style="text-align: center;">
+I enjoy classical and tranquil music, as it helps me unwind and relax while reading. Below are some pieces I typically listen to:
+</div>
+<div style="display: flex; justify-content: center; gap: 15px;">
+  <iframe width="262" height="200" src="https://www.youtube.com/embed/IH2KrGjKXw0?si=0Rwu1_9jWVkwSyJt" frameborder="0" allowfullscreen></iframe>
+  <iframe width="262" height="200" src="https://www.youtube.com/embed/TK1Ij_-mank?si=fjQklLDjUaC_JiE1" frameborder="0" allowfullscreen></iframe>
+  <iframe width="262" height="200" src="https://www.youtube.com/embed/1e9B31FLT-s?si=WCI1SsZhQR16Et92" frameborder="0" allowfullscreen></iframe>
 </div>
 
-
-
-### Food I cooked:
-🍛Below are examples of foods I cooked while volunteering and in my free time:
-
-<div class="gallery">
-  <a href="assets/food1.PNG" target="_blank">
-    ![Teryaki Stir-fry](assets/food1.PNG){.gallery}
-  </a>
-  <a href="assets/food2.PNG" target="_blank">
-    ![Satay Stir-fry](assets/food2.PNG){.gallery}
-  </a>
-  <a href="assets/food3.PNG" target="_blank">
-    ![Salmon Meal](assets/food3.PNG){.gallery}
-  </a>
-  <a href="assets/food4.PNG" target="_blank">
-    ![Curry Meal](assets/food4.PNG){.gallery}
-  </a>
-</div>
-
-
-
-### Rock climbing:
-🪨Through out my years in college, I have taken up rock climbing as a sport I am passionate about.Below a video of the rock climbing club at DCU which I have taken part of and am featured in the video a few times:
-
-{{< video https://www.youtube.com/watch?v=lwPNShbrzSA&ab_channel=DCURockClimbingClub>}}
+[Find out more about my interests, community engagement and growths &rarr;](experience.qmd){.btn .btn-outline-warning style="padding: 10px 20px; font-size: 16px; border-radius: 5px; color: #3a3931; display: inline-block;"}

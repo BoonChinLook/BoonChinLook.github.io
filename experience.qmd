@@ -7,7 +7,11 @@ image: assets/flower.jpg
 
 about: 
     template: marquee
-  
+    links:
+        - icon: linkedin
+          text: Contact me on Linkedin
+          href: https://www.linkedin.com/in/boon-chin-l-13b104193/
+          target: _blank
 ---
 Throughout my time at university, I’ve actively sought out opportunities to grow both personally and professionally through diverse experiences in work, volunteering, and sport. 
 
@@ -32,9 +36,8 @@ My passion for continuous learning led me to participate in Dell Technologies’
             <h2>Running</h2>
             <h3>Fitness</h3>
           </div>
-          <p>Last year, I organised and took part in an 11km obstacle course run (Runamuck Challenge) with minimal training towards It, an experience which was both challenging and rewarding.
-          
-          Since then, I’ve committed to regular running and gym workouts to improve my endurance. This year, I’m taking on the 13km Hell & Back obstacle course, better prepared, and rallying colleagues to take on the challenge together.</p>
+          <p>Last year, I organised and took part in an 11km obstacle course run (Runamuck Challenge) with minimal training towards It, an experience which was both challenging and rewarding.</p>
+          <p>Since then, I’ve committed to regular running and gym workouts to improve my endurance. This year, I’m taking on the 13km Hell & Back obstacle course, better prepared, and rallying colleagues to take on the challenge together.</p>
           <span class="timeline-date">2024–Present, Dublin, Ireland</span>
         </div>
       </div>
@@ -48,7 +51,8 @@ My passion for continuous learning led me to participate in Dell Technologies’
             <h2>Baking & Cooking</h2>
             <h3>Passion</h3>
           </div>
-          <p>One year, I challenged myself to learn baking and cooking, which inspired me to participate in the Ballymunch volunteering programme, supported by the Raising And Giving (RAG) society. Through this experience, I gained valuable skills and, during my final semester in college, I decided to join the HSE's healthy eating programme, a six-week initiative that ran for four hours each week. I was part of a class of around 11 people from my local community, all learning to cook nutritious meals. Together, we created healthy dishes and fostered a supportive community built on collaboration and shared learning.</p>
+          <p>One year, I challenged myself to learn baking and cooking, which inspired me to participate in the Ballymunch volunteering programme, supported by the Raising And Giving (RAG) society.</p>
+          <p> Through this experience, I gained valuable skills and, during my final semester in college, I decided to join the HSE's healthy eating programme, a six-week initiative that ran for four hours each week. I was part of a class of around 11 people from my local community, all learning to cook nutritious meals. Together, we created healthy dishes and fostered a supportive community built on collaboration and shared learning.</p>
           <span class="timeline-date">2023–Present, Dublin, Ireland</span>
         </div>
       </div>
@@ -62,9 +66,8 @@ My passion for continuous learning led me to participate in Dell Technologies’
           <h2>Rock Climbing</h2>
           <h3>Competitive Sport</h3>
         </div>
-        <p>I am an active member of the DCU rock climbing club. I find it a fantastic way to go outside of my comfort zone. I mainly do bouldering which is climbing around up to 2 metres to then climb down safely if you can. It is a great way to meet new friendly people who have the same passion.
-        <br>
-        Additionally, as part of DCU rock climbing, I competed in the intervertisites in 2024 and came in 3rd place of the beginners females.
+        <p>I am an active member of the DCU rock climbing club. I find it a fantastic way to go outside of my comfort zone. I mainly do bouldering which is climbing around up to 2 metres to then climb down safely if you can. It is a great way to meet new friendly people who have the same passion.</p>
+        <p>Additionally, as part of DCU rock climbing, I competed in the intervertisites in 2024 and came in 3rd place of the beginners females.
         </p>
         <span class="timeline-date">2022-Present, Dublin, Ireland</span>
       </div>
@@ -134,7 +137,7 @@ My passion for continuous learning led me to participate in Dell Technologies’
     </div>
     <div class="timeline-item">
       <div class="timeline-icon">
-        <img src="assets/circleK.png" alt="Baking & Cooking">
+        <img src="assets/circleK.png" alt="Circle K Logo">
       </div>
       <div class="timeline-content">
         <div class="timeline-header">
@@ -155,29 +158,119 @@ My passion for continuous learning led me to participate in Dell Technologies’
 
 <br>
 
+
 <button class="accordion">
-  <strong>Certifications</strong>
+  <strong>Local & Community Involvement</strong>
+  <span class="dropdown-icon">+</span> <!-- Plus icon -->
+</button>
+<div class="panel">
+  <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-icon">
+          <img src="/assets/cupcakes.PNG" alt="Red Velvet Cupcakes">
+        </div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <h2>Ballymunch</h2>
+            <h3>Volunteering</h3>
+          </div>
+          <p>Participating in Ballymunch, a cooking class initiative for parents in Ballymun, has been an invaluable experience. Supported by DCU's Raising And Giving (RAG) Society, this volunteering opportunity has not only deepened my understanding of how to prepare affordable, nutritious meals but has also equipped me with essential skills such as effective communication, teamwork, and collaboration.</p>
+          <p>This opportunity has allowed me to engage with my community, share knowledge, and develop practical skills that extend beyond the kitchen and college.</p>
+          <span class="timeline-date">2023 November–Present, Dublin, Ireland</span>
+        </div>
+      </div>
+      
+    <div class="timeline-item">
+        <div class="timeline-icon">
+          <img src="/assets/experiencejapan.jpg" alt="Experience Japan Logo">
+        </div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <h2>Experience Japan</h2>
+            <h3>Community Involvement</h3>
+          </div>
+          <p>Driven by a strong commitment to volunteering, I had the privilege of working as and contributing to Experience Japan as an Area Leader in the Kitchen Cabinet crew.</p> 
+          <p>In this role, I worked alongside dedicated teams focused on two key areas: managing the storage and changing spaces for performers and efficiently reallocating volunteer resources throughout the event. This was a rewarding opportunity to support a vibrant cultural initiative while collaborating with an incredible group of volunteers to ensure a seamless experience for everyone at the event.</p>
+          <span class="timeline-date">April 2025–April 2025, Dublin, Ireland</span>
+        </div>
+      </div>
+
+  
+      
+         <div class="timeline-item">
+        <div class="timeline-icon">
+          <img src="assets/dcu_student_life_logo.jpg" alt="DCU Student Life Logo">
+        </div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <h2>DCU mentor</h2>
+            <h3>College Involvement</h3>
+          </div>
+          <p>As a mentor at Dublin City University, I had the privilege of supporting a group of Business Studies students as they navigated their transition into college life.</p>
+          <p>Through structured teamwork exercises, engaging icebreakers, and collaborative activities, I fostered a welcoming and inclusive environment that encouraged confidence and connection. My role was to ensure that each student felt comfortable, supported, and empowered as they adapted to this new academic and social experience.</p>
+          <span class="timeline-date">September 2024–April 2025, Dublin, Ireland</span>
+        </div>
+      </div>
+
+        <div class="timeline-item">
+        <div class="timeline-icon">
+          <img src="assets/dcu_logo.png" alt="DCU Logo">
+        </div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <h2>Class Representative & DCU Access mentor</h2>
+            <h3>College Involvement</h3>
+          </div>
+          <p>One year, I challenged myself to learn baking and cooking, which inspired me to participate in the Ballymunch volunteering programme, supported by the Raising And Giving (RAG) society.</p>
+          <p> Through this experience, I gained valuable skills and, during my final semester in college, I decided to join the HSE's healthy eating programme, a six-week initiative that ran for four hours each week. I was part of a class of around 11 people from my local community, all learning to cook nutritious meals. Together, we created healthy dishes and fostered a supportive community built on collaboration and shared learning.</p>
+          <span class="timeline-date">2023–Present, Dublin, Ireland</span>
+        </div>
+      </div>
+
+
+    <div class="timeline-item">
+      <div class="timeline-icon">
+        <img src="/assets/healthy_food_made_easy_logo.png" alt="Healthy Food Made Easy Logo">
+      </div>
+      <div class="timeline-content">
+        <div class="timeline-header">
+          <h2>Healthy Foods Eating Programme</h2>
+          <h3>Local community involvement</h3>
+        </div>
+        <p>In my opinion going to the gym a minimum of 2 times a week is good for your health. Personally, I go more times a week, as it is a great way to stay focused, relieve any stress and focus on ourselves.</p>
+        <span class="timeline-date">2022-Present, Dublin, Ireland</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<br>
+
+<button class="accordion">
+  <strong>Licenses & Certifications</strong>
   <span class="dropdown-icon">+</span> <!-- Plus icon -->
 </button>
 <div class="panel">
   <div class="timeline">
     <div class="timeline-item">
       <div class="timeline-icon">
-        <img src="/assets/cat.jpg" alt="rock-climbing">
+        <img src="/assets/RSA.jpg" alt="RSA Logo">
       </div>
       <div class="timeline-content">
         <div class="timeline-header">
-          <h2>Rock Climbing</h2>
-          <h3>Competitive Sport</h3>
+          <h2>Irish Driving License</h2>
+          <h3>Commitment</h3>
         </div>
-        <p>test test</p>
-        <span class="timeline-date">2021–Present, Dublin, Ireland</span>
+        <p>Through unwavering dedication and a strong commitment to achieving my goals, I successfully obtained my Irish driving license without the advantage of a family-owned vehicle. Relying solely on my own resources, I navigated through busy schedules, arranged practice sessions on my own, overcoming challenges on my own.</p>
+        <p>This journey required persistence, adaptability, and strategic planning. Moreover, the support and encouragement from my community played a vital role, reminding me that while independence is valuable, resilience is often strengthened by the people who uplift us.</p>
+        <span class="timeline-date">2023–2025, Dublin, Ireland</span>
       </div>
     </div>
 
     <div class="timeline-item">
       <div class="timeline-icon">
-        <img src="/assets/baked2.PNG" alt="Running">
+        <img src="assets/certiport.png" alt="Running">
       </div>
       <div class="timeline-content">
         <div class="timeline-header">
