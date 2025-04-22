@@ -1,0 +1,81 @@
+---
+title: "Professional Development"
+toc: false
+page-layout: full
+---
+
+## Course Certificates
+
+Below is a summary of some of my certificates and completed courses:
+
+| **Subject**                     | **Course Name**                                | **Date Completed**  |
+|---------------------------------|------------------------------------------------|---------------------|
+| Alteryx                         | Alteryx Fundamentals                           | April 18th, 2024    |
+| Excel                           | Monte Carlo Simulation                         | February 21st, 2024 |
+| Excel                           | Forward-Looking Models                         | February 10th, 2024 |
+| Excel                           | Build Your First Model                         | February 7th, 2024  |
+| Excel                           | Build Your First Dashboard                     | February 4th, 2024  | 
+| Machine Learning with Python    | Advanced Clustering                            | January 22nd, 2024  |
+| Machine Learning with Python    | Advanced Classification                        | January 20th, 2024  |
+| Machine Learning with Python    | Advanced Regression                            | January 19th, 2024  |
+| Machine Learning with Python    | Feature Engineering                            | January 16th, 2024  |
+| Machine Learning with Python    | K-Means Clustering in Python                   | January 12th, 2024  |
+| Machine Learning with Python    | Decision Trees in Python                       | January 12th, 2024  |
+| Machine Learning with Python    | Regression Analysis in Python                  | January 9th, 2024   |
+| Power BI                        | Advanced DAX Functions and Concepts            | January 8th, 2024   |
+| Data Presentation Skills        | Presenting Your Data                           | January 1st, 2024   |
+| Data Presentation Skills        | Communicating Data Effectively                 | December 30th, 2023 |
+| Data Presentation Skills        | Telling Stories with Data                      | December 29th, 2023 |
+| Power BI                        | Introduction to DAX                            | December 25th, 2023 |
+| Power BI                        | The Query Editor                               | December 23rd, 2023 |
+| Power BI                        | Designing Effective Dashboards                 | December 21st, 2023 |
+| Power BI                        | Developing Effective Visualizations            | December 21st, 2023 |
+| Power BI                        | Introduction to Visualizations in Power BI     | December 17th, 2023 |
+| Visualization Fundamentals      | Applying Visual Data Skills                    | December 17th, 2023 |
+| Data Strategy & Governance      | Building a Data-Driven Culture                 | December 14th, 2023 |
+| Data Strategy & Governance      | Defining Your Data Strategy                    | December 13th, 2023 |
+| Data Security                   | Handling Data Securely and Responsibly         | November 28th, 2023 |
+| Data Security                   | Keeping Your Information Safe                  | November 27th, 2023 |
+| Data Ethics & Risk              | Applying Ethical Thinking                      | November 23rd, 2023 |
+| Data Ethics & Risk              | Introduction to Data Ethics                    | November 17th, 2023 |
+| AI Fundamentals                 | Large Language Models                          | November 16th, 2023 |
+| AI Fundamentals                 | Generative AI and ChatGPT                      | November 15th, 2023 |
+| AI Fundamentals                 | Identifying Patterns                           | November 14th, 2023 |
+| AI Fundamentals                 | Understanding Natural Language                 | November 13th, 2023 |
+| AI Fundamentals                 | Predicting Scenarios                           | November 6th, 2023  |
+| AI Fundamentals                 | Predicting Future Values                       | October 26th, 2023  |
+| AI Fundamentals                 | Business Applications of AI                    | October 16th, 2023  |
+| Financial Modeling              | Introduction to Financial Statements           | October 15th, 2023  |
+| AI Fundamentals                 | Introduction to Artificial Intelligence        | October 13th, 2023  |
+| Statistical Analysis            | Hypothesis Testing                             | October 10th, 2023  |
+| Statistical Analysis            | Probability Distributions                      | October 5th, 2023   |
+| Statistical Analysis            | Probability Principles                         | October 3rd, 2023   |
+| Statistical Analysis            | Introduction to Predictive Modeling            | October 1st, 2023   |
+| Python Fundamentals             | Connecting to Live Data                        | September 30th, 2023|
+| Python Fundamentals             | Data Preparation                               | September 25th, 2023|
+| Python Fundamentals             | Storing, Transforming and Visualizing Data     | September 21st, 2023|
+| Python Fundamentals             | Functions, Conditionality and Loops            | September 17th, 2023|
+| Power BI                        | Building Your First Dashboard                  | May 1st, 2023       |
+| SQL                             | Data Manipulation with SQL                     | April 30th, 2023    |
+| SQL                             | Aggregating Data with SQL                      | February 6th, 2023  |
+| Tableau                         | Introducing Tableau                            | February 1st, 2023  |
+| SQL                             | Joining Data with SQL                          | January 7th, 2023   |
+| SQL                             | Selecting and Filtering Data with SQL          | January 4th, 2023   |
+| SQL                             | Understanding SQL Databases                    | January 2nd, 2023   |
+| Data Literacy                   | Thinking and Communicating with Data           | December 26th, 2022 |
+| Excel                           | Introduction to Excel Macros                   | December 26th, 2022 |
+| Excel                           | Project: Optimize company revenue with cost analysis| December 25th, 2022 |
+| Excel                           | Finance Functions                              | December 24th, 2022 |
+| Excel                           | Text, Time, and Dates                          | December 10th, 2022 |
+| Python Fundamentals             | Python Fundamentals                            | December 7th, 2022  |
+| Visualization Fundamentals      | Visual Data Thinking                           | December 4th, 2022  |
+| Excel                           | Lookups and Database Functions                 | November 24th, 2022 |
+| Excel                           | Charts in Depth                                | November 21st, 2022 |
+| Statistical Analysis            | Principles of Statistics                       | November 18th, 2022 |
+| Excel                           | Pivot Tables                                   | November 3rd, 2022  |
+| Data Literacy                   | Introduction to Data Preparation               | October 26th, 2022  |
+| Excel                           | Formulas and Functions                         | October 26th, 2022  |
+| Excel                           | Data Manipulation and Formatting               | October 8th, 2022   |
+| Data Literacy                   | Introduction to Data and Databases             | October 7th, 2022   |
+
+[Check out my Experiences & Growth page to explore my certifications, involvements and interests! &rarr;](experience.qmd){.btn .btn-outline-warning style="padding: 10px 20px; font-size: 16px; border-radius: 5px; color: #3a3931; display: inline-block;"}
