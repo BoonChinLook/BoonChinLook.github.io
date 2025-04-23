@@ -2,11 +2,12 @@
 title: "Professional Development"
 toc: false
 page-layout: full
+
 ---
 
 ## Course Certificates
 
-Below is a summary of some of my certificates and completed courses:
+Below is are of some of my certificates and completed courses:
 
 | **Subject**                     | **Course Name**                                | **Date Completed**  |
 |---------------------------------|------------------------------------------------|---------------------|
