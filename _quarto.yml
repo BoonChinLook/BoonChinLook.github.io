@@ -50,7 +50,7 @@ website:
         
       - icon: file-earmark-pdf
         text: CV
-        href: assets/Blankforcvtester.pdf
+        href: assets/portfolio_cv.pdf
         target: _blank
   page-footer: 
     left: "© Boon Chin Look, 2025"    

@@ -17,7 +17,7 @@ about:
           target: _blank
         - icon: file-earmark-pdf
           text: CV
-          href: assets/Blankforcvtester.pdf
+          href: assets/portfolio_cv.pdf
           target: _blank
         - icon: envelope
           text: Email
@@ -41,7 +41,7 @@ I am a final-year Business Studies student specializing in Data Analytics.</div>
 :::
 ### [My Skills:]{.mark}
 * Programming Languages: Python, HTML, CSS, JavaScript, SQL.
-* Software & Tools: Microsoft Office, GitHub, Alteryx, Tableau, Power BI, Quarto.
+* Software & Tools: Microsoft Office, GitHub, Alteryx, Tableau, Power BI, Quarto, Jira.
 
 ### [Music that I like:]{.mark}
 <div style="text-align: center;">
