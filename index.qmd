@@ -1,6 +1,6 @@
 ---
-title: "Boon Chin Look, Bachelors"
-subtitle: "Final year Data Analytics student"
+title: "Boon Chin Look, BBS"
+subtitle: "Final-year Data Analytics student"
 image: assets/analytics.JPG
 format:
   html:
@@ -53,9 +53,9 @@ listing:
 ---
 ::: {#hero-heading class="fade-in"}
 
-Welcome to my Portfolio! <br>Here you will find out about me, my hobbies, what I do, what I aspire to be and what project I have done.
+Welcome to my Portfolio! <br> Here, you can learn about me, explore my coding projects, and follow my professional journey and future aspirations.
 
-[Learn more about me &rarr;](about.qmd)
+[Get to Know Me &rarr;](about.qmd)
 
 :::
 

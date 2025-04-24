@@ -24,28 +24,28 @@ about:
           href: mailto:boon.look3@mail.dcu.ie
 page-layout: article
 ---
-::: {#hero-heading}
+::: {#hero-heading .fade-in}
 <div class="h1">Hi, nice to meet you!</div>
 <div class="lead">
-I am a final-year Business Studies student specializing in Data Analytics.</div>
+I'm a final-year Business Studies student specializing in Data Analytics.</div>
 
-* I thrive on problem-solving, data-driven insights, and love continuously learning.
+I thrive on problem‑solving, drawing data‑driven insights, and continuous learning.
 
 [Beyond Academics:]{.mark .underline}
 
-* I am passionate about rock climbing, fitness, and artistic exploration. I enjoy pushing boundaries both mentally and physically.
+I'm passionate about rock climbing, fitness, and the arts. I enjoy pushing my boundaries, both mentally and physically.
 
 [Cookery Enthusiast:]{.mark .underline}
 
-* Cooking, baking, and discovering new cuisines fuel my creativity and appreciation for culture.
+Experimenting in the kitchen fuels my creativity. I enjoy cooking, baking, and discovering new cuisines that deepen my appreciation for culture.
 :::
-### [My Skills:]{.mark}
+#### [My Skills:]{.mark .fade-in}
 * Programming Languages: Python, HTML, CSS, JavaScript, SQL.
 * Software & Tools: Microsoft Office, GitHub, Alteryx, Tableau, Power BI, Quarto, Jira.
 
-### [Music that I like:]{.mark}
+#### [Music I Love:]{.mark .fade-in}
 <div style="text-align: center;">
-I enjoy classical and tranquil music, as it helps me unwind and relax while reading. Below are some pieces I typically listen to:
+Classical and ambient music helps me unwind while reading. Here are a few. Below are some pieces I typically listen to:
 </div>
 <div style="display: flex; justify-content: center; gap: 15px;">
   <iframe width="262" height="200" src="https://www.youtube.com/embed/IH2KrGjKXw0?si=0Rwu1_9jWVkwSyJt" frameborder="0" allowfullscreen></iframe>
@@ -53,4 +53,4 @@ I enjoy classical and tranquil music, as it helps me unwind and relax while read
   <iframe width="262" height="200" src="https://www.youtube.com/embed/1e9B31FLT-s?si=WCI1SsZhQR16Et92" frameborder="0" allowfullscreen></iframe>
 </div>
 
-[Find out more about my interests, community engagement and growths &rarr;](experience.qmd){.btn .btn-outline-warning style="padding: 10px 20px; font-size: 16px; border-radius: 5px; color: #3a3931; display: inline-block;"}
+[Find out more about my interests, community engagement and growth &rarr;](experience.qmd){.btn .btn-outline-warning style="padding: 10px 20px; font-size: 16px; border-radius: 5px; color: #3a3931; display: inline-block;"}

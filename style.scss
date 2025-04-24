@@ -49,7 +49,7 @@ img {
     border-radius: 5px; /* Adjust this value as needed */
 }
 
-/*-- landing page fade in text --*/
+/*-- landing page & about me page fade in text --*/
 .fade-in {
   opacity: 0;
   animation: fadeIn 1s ease-in-out forwards;
@@ -233,7 +233,7 @@ body {
   }
 }
 
-
+/*-- made icon links like github, linkedin, email and cv scale on hover --*/
 .about-links {
   display: inline-flex;
 
