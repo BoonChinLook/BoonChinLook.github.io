@@ -13,7 +13,8 @@ about:
           href: https://www.linkedin.com/in/boon-chin-l-13b104193/
           target: _blank
 ---
-<div style="text-align: justify;">
+
+::: {style="text-align: justify;"}
 Throughout my time at university, I’ve actively sought opportunities to grow both personally and professionally through diverse experiences in work, volunteering, and sport.
 
 As a Business with Data Analytics student at DCU, I’ve taken on leadership roles such as Class Representative and DCU Mentor, while also being a mentee myself. I love supporting my peers and fostering a strong sense of community. I’m always open to opportunities that involve learning, growing, and helping others.
@@ -21,7 +22,7 @@ As a Business with Data Analytics student at DCU, I’ve taken on leadership rol
 My commitment to giving back is evident in my support for colleagues when needed, and through initiatives like Ballymunch, where I help adults learn to cook. I also completed the Healthy Food Made Easy programme, an initiative led by the Health Service Executive (HSE) in my local community.
 
 Driven by a passion for continuous learning, I participated in Dell Technologies’ STEM Aspire and Innovative Communities mentorship, while my job has helped me develop strong time management skills by balancing work with academic and extracurricular commitments. Outside of academics, I challenge myself every year by joining clubs outside my comfort zone, from rock climbing and art to table tennis. Most recently, I completed the 11km Runamuck obstacle course. These experiences have shaped me into a well-rounded, motivated individual with a strong work ethic and a drive to make a positive impact.
-</div>
+:::
 
 ```{=html}
 <button class="accordion">

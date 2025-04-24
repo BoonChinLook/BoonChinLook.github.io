@@ -12,5 +12,7 @@ about:
       text: Automobile Industry Analysis pdf
       href: reports/technological&consumer_changes_in_autombile_industry/autombile.pdf
 ---
-This assignment involved exploring how advancements in technology and evolving consumer preferences influence the global automobile industry's structure, strategies, and market dynamics.
 
+::: {style="text-align: justify;"}
+This assignment explored how advancements in technology and shifting consumer preferences have shaped the structure, strategies, and market dynamics of the global automobile industry. It deepened my understanding of how external forces drive transformation in established sectors and sharpened my analytical thinking around industry adaptation.
+:::

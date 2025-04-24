@@ -16,6 +16,10 @@ about:
       href: /reports/ethical_theory_creation/unified_fulfillment_theory.pdf
 ---
 
-As part of the Business and Professional Ethics module, we were given a pair assignment. This task challenged us to reflect deeply on ethical theories covered in class, including those of Aristotle, Kant, and Bentham. Our objective was to design a unique ethical framework that answers the fundamental question: "Why do we act?"
+::: {style="text-align: justify;"}
+As part of a Business and Professional Ethics module, we were assigned a paired project that challenged us to reflect deeply on ethical theories discussed in class, including those of Aristotle, Kant, and Bentham. Our objective was to design a unique ethical framework that answers the fundamental question: “Why do we act?”
 
-Through collaborative dialogue and thoughtful exchange of ideas, my partner and I explored philosophical principles to craft a coherent and creative ethical theory. This process involved naming our theory, defining its core inspiration, critically comparing it with existing theories, and demonstrating its application in a real-world scenario. Deep thinking, creativity, and teamwork were key elements of this assignment, culminating in the development of our theory: Unified Fulfillment Theory (UFT).
+Through collaborative dialogue and thoughtful exchange of ideas, my partner and I explored philosophical principles to craft a coherent and creative ethical theory. This process involved naming our theory, defining its core inspiration, critically comparing it with existing frameworks, and demonstrating its application in a real-world scenario.
+
+Deep thinking, creativity, and teamwork were central to this assignment, culminating in the development of our theory: the Unified Fulfillment Theory (UFT).
+:::

@@ -14,7 +14,7 @@ about:
 
 ---
 
-<div style="text-align: justify;">
+::: {style="text-align: justify;"}
 With a foundation in Business with Data Analytics and a growing passion for technology, my future is shaped by both strategic intent and hands-on experience. From early exposure to software development through mentorship with Innovative Communities, to gaining practical insights during the Dell Technologies STEM Aspire programme, I’ve developed a clear vision for building a career in the tech sector.
 
 Motivated by the rapidly evolving technological landscape, I intentionally chose Data Analytics as my specialization within Business Studies, completing modules such as Programming & Visualization, Machine Learning & Advanced Python, Workflow & Data Management, Econometrics, and Forecasting. Beyond university, I’ve also completed external courses in software development, which have further strengthened my technical foundation and reaffirmed my ambition to become a software developer.
@@ -24,7 +24,7 @@ My professional growth is also reflected in my academic projects, most notably, 
 Looking ahead, I plan to develop more code-based projects and pursue courses across the tech space as part of my continuing professional development (CPD), further bridging the gap between my business acumen and technical skill set
 
 Ultimately, I am driven by a commitment to continuous learning, adaptability, and a passion for solving complex problems. My goal is to thrive in a dynamic tech environment where I can contribute meaningfully to a company and continue to grow both personally and professionally.
-</div>
+:::
 
 [Find out more about my interests, community engagement and growth &rarr;](experience.qmd){.btn .btn-outline-warning style="padding: 10px 20px; font-size: 16px; border-radius: 5px; color: #3a3931; display: inline-block;"}
 
