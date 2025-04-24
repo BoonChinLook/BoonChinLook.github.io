@@ -8,6 +8,7 @@ project:
     - reports/solow_model/solow.pdf
     - reports/technological&consumer_changes_in_autombile_industry/autombile.pdf
     - reports/ethical_theory_creation/unified_fulfillment_theory.pdf
+    - code_projects/sql_project/restuarant.sql
 
 
 website:
