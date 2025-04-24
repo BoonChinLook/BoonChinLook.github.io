@@ -3,7 +3,10 @@ title: "Creating an Ethical Theory"
 categories: [Ethics]
 image: "/reports/ethical_theory_creation/ethics.jpg"
 date: '2024-02-07'
-author: "Boon Chin Look"
+author: 
+    - "Boon Chin Look"
+    - "Jack MacNamara"
+  
 
 about:
   template: solana
