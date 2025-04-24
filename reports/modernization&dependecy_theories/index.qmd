@@ -13,5 +13,7 @@ about:
       href: /reports/modernization&dependecy_theories/modernization_dependency.pdf
 ---
 
-This project had critically explored the contrasting perspectives of the Stages of Growth ("modernization") and Dependency schools of thought regarding economic development. It examined the historical, social, and political contexts that shaped each theory, highlighting how these foundations inform their differing understandings of development processes. The analysis also delves into their core arguments and policy recommendations, drawing attention to the unique implications of each perspective for global economic strategies. 
+::: {style="text-align: justify;"}
+This project critically explored the contrasting perspectives of the Stages of Growth ("modernization") and Dependency schools of thought on economic development. It examined the historical, social, and political contexts that shaped each theory, highlighting how these foundations informed their differing interpretations of development processes. The analysis also delved into their core arguments and policy recommendations, drawing attention to the unique implications each perspective held for global economic strategy.
+:::
 

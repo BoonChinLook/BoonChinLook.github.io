@@ -8,6 +8,7 @@ project:
     - reports/solow_model/solow.pdf
     - reports/technological&consumer_changes_in_autombile_industry/autombile.pdf
     - reports/ethical_theory_creation/unified_fulfillment_theory.pdf
+    - code_projects/sql_project/restuarant.sql
 
 
 website:
@@ -49,7 +50,7 @@ website:
         
       - icon: file-earmark-pdf
         text: CV
-        href: assets/Blankforcvtester.pdf
+        href: assets/portfolio_cv.pdf
         target: _blank
   page-footer: 
     left: "© Boon Chin Look, 2025"    

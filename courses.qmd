@@ -7,7 +7,7 @@ page-layout: full
 
 ## Course Certificates
 
-Below is are of some of my certificates and completed courses:
+The following is a list of certificates and professional development courses I’ve completed:
 
 ::: {.panel-tabset}
 

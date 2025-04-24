@@ -1,4 +1,5 @@
 /*-- scss:defaults --*/
+/*-- navbar --*/
 $yellow: #d4c35a;
 $navbar-bg: $yellow;
 $footer-bg: #e8dc92;
@@ -43,9 +44,22 @@ $body-bg: white;
     width: auto;
 }
 
-
+/*-- images --*/
 img {
     border-radius: 5px; /* Adjust this value as needed */
+}
+
+/*-- landing page & about me page fade in text --*/
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.4s ease-in-out forwards;
+  animation-delay: 0.3s;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
 }
 
 /* Container style for the SQL ERD */
@@ -73,7 +87,7 @@ img {
   cursor: pointer;
 }
 
-/*-- Growth & Experiences --*/
+/*-- Growth & Experiences page accordion --*/
 $primary-color: #d4c35a;
 $secondary-color: #6c757d;
 $background-color: #f8f9fa;
@@ -219,10 +233,19 @@ body {
   }
 }
 
-.reveal .slide img {
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: cover;
-  margin: 0 !important;
-  padding: 0 !important;
+/*-- made icon links like github, linkedin, email and cv scale on hover --*/
+.about-links {
+  display: inline-flex;
+
+  a {
+    transition: transform 0.2s ease, color 0.2s ease;
+
+    &:hover {
+      transform: scale(1.05); /* Slightly scale up only the hovered link */
+    }
+
+    i {
+      transition: color 0.2s ease, transform 0.2s ease;
+    }
+  }
 }
