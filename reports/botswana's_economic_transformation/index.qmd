@@ -21,8 +21,6 @@ about:
 
 ---
 
-This group project examined how Botswana successfully leveraged its mineral wealth-especially diamonds to transform from one of the world’s poorest nations into a stable, middle-income economy. It highlights the government's effective resource management, investments in social services, and infrastructure development.
+This group project consisted of writing report and summary video presentation examining how Botswana successfully leveraged its mineral wealth-especially diamonds to transform from one of the world’s poorest nations into a stable, middle-income economy. It highlights the government's effective resource management, investments in social services, and infrastructure development.
 
 The study also explores the risks of overreliance on diamonds and the rise of synthetic alternatives, emphasizing Botswana's strategic shift toward economic diversification. Through initiatives like Vision 2036 and the Economic Reform and Transformation Plan, Botswana is promoting growth in tourism, agriculture, and manufacturing to build a more resilient and inclusive economy. Below, I have attached my presentation slides
-
-<iframe src="/botswana.html" width="100%" height="600px" frameborder="0" allowfullscreen></iframe>
