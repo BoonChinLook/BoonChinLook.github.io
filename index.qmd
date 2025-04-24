@@ -51,8 +51,7 @@ listing:
 ---
 
 ---
-
-::: {#hero-heading}
+::: {#hero-heading class="fade-in"}
 
 Welcome to my Portfolio! <br>Here you will find out about me, my hobbies, what I do, what I aspire to be and what project I have done.
 
