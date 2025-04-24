@@ -200,4 +200,10 @@ body {
   }
 }
 
-
+.reveal .slide img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+  margin: 0 !important;
+  padding: 0 !important;
+}

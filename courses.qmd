@@ -9,6 +9,10 @@ page-layout: full
 
 Below is are of some of my certificates and completed courses:
 
+::: {.panel-tabset}
+
+## Kubicle
+
 | **Subject**                     | **Course Name**                                | **Date Completed**  |
 |---------------------------------|------------------------------------------------|---------------------|
 | Alteryx                         | Alteryx Fundamentals                           | April 18th, 2024    |
@@ -78,5 +82,21 @@ Below is are of some of my certificates and completed courses:
 | Excel                           | Formulas and Functions                         | October 26th, 2022  |
 | Excel                           | Data Manipulation and Formatting               | October 8th, 2022   |
 | Data Literacy                   | Introduction to Data and Databases             | October 7th, 2022   |
+
+## LinkedIn
+
+| **Subject**                  | **Course Name**                                    | **Date Completed**    |
+|------------------------------|----------------------------------------------------|-----------------------|
+| Social Media Marketing       | Social Media Marketing Strategy: TikTok and Instagram Reels | February 5th, 2024    |
+| Instagram Marketing          |  Marketing on Instagram (2021)                     | February 3th, 2024    |
+| Social Media Marketing       |  Social Media Marketing with Facebook and Twitter  | February 2nd, 2024    |
+| Data Science Foundations     |  Data Science Foundations: Fundamentals (2022)     | January 31st, 2024    |
+| Data Analytics               |  Data Analytics for Business Professionals (2022)  | January 28th, 2024    |
+| Big Data                     |  Big Data in the Age of AI (2019)                  | January 28th, 2024    |
+| Business Analytics           |  Introduction to Business Analytics                | January 24th, 2024    |
+| SEO                          |  SEO Foundations                                   | January 23th, 2024    |
+
+
+:::
 
 [Check out my Experiences & Growth page to explore my certifications, involvements and interests! &rarr;](experience.qmd){.btn .btn-outline-warning style="padding: 10px 20px; font-size: 16px; border-radius: 5px; color: #3a3931; display: inline-block;"}

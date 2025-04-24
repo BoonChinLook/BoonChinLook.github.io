@@ -1,14 +1,5 @@
 [
   {
-    "listing": "/code_projects/index.html",
-    "items": [
-      "/code_projects/eportfolio/index.html",
-      "/code_projects/product_proposal/index.html",
-      "/code_projects/fruit_basket_project/index.html",
-      "/code_projects/sql_project/index.html"
-    ]
-  },
-  {
     "listing": "/index.html",
     "items": [
       "/reports/solow_model/index.html",
@@ -30,6 +21,15 @@
       "/reports/botswana's_economic_transformation/index.html",
       "/reports/technological&consumer_changes_in_autombile_industry/index.html",
       "/reports/ethical_theory_creation/index.html"
+    ]
+  },
+  {
+    "listing": "/code_projects/index.html",
+    "items": [
+      "/code_projects/eportfolio/index.html",
+      "/code_projects/product_proposal/index.html",
+      "/code_projects/fruit_basket_project/index.html",
+      "/code_projects/sql_project/index.html"
     ]
   }
 ]
