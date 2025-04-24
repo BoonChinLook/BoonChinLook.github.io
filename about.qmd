@@ -2,7 +2,7 @@
 pagetitle: "About Me"
 title: "Boon Chin Look"
 subtitle: "Data Analytics Student"
-image: assets/profile_picture.webp
+image: assets/image.png
 about: 
     template: trestles
     id: hero-heading
@@ -21,7 +21,6 @@ about:
           target: _blank
 page-layout: article
 ---
-
 ::: {#hero-heading}
 <div class="h1">Hi, nice to meet you!</div>
 <div class="lead">
@@ -37,7 +36,6 @@ I am a final-year Business Studies student specializing in Data Analytics.</div>
 
 * Cooking, baking, and discovering new cuisines fuel my creativity and appreciation for culture.
 :::
-
 ### [My Skills:]{.mark}
 * Programming Languages: Python, HTML, CSS, JavaScript, SQL.
 * Software & Tools: Microsoft Office, GitHub, Alteryx, Tableau, Power BI, Quarto.
