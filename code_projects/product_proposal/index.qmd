@@ -14,13 +14,11 @@ about:
       href: code_projects/product_proposal/individual_report.pdf
       target: _blank
 ---
-This project consisted of group and individual elements. 
+This project encompassed both collaborative and individual components. As a team, we developed a product concept and identified a dataset relevant to our idea. We were required to present our product pitch in the form of a video presentation, which I have embedded on the first page of the PDF above containing my individual report. 
 
-Within the group side we agreed on a product idea and found a dataset related to our product idea, we had to pitch our product in the form of a video presentation which is embedded within the first page of our pdf of our individual report. This had to be an application for students with finance, innovation and entriprise elements.
+The product needed to be an application designed for students, incorporating elements of finance, innovation, and enterprise. On the individual side, each team member was tasked with detailing the technical aspects of our pitch, including data analysis, identifying the market gap, understanding our target customers, and outlining the product's sales strategy. While some aspects could be shared among team members, it was essential to include our own unique contributions within the assignment.
 
-Within the individual side we had to write the main technicialities about our pitch such as the data analysis, the gap within the market, our customers and how we'll sell our product. We could have shared elements within the group, however we'd to have our own touches too within the assignment.
-
-Below are the main snipets of code that aided our teamsdecisions for identifying the gap within the market:
+Below are key snippets of code processed from a dataset that supported our team's decision-making process in identifying the market gap, which I primarily analyzed for my team:
 
 # Importing Data and Intial Analysis
 ```{python}

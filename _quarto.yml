@@ -7,6 +7,7 @@ project:
     - reports/modernization&dependecy_theories/modernization_dependency.pdf
     - reports/solow_model/solow.pdf
     - reports/technological&consumer_changes_in_autombile_industry/autombile.pdf
+    - reports/ethical_theory_creation/unified_fulfillment_theory.pdf
 
 
 website:
@@ -25,9 +26,17 @@ website:
           - text: Written Projects
             href: reports/index.qmd
 
+      - text: Professional Development
+        icon: pencil
+        href: courses.qmd
+
       - text: Experiences & Growth
         icon: lightbulb
         href: experience.qmd
+
+      - text: Future Goals
+        icon: star
+        href: future_goals.qmd
 
       - text: About
         icon: people
@@ -43,7 +52,7 @@ website:
         target: _blank
   page-footer: 
     left: "© Boon Chin Look, 2025"    
-    right: "Built with [Quarto](https://quarto.org/)" 
+    right: "Built with [Quarto](https://quarto.org/)"  
 
         
 format:

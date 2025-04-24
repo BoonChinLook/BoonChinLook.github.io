@@ -2,7 +2,7 @@
 pagetitle: "About Me"
 title: "Boon Chin Look"
 subtitle: "Data Analytics Student"
-image: assets/cat.jpg
+image: assets/profile_picture.webp
 about: 
     template: trestles
     id: hero-heading

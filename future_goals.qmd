@@ -1,0 +1,31 @@
+---
+title: "Future Pathway: Pursuing a Career in Technology"
+format:
+  html:
+    page-layout: article
+image: "assets/bends_ahead_sign.jpg"
+about: 
+    template: solana
+    links:
+        - icon: linkedin
+          text: Contact me on Linkedin
+          href: https://www.linkedin.com/in/boon-chin-l-13b104193/
+          target: _blank
+
+---
+
+<div style="text-align: justify;">
+With a foundation in Business with Data Analytics and a growing passion for technology, my future is shaped by both strategic intent and hands-on experience. From early exposure to roles in software development through mentorship with Innovative Communities, to gaining practical insights during the Dell Technologies STEM Aspire programme, I’ve developed a  vison of  building a career in the technology sectory.
+
+Motivated by the rapidly evolving technological landscape, I had intentionally chosen Data Analytics as my university specialization within Business Studies, completing modules such as Programming & Visualization, Machine Learning & Advanced Python, Workflow & Data Management, Econometrics, and Forecasting. Moreover, outside of university, I completed courses in software development. These experiences have strengthened my technical foundation and reaffirmed my ambition to pursue a career as a software developer.
+
+My professional growth is also reflected in my academic projects, developing a Quarto-based ePortfolio hosted on GitHub Pages (this website). This not only sharpened my web development and version control skills but also allowed me to showcase my journey and capabilities in a structured, industry-relevant format.
+
+Looking ahead, I plan to develop more code-based projects and persue courses around the technology space as part of continuing professional development (CPD), bridging the gap between my business acumen and technical skill set
+
+Ultimately, I am driven by a commitment to continuous learning, adaptability, and a passion for solving complex problems. My goal is to thrive in a dynamic tech environment where I can contribute meaningfully and continously learn.
+</div>
+
+[Find out more about my interests, community engagement and growths &rarr;](experience.qmd){.btn .btn-outline-warning style="padding: 10px 20px; font-size: 16px; border-radius: 5px; color: #3a3931; display: inline-block;"}
+
+[Explore the short courses I’ve completed &rarr;](courses.qmd){.btn .btn-outline-warning style="padding: 10px 20px; font-size: 16px; border-radius: 5px; color: #3a3931; display: inline-block;"}
