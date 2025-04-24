@@ -7,12 +7,31 @@ $navbar-link-color: #3a3931;
 .navbar a {
   color: $navbar-link-color;
   text-decoration: none;
-  transition: transform 0.3s ease, color 0.3s ease;
+  transition: transform 0.2s ease, color 0.2s ease;
 
   &:hover {
     color: darken($navbar-link-color, 5%);
     text-decoration: underline;
     transform: scale(1.05);
+  }
+
+  &:active {
+    ~ .navbar-brand img {
+      animation: bounce 0.5s forwards;
+    }
+  }
+}
+
+.navbar-brand img {
+  animation: bounce 0.5s forwards;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
   }
 }
 

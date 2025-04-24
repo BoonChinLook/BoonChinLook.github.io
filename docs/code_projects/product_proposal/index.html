@@ -60,7 +60,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script><script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
@@ -74,7 +73,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-50e724f4f9e9710c57f5a70865418475.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-3f9a4549e025acb9c1bd63add0892f47.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -104,7 +103,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
 
+
+
 <script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+
 
 
 </head>
@@ -147,9 +149,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </ul>
   </li>
   <li class="nav-item">
+    <a class="nav-link" href="../../courses.html"> <i class="bi bi-pencil" role="img">
+</i> 
+<span class="menu-text">Professional Development</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="../../experience.html"> <i class="bi bi-lightbulb" role="img">
 </i> 
 <span class="menu-text">Experiences &amp; Growth</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../future_goals.html"> <i class="bi bi-star" role="img">
+</i> 
+<span class="menu-text">Future Goals</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../about.html"> <i class="bi bi-people" role="img">
@@ -216,7 +228,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Below are the main snipets of code that aided our teamsdecisions for identifying the gap within the market:</p>
 <section id="importing-data-and-intial-analysis" class="level1">
 <h1>Importing Data and Intial Analysis</h1>
-<div id="3598458c" class="cell" data-execution_count="1">
+<div id="e689e462" class="cell" data-execution_count="1">
 <details class="code-fold">
 <summary>Importing librarys</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
@@ -225,7 +237,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<div id="73580efc" class="cell" data-execution_count="2">
+<div id="bf902bdc" class="cell" data-execution_count="2">
 <details class="code-fold">
 <summary>Importing dataset</summary>
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="st">"UberDataset.csv"</span>)</span>
@@ -303,7 +315,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<div id="bdf2ef38" class="cell" data-execution_count="3">
+<div id="eae02a7f" class="cell" data-execution_count="3">
 <details class="code-fold">
 <summary>Looking at data types of columns</summary>
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>df.info()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -325,7 +337,7 @@ dtypes: float64(1), object(6)
 memory usage: 63.3+ KB</code></pre>
 </div>
 </div>
-<div id="8a9ce3ec" class="cell" data-execution_count="4">
+<div id="f80b9d2d" class="cell" data-execution_count="4">
 <details class="code-fold">
 <summary>Standardize column names to lowercase for consistency</summary>
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>df.columns <span class="op">=</span> df.columns.<span class="bu">str</span>.lower()</span>
@@ -403,7 +415,7 @@ memory usage: 63.3+ KB</code></pre>
 </div>
 </div>
 </div>
-<div id="0ac7fc69" class="cell" data-execution_count="5">
+<div id="7b7dff59" class="cell" data-execution_count="5">
 <details class="code-fold">
 <summary>Checking for missing values in the dataset</summary>
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>df.isnull().<span class="bu">sum</span>()</span>
@@ -420,7 +432,7 @@ purpose       502
 dtype: int64</code></pre>
 </div>
 </div>
-<div id="7d1cb4d6" class="cell" data-execution_count="6">
+<div id="2a5c6bc7" class="cell" data-execution_count="6">
 <details class="code-fold">
 <summary>Simple descriptive statistics of each numerical column</summary>
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>df.describe()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -476,7 +488,7 @@ dtype: int64</code></pre>
 </section>
 <section id="data-cleaning" class="level1">
 <h1>Data Cleaning</h1>
-<div id="27d4f43c" class="cell" data-execution_count="7">
+<div id="c72272dc" class="cell" data-execution_count="7">
 <details class="code-fold">
 <summary>Checked &amp; removed duplicates</summary>
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>duplicated_data <span class="op">=</span> df[df.duplicated()]</span>
@@ -488,20 +500,20 @@ dtype: int64</code></pre>
 <pre><code>(1, 7)</code></pre>
 </div>
 </div>
-<div id="51e8b2e0" class="cell" data-execution_count="8">
+<div id="4c8e6fa2" class="cell" data-execution_count="8">
 <details class="code-fold">
 <summary>Encode categorical variables using one-hot encoding</summary>
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>data_encoded <span class="op">=</span> pd.get_dummies(df, columns<span class="op">=</span>[<span class="st">'category'</span>, <span class="st">'purpose'</span>], drop_first<span class="op">=</span><span class="va">True</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<div id="76e9977c" class="cell" data-execution_count="9">
+<div id="7e269043" class="cell" data-execution_count="9">
 <details class="code-fold">
 <summary>Converted date columns into date time</summary>
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"start_date"</span>] <span class="op">=</span> pd.to_datetime(df[<span class="st">"start_date"</span>], errors<span class="op">=</span><span class="st">"coerce"</span>)</span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"end_date"</span>] <span class="op">=</span> pd.to_datetime(df[<span class="st">"end_date"</span>], errors<span class="op">=</span><span class="st">"coerce"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<div id="4238bd6e" class="cell" data-execution_count="10">
+<div id="cde5bba5" class="cell" data-execution_count="10">
 <details class="code-fold">
 <summary>Handling missing values</summary>
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Handle missing values by dropping rows with missing 'start' or 'stop' and filling 'purpose' with 'unknown'</span></span>
@@ -509,13 +521,13 @@ dtype: int64</code></pre>
 <span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>df[<span class="st">'purpose'</span>] <span class="op">=</span> df[<span class="st">'purpose'</span>].fillna(<span class="st">"Unknown"</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<div id="30ac5e6d" class="cell" data-execution_count="11">
+<div id="c72e73f3" class="cell" data-execution_count="11">
 <details class="code-fold">
 <summary>Feature engineering, created new column for trip date</summary>
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"date"</span>] <span class="op">=</span> df[<span class="st">"start_date"</span>].dt.date</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<div id="9f287249" class="cell" data-execution_count="12">
+<div id="58eef27c" class="cell" data-execution_count="12">
 <details class="code-fold">
 <summary>Ensured the dataset is sorted by date</summary>
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> df.sort_values(<span class="st">'start_date'</span>)</span>
@@ -525,7 +537,7 @@ dtype: int64</code></pre>
 </section>
 <section id="analysis" class="level1">
 <h1>Analysis</h1>
-<div id="a0a9a01f" class="cell" data-execution_count="13">
+<div id="2298684d" class="cell" data-execution_count="13">
 <details class="code-fold">
 <summary>Returns first few rows of dataset to check</summary>
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>df.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -612,7 +624,7 @@ dtype: int64</code></pre>
 </div>
 </div>
 </div>
-<div id="b6da1ef8" class="cell" data-execution_count="14">
+<div id="84bdbecc" class="cell" data-execution_count="14">
 <details class="code-fold">
 <summary>Plot trip frequency over time plot code</summary>
 <div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">11</span>, <span class="dv">7</span>))</span>
@@ -632,7 +644,7 @@ dtype: int64</code></pre>
 </div>
 </div>
 </div>
-<div id="90bb055b" class="cell" data-execution_count="15">
+<div id="5aad47c4" class="cell" data-execution_count="15">
 <details class="code-fold">
 <summary>Top 10 most common pickup and drop-off locations plot code</summary>
 <div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>top_pickups <span class="op">=</span> df[<span class="st">"start"</span>].value_counts().head(<span class="dv">10</span>)</span>
@@ -660,7 +672,7 @@ dtype: int64</code></pre>
 </div>
 </div>
 </div>
-<div id="405eb1b8" class="cell" data-execution_count="16">
+<div id="2551d055" class="cell" data-execution_count="16">
 <details class="code-fold">
 <summary>code for plot of count of trips by purpose</summary>
 <div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>trip_purpose_counts <span class="op">=</span> df[<span class="st">"purpose"</span>].value_counts()</span>
@@ -682,7 +694,7 @@ dtype: int64</code></pre>
 </div>
 </div>
 </div>
-<div id="cde2129e" class="cell" data-execution_count="17">
+<div id="c6329aee" class="cell" data-execution_count="17">
 <details class="code-fold">
 <summary>code for plot of average trip distance by purpose</summary>
 <div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>avg_miles_purpose <span class="op">=</span> df.groupby(<span class="st">"purpose"</span>)[<span class="st">"miles"</span>].mean().sort_values()</span>
@@ -702,7 +714,7 @@ dtype: int64</code></pre>
 </div>
 </div>
 </div>
-<div id="1ea2727a" class="cell" data-execution_count="18">
+<div id="9390d5e4" class="cell" data-execution_count="18">
 <details class="code-fold">
 <summary>Plot for hourly trip analysis of the day</summary>
 <div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"hour"</span>] <span class="op">=</span> df.index.hour</span>
@@ -722,7 +734,7 @@ dtype: int64</code></pre>
 </div>
 </div>
 </div>
-<div id="26a517b3" class="cell" data-execution_count="19">
+<div id="71e063bf" class="cell" data-execution_count="19">
 <details class="code-fold">
 <summary>Code for plot of Trip category to number of trips distribution</summary>
 <div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">9</span>, <span class="dv">5</span>))</span>

@@ -16,6 +16,7 @@ website:
   #back to top button - will get feedback and see should I create a button instead on it
   back-to-top-navigation: true
   navbar:
+    pinned: true
     logo: assets/sitelogo.PNG
     right:
       - text: Projects
