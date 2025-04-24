@@ -19,6 +19,9 @@ about:
           text: CV
           href: assets/Blankforcvtester.pdf
           target: _blank
+        - icon: envelope
+          text: Email
+          href: mailto:boon.look3@mail.dcu.ie
 page-layout: article
 ---
 ::: {#hero-heading}

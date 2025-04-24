@@ -49,6 +49,7 @@ img {
     border-radius: 5px; /* Adjust this value as needed */
 }
 
+/*-- landing page fade in text --*/
 .fade-in {
   opacity: 0;
   animation: fadeIn 1s ease-in-out forwards;
@@ -60,8 +61,6 @@ img {
     opacity: 1;
   }
 }
-
-
 
 /* Container style for the SQL ERD */
 .sql-erd {
@@ -88,7 +87,7 @@ img {
   cursor: pointer;
 }
 
-/*-- Growth & Experiences --*/
+/*-- Growth & Experiences page accordion --*/
 $primary-color: #d4c35a;
 $secondary-color: #6c757d;
 $background-color: #f8f9fa;
@@ -234,10 +233,19 @@ body {
   }
 }
 
-.reveal .slide img {
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: cover;
-  margin: 0 !important;
-  padding: 0 !important;
+
+.about-links {
+  display: inline-flex;
+
+  a {
+    transition: transform 0.2s ease, color 0.2s ease;
+
+    &:hover {
+      transform: scale(1.05); /* Slightly scale up only the hovered link */
+    }
+
+    i {
+      transition: color 0.2s ease, transform 0.2s ease;
+    }
+  }
 }
