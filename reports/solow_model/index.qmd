@@ -9,7 +9,7 @@ about:
   template: solana
   links:
     - icon: file-earmark-pdf
-      text: Theories Analysis PDF
+      text: Solow Model Analysis PDF
       href: reports/solow_model/solow.pdf
 ---
 
