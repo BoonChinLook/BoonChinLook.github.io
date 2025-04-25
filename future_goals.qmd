@@ -19,7 +19,7 @@ With a foundation in Business with Data Analytics and a growing passion for tech
 
 Motivated by the rapidly evolving technological landscape, I intentionally chose Data Analytics as my specialization within Business Studies, completing modules such as Programming & Visualization, Machine Learning & Advanced Python, Workflow & Data Management, Econometrics, and Forecasting. Beyond university, I’ve also completed external courses in software development, which have further strengthened my technical foundation and reaffirmed my ambition to become a software developer.
 
-My professional growth is also reflected in my academic projects, most notably, the development of a Quarto-based ePortfolio hosted on GitHub Pages (this website). This project sharpened my skills in web development and version control while providing a structured and industry-relevant way to showcase my journey and capabilities.
+My professional growth is also reflected in my academic projects, most notably, the development of a Quarto-based ePortfolio hosted on GitHub Pages (this website). This project sharpened my skills in web development and version control while providing a structured and industry-relevant way to showcase my journey and capabilities. It gave me valuable insight into my progress; where I started, where I am now, and where I aspire to be in the future.
 
 Looking ahead, I plan to develop more code-based projects and pursue courses across the tech space as part of my continuing professional development (CPD), further bridging the gap between my business acumen and technical skill set
 
