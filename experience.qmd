@@ -14,6 +14,7 @@ about:
           target: _blank
 ---
 
+
 ::: {style="text-align: justify;"}
 Throughout my time at university, I’ve actively sought opportunities to grow both personally and professionally through diverse experiences in work, volunteering, and sport.
 
@@ -30,7 +31,7 @@ Driven by a passion for continuous learning, I participated in Dell Technologies
   <span class="dropdown-icon">+</span> <!-- Plus icon -->
 </button>
 <div class="panel">
-  <div class="timeline">
+  <div class="timeline" style="text-align: justify;">
     <div class="timeline-item">
         <div class="timeline-icon">
           <img src="assets/runamuck.jpg" alt="Running">
@@ -41,7 +42,7 @@ Driven by a passion for continuous learning, I participated in Dell Technologies
             <h3>Fitness</h3>
           </div>
           <p>Last year, I organized and participated in a 11km obstacle course (Runamuck Challenge) with minimal training, an experience that was both challenging and rewarding.</p>
-          <p>Since then, I’ve committed to regular running and gym workouts to improve my endurance. This year, I’m taking on the 13km Hell & Back obstacle course—better prepared and encouraging more colleagues to take on the challenge with me.</p>
+          <p>Since then, I’ve committed to regular running and gym workouts to improve my endurance. This year, I’m taking on the 13km Hell & Back obstacle course, better prepared and encouraging more colleagues to take on the challenge with me.</p>
           <span class="timeline-date">2024–Present, Dublin, Ireland</span>
         </div>
       </div>
@@ -99,7 +100,7 @@ Driven by a passion for continuous learning, I participated in Dell Technologies
   <span class="dropdown-icon">+</span> <!-- Plus icon -->
 </button>
 <div class="panel">
-  <div class="timeline">
+    <div class="timeline" style="text-align: justify;">
     <div class="timeline-item">
       <div class="timeline-icon">
         <img src="assets/babyacademylogo.jpg" alt="Baby Academy Logo">
@@ -167,7 +168,7 @@ Driven by a passion for continuous learning, I participated in Dell Technologies
   <span class="dropdown-icon">+</span> <!-- Plus icon -->
 </button>
 <div class="panel">
-  <div class="timeline">
+    <div class="timeline" style="text-align: justify;">
       <div class="timeline-item">
         <div class="timeline-icon">
           <img src="/assets/cupcakes.PNG" alt="Red Velvet Cupcakes">
@@ -256,7 +257,7 @@ Driven by a passion for continuous learning, I participated in Dell Technologies
   <span class="dropdown-icon">+</span> <!-- Plus icon -->
 </button>
 <div class="panel">
-  <div class="timeline">
+  <div class="timeline" style="text-align: justify;">
     <div class="timeline-item">
       <div class="timeline-icon">
         <img src="/assets/RSA.jpg" alt="RSA Logo">

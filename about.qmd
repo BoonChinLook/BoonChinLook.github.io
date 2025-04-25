@@ -33,7 +33,7 @@ I thrive on problem‑solving, drawing data‑driven insights, and continuous le
 
 [Beyond Academics:]{.mark .underline}
 
-::: {.justify-text}
+::: {style="text-align: justify;"}
 Outside the lecture hall, I’m passionate about rock climbing, fitness, and the arts, activities that push my boundaries mentally and physically. 
 
 I’m also a keen cook and baker; experimenting in the kitchen fuels my creativity and deepens my appreciation for global cultures. Whether on a climbing wall or behind the stove, I love challenges that spark growth and curiosity.
