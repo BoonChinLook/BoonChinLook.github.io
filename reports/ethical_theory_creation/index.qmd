@@ -12,7 +12,7 @@ about:
   template: solana
   links:
     - icon: file-earmark-pdf
-      text: Unified Fufillment Theory (UFT) pdf
+      text: Unified Fulfilment Theory (UFT) PDF
       href: /reports/ethical_theory_creation/unified_fulfillment_theory.pdf
 ---
 
@@ -21,5 +21,5 @@ As part of a Business and Professional Ethics module, we were assigned a paired 
 
 Through collaborative dialogue and thoughtful exchange of ideas, my partner and I explored philosophical principles to craft a coherent and creative ethical theory. This process involved naming our theory, defining its core inspiration, critically comparing it with existing frameworks, and demonstrating its application in a real-world scenario.
 
-Deep thinking, creativity, and teamwork were central to this assignment, culminating in the development of our theory: the Unified Fulfillment Theory (UFT).
+Deep thinking, creativity, and teamwork were central to this assignment, culminating in the development of our theory: the Unified Fulfilment Theory (UFT).
 :::

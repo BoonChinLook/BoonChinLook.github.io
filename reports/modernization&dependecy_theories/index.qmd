@@ -9,7 +9,7 @@ about:
   template: solana
   links:
     - icon: file-earmark-pdf
-      text: Theories Analysis pdf
+      text: Theories Analysis PDF
       href: /reports/modernization&dependecy_theories/modernization_dependency.pdf
 ---
 

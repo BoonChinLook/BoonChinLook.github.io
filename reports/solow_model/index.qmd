@@ -9,12 +9,12 @@ about:
   template: solana
   links:
     - icon: file-earmark-pdf
-      text: Theories Analysis pdf
+      text: Theories Analysis PDF
       href: reports/solow_model/solow.pdf
 ---
 
 ::: {style="text-align: justify;"}
-This report reflects on the Solow Model of economic growth, exploring its key insights and limitations. It highlights the model’s focus on capital accumulation, labor, and technological progress as primary drivers of growth, while also addressing its shortcomings, such as the exogenous nature of technological progress and limited consideration of trade, inequality, and human capital. By integrating academic literature, this report offers a nuanced critique of the model’s theoretical foundations and its practical relevance in today’s economic context.
+This report reflects on the Solow Model of economic growth, exploring its key insights and limitations. It highlights the model’s focus on capital accumulation, labour, and technological progress as primary drivers of growth, while also addressing its shortcomings, such as the exogenous nature of technological progress and limited consideration of trade, inequality, and human capital. By integrating academic literature, this report offers a nuanced critique of the model’s theoretical foundations and its practical relevance in today’s economic context.
 :::
 
 

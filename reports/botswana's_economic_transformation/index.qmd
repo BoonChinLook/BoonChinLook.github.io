@@ -1,6 +1,6 @@
 ---
 title: "Botswana's Economic Transformation through mineral wealth"
-categories: [Economics, Slides]
+categories: [Economics, Presentation]
 image: "/reports/botswana's_economic_transformation/botswana.jpg"
 date: '2024-10-20'
 author: 
@@ -13,7 +13,7 @@ about:
   template: solana
   links:
     - icon: file-earmark-pdf
-      text: Botswana Analysis pdf
+      text: Botswana Analysis PDF
       href: reports/botswana's_economic_transformation/botswana.pdf
     - icon: file-earmark-pdf
       text: Video Presentation
