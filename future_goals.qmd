@@ -21,7 +21,7 @@ Motivated by the rapidly evolving technological landscape, I intentionally chose
 
 My professional growth is also reflected in my academic projects, most notably, the development of a Quarto-based ePortfolio hosted on GitHub Pages (this website). This project sharpened my skills in web development and version control while providing a structured and industry-relevant way to showcase my journey and capabilities. It gave me valuable insight into my progress; where I started, where I am now, and where I aspire to be in the future.
 
-Looking ahead, I plan to develop more code-based projects and pursue courses across the tech space as part of my continuing professional development (CPD), further bridging the gap between my business acumen and technical skill set
+Looking ahead, I plan to develop more code-based projects and pursue courses across the tech space as part of my continuing professional development (CPD), further bridging the gap between my business acumen and technical skill set.
 
 Ultimately, I am driven by a commitment to continuous learning, adaptability, and a passion for solving complex problems. My goal is to thrive in a dynamic tech environment where I can contribute meaningfully to a company and continue to grow both personally and professionally.
 :::
