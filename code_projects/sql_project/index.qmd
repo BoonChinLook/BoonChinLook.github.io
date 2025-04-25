@@ -1,9 +1,13 @@
 ---
-title: "SQL Project"
+title: "SQL Project - Restaurant Order Management Database"
+code-fold: true
+code-block-border-left: " #e8dc92"
+code-block-bg: "rgb(249, 246, 232)"
 author: "Boon Chin Look"
 categories: [SQL]
 image: "/code_projects/sql_project/restaurant.jpg"
 date: '2023-11-20'
+lightbox: auto
 
 about:
   template: solana
@@ -15,24 +19,223 @@ about:
         
 ---
 
-This project was developed during an 8-week course introducing SQL by Girls Code First. Through this course, I acquired fundamental SQL skills and completed an individual assignment covering various topics, including:
+::: {style="text-align: justify;"}
+This project was developed as part of an 8-week introduction to the structured query language (SQL) course hosted by Girls Code First. Throughout the course, I built foundational SQL skills through hands-on learning and completed an individual assignment that covered topics such as:
 
-*   SQL coding and database management techniques.
-*   Data analysis.
-*   Analyzing data from complex structures.
-*   Data manipulation with SQL programming language.
-*   Data management using SQL coding techniques.
-*   Database design and data visualisation.
-*   Project presentation.
+* SQL coding and database management techniques.
 
+* Data analysis and manipulation
 
+* Working with complex data structures
 
-<div class="sql-erd">
-  <a href="/code_projects/sql_project/erd.png" target="_blank">
-    ![SQL ERD](/code_projects/sql_project/erd.png){.gallery}
-  </a>
-</div>
+* Database design and data visualization
 
+* Project presentation and reporting
+::: 
 
+::: {style="text-align: center;"}
+![](/code_projects/sql_project/erd.png){.gallery}
+:::
 
-For my project, I designed a database focused on restaurant order management. This involved implementing foreign and primary keys and creating an Entity-Relationship (EER) diagram.
+####  Final Project: SQL ERD – Restaurant Order Management
+For my final project, I designed a relational database centered around restaurant order management. This involved implementing key database concepts such as primary and foreign keys, and developing an Enhanced Entity-Relationship (EER) diagram to visually represent the system structure.
+
+The project gave me the opportunity to apply theoretical concepts in a real-world scenario, significantly enhancing both my technical proficiency and confidence in structured data management.
+Below, you can find code snippets used to create the database tables and their relationships.
+
+```{.sql}
+-- Creates the restaurant Database
+Create Database restaurant;
+```
+
+```{.sql}
+-- Creates the Customer table
+CREATE TABLE Customer (
+    custid INT PRIMARY KEY,
+    cust_firstname VARCHAR(50) NOT NULL,
+    cust_lastname VARCHAR(50) NOT NULL
+);
+
+```
+
+```{.sql}
+-- Selects all values from the Customers table within the restaurant database
+SELECT * FROM restaurant.customer;
+```
+
+```{.sql}
+-- Insert values into the Customer table
+INSERT INTO Customer (custid, cust_firstname, cust_lastname)
+VALUES
+    (1, 'John', 'Soda'),
+    (2, 'Jane', 'Smith'),
+    (3, 'Michael', 'Johnson'),
+    (4, 'Emily', 'Brown'),
+    (5, 'Robert', 'Wilson');
+```
+
+```{.sql}
+-- Create the Cashier table
+CREATE TABLE Cashier (
+    cashier_id INT PRIMARY KEY,
+    cashier_name VARCHAR(50) NOT NULL,
+    hourly_wage DECIMAL(10, 2) NOT NULL
+);
+```
+
+```{.sql}
+-- Create the Cashier table
+CREATE TABLE Cashier (
+    cashier_id INT PRIMARY KEY,
+    cashier_name VARCHAR(50) NOT NULL,
+    hourly_wage DECIMAL(10, 2) NOT NULL
+);
+```
+
+```{.sql}
+-- Selects all values from the Cashier table within the restaurant database
+SELECT * FROM restaurant.cashier; 
+```
+
+```{.sql}
+-- Insert values into the Cashier table
+INSERT INTO Cashier (cashier_id, cashier_name, hourly_wage)
+VALUES
+    (1, 'Jay', 10),
+    (2, 'Samuel', 10.25),
+    (3, 'Noel', 11),
+    (4, 'Jill', 10.25),
+    (5, 'Philip', 12);
+```
+
+```{.sql}
+-- Create the Address table
+CREATE TABLE Address (
+    address_id INT PRIMARY KEY,
+    delivery_address1 VARCHAR(200) NOT NULL,
+    delivery_address2 VARCHAR(200),
+    delivery_city VARCHAR(50) NOT NULL,
+    delivery_eircode VARCHAR(10) NOT NULL
+);
+```
+
+```{.sql}
+-- Selects all values from the Address table within the restaurant database
+SELECT * FROM restaurant.address;
+```
+
+```{.sql}
+-- Insert values into the Address table
+INSERT INTO Address (address_id, delivery_address1, delivery_address2, delivery_city, delivery_eircode)
+VALUES
+    (1, '123 Main Street', NULL, 'City A', 'EIR123'),
+    (2, '456 Elm Street', 'Apt 101', 'City B', 'EIR456'),
+    (3, '789 Oak Street', NULL, 'City C', 'EIR789'),
+    (4, '321 Pine Street', 'Suite 5', 'City D', 'EIR321'),
+    (5, '654 Birch Street', 'Apt 202', 'City E', 'EIR654');
+```
+
+```{.sql}
+-- Create the Item table
+CREATE TABLE Item (
+    itemID INT PRIMARY KEY,
+    cashier_id INT NOT NULL,
+    custid INT NOT NULL,
+    address_id INT NOT NULL,
+    totalcost decimal(5, 2) NOT NULL,
+    FOREIGN KEY (cashier_id) REFERENCES Cashier(cashier_id),
+    FOREIGN KEY (custid) REFERENCES Customer(custid),
+    FOREIGN KEY (address_id) REFERENCES Address(address_id)
+);
+```
+
+```{.sql}
+-- Selects all values from the Item table within the restaurant database
+SELECT * FROM restaurant.item;
+```
+
+```{.sql}
+-- Insert values into the Item table
+INSERT INTO Item (itemID, cashier_id, custid, address_id, totalcost)
+VALUES
+    (1, 3, 1, 1, 25.50),
+    (2, 1, 2, 2, 30.75),
+    (3, 1, 3, 3, 18.90),
+    (4, 2, 4, 4, 42.25),
+    (5, 1, 5, 5, 22.60);
+```
+
+```{.sql}
+-- Create the Mealone table
+CREATE TABLE Mealone (
+    itemID INT PRIMARY KEY,
+    Fruit_Cocktail VARCHAR(50),
+    FOREIGN KEY (itemID) REFERENCES Item(itemID)
+);
+```
+
+```{.sql}
+-- Selects all values from the Mealone table within the restaurant database
+SELECT * FROM restaurant.mealone;
+```
+
+```{.sql}
+-- Insert values into the Mealone table
+INSERT INTO Mealone (itemID, Fruit_Cocktail)
+VALUES
+    (1, 'Tropical Fruit Cocktail'),
+    (2, 'Mixed Berry Cocktail'),
+    (3, 'Pineapple and Mango Cocktail'),
+    (4, 'Exotic Fruit Delight'),
+    (5, 'Watermelon and Cantaloupe');
+```
+
+```{.sql}
+-- Create the Mealtwo table
+CREATE TABLE Mealtwo (
+    itemID INT PRIMARY KEY,
+    Fruits VARCHAR(50),
+    FOREIGN KEY (itemID) REFERENCES Item(itemID)
+);
+```
+
+```{.sql}
+-- Selects all values from the Mealtwo table within the restaurant database
+SELECT * FROM restaurant.mealtwo;
+```
+
+```{.sql}
+-- Insert values into the Mealtwo table
+INSERT INTO Mealtwo (itemID, Fruits)
+VALUES
+    (1, 'Tropical Fruit Cocktail'),
+    (2, 'Strawberries and Kiwi'),
+    (3, 'Bananas and Grapes'),
+    (4, 'Watermelon and Cantaloupe'),
+    (5, 'Exotic Fruit Delight');
+```
+
+```{.sql}
+-- Create the Mealthree table
+CREATE TABLE Mealthree (
+    itemID INT PRIMARY KEY,
+    Fruitsalad VARCHAR(50),
+    FOREIGN KEY (itemID) REFERENCES Item(itemID)
+);
+```
+
+```{.sql}
+-- Selects all values from the Mealthree table within the restaurant database
+SELECT * FROM restaurant.mealthree;
+```
+
+```{.sql}
+-- Insert values into the Mealthree table
+INSERT INTO Mealthree (itemID, Fruitsalad)
+VALUES
+    (1, 'Tropical Fruit Cocktail'),
+    (2, 'Tropical Fruitsalad'),
+    (3, 'Citrus Fruitsalad'),
+    (4, 'Citrus Fruit Medley'),
+    (5, 'Berry Fruitsalad');
+```

@@ -1,7 +1,7 @@
 Create Database restaurant;
 Use restaurant; 
 
--- Create the Customer table
+-- Creates the Customer table
 CREATE TABLE Customer (
     custid INT PRIMARY KEY,
     cust_firstname VARCHAR(50) NOT NULL,

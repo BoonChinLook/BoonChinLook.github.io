@@ -1,5 +1,5 @@
 ---
-title: "Fruit Basket Project"
+title: "JavaScript Project: Interactive Fruit Shop Basket"
 author: "Boon Chin Look"
 categories: [Javascript]
 image: "/code_projects/fruit_basket_project/fruitshop.jpg"
@@ -9,16 +9,18 @@ about:
   template: solana
 
 ---
-This project was developed during an 8-week introduction to JavaScript course offered by Girls Code First. Throughout the course, I gained proficiency in JavaScript fundamentals and collaborated on a group project covering various topics, including:
+
+::: {style="text-align: justify;"}
+This project was developed during an 8-week Introduction to JavaScript course offered by Girls Code First. Throughout the course, I built a solid foundation in JavaScript fundamentals while working collaboratively on a group project. Key topics covered included:
 
 *   Conditional logical and functions.
 *   Arrays and loops.
-*   JavaScript for websites: DOM part 1.
-*   JavaScript for websites: DOM part 2.
-*   Project Initiation.
-*   Building your app.
-*   Project Presentation.
+*   JavaScript for websites: Document Object Model manipulation (Parts 1 & 2).
+*   Project planning and presentation
 
-Our final pair, a [fruit shop basket](https://codepen.io/Boon-Chin-Look/pen/qBgdpPz){target="_blank"}, was completed within a 2-week deadline.
+For our final project, my partner and I created an interactive [fruit shop basket](https://codepen.io/Boon-Chin-Look/pen/qBgdpPz){target="_blank"}, completed within a 2-week deadline. 
 
-In this project, a interactive shopping experience was created. Upon entering the interface, users are greeted by their name and prompted to give an item they would like to purchase. If an item is unavailable, an apology message is displayed. Furthermore, the shop dynamically calculates the contents of the user's basket.
+The app offers a simple and engaging shopping experience. When a user enters the site, they are greeted by name and prompted to enter an item they'd like to purchase. If the item is unavailable, a friendly apology message is shown. The application also dynamically calculates the contents and total of the user's basket, enhancing interactivity and usability.
+
+This project strengthened my understanding of DOM manipulation, user interaction, and the value of clear project planning under time constraints. It was also a great opportunity to collaborate and apply theory to a fun, practical outcome.
+::: 

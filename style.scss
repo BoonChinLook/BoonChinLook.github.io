@@ -62,31 +62,6 @@ img {
   }
 }
 
-/* Container style for the SQL ERD */
-.sql-erd {
-  display: flex; /* Enables flexible box layout */
-  justify-content: center; /* Centers the image horizontally */
-  align-items: center; /* Centers the image vertically (optional) */
-  padding: 20px; /* Adds padding around the container */
-  background-color: #f9f9f9; /* Optional: Adds a background color */
-}
-
-/* Style for the SQL ERD image */
-.sql-erd img {
-  width: 500px; /* Adjust width to make the image bigger */
-  height: auto; /* Maintains the image's aspect ratio */
-  object-fit: contain; /* Ensures the entire image is displayed */
-  border-radius: 10px; /* Optional: Adds rounded edges */
-  transition: transform 0.3s ease; /* Smooth hover effect */
-  margin: 10px; /* Adds spacing around the image */
-}
-
-/* Hover effect for interactivity */
-.sql-erd img:hover {
-  transform: scale(1.1); /* Slightly enlarge the image on hover */
-  cursor: pointer;
-}
-
 /*-- Growth & Experiences page accordion --*/
 $primary-color: #d4c35a;
 $secondary-color: #6c757d;
