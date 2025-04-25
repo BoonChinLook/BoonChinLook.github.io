@@ -10,6 +10,11 @@ about:
         
 ---
 
-This project involves creating a professional ePortfolio using predominately Quarto, Git, and GitHub, hosted on GitHub Pages. It allowed me to showcase my technical expertise, academic accomplishments, and professional growth through various sections like a landing page, CV, and coding-based projects. Through this assignment, I honed my skills in web development, utilizing primarily Quarto, HTML, and SCSS and version control, while demonstrating best practices in multimedia integration, usability, and design. 
+::: {style="text-align: justify;"}
+This project involved creating a professional ePortfolio using Quarto, Git, and GitHub, and deploying it through GitHub Pages. The goal was to showcase my technical skills, achievements, and professional development through an organized and interactive platform. Key sections include a landing page, CV, and code-based project highlights.
 
- My ePortfolio is now live, deployed on GitHub Pages, representing the culmination of my efforts. Moverover, this repositry can be found by following the link above.
+Throughout this process, I honed my web development skills using Quarto, HTML, and SCSS, while also applying version control best practices with Git. I focused on multimedia integration, usability, and clean design principles to create a user-friendly and visually engaging site.
+
+The ePortfolio is now live and represents the culmination of my learning journey.
+The full repository is accessible via the link above.
+::: 

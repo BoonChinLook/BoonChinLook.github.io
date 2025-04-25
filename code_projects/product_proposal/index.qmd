@@ -1,6 +1,8 @@
 ---
 title: "Product Proposal"
 code-fold: true
+code-block-border-left: " #e8dc92"
+code-block-bg: "rgb(249, 246, 232)"
 author: "Boon Chin Look"
 categories: [Python]
 image: "/code_projects/product_proposal/proposal.jpg"
@@ -14,11 +16,14 @@ about:
       href: code_projects/product_proposal/individual_report.pdf
       target: _blank
 ---
-This project encompassed both collaborative and individual components. As a team, we developed a product concept and identified a dataset relevant to our idea. We were required to present our product pitch in the form of a video presentation, which I have embedded on the first page of the PDF above containing my individual report. 
 
-The product needed to be an application designed for students, incorporating elements of finance, innovation, and enterprise. On the individual side, each team member was tasked with detailing the technical aspects of our pitch, including data analysis, identifying the market gap, understanding our target customers, and outlining the product's sales strategy. While some aspects could be shared among team members, it was essential to include our own unique contributions within the assignment.
+::: {style="text-align: justify;"}
+This project encompassed both collaborative and individual components. As a team, we developed a product concept and identified a dataset relevant to our idea. The task involved pitching our application, designed specifically for students, focusing on finance, innovation, and enterprise. Our pitch was presented as a video, which I’ve embedded on the first page of the PDF above containing my individual report. 
 
-Below are key snippets of code processed from a dataset that supported our team's decision-making process in identifying the market gap, which I primarily analyzed for my team:
+Individually, we were responsible for diving deeper into the technical side of our pitch. This included conducting data analysis, identifying the market gap, understanding target customers, and outlining a strategic approach to product sales. While teamwork was encouraged, each member was expected to make a unique and meaningful contribution in their final report.
+
+Below are key snippets of code I developed during the data analysis phase, which played a critical role in shaping our product’s direction. I led this part of the project, as it closely aligned with my strengths. I used a preliminary dataset to inform our pricing strategy and another to identify market gaps and opportunities. Snippets from the latter dataset are included below to illustrate how it supported our decision-making process.
+::: 
 
 # Importing Data and Intial Analysis
 ```{python}
