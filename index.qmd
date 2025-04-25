@@ -13,7 +13,7 @@ about:
   id: hero-heading
   links:
         - icon: github
-          text: Github
+          text: GitHub
           href: https://github.com/BoonChinLook
           target: _blank
         - icon: linkedin

@@ -9,7 +9,7 @@ about:
   template: solana
   links:
     - icon: save
-      text: Github Repository
+      text: GitHub Repository
       href: https://github.com/BoonChinLook/BoonChinLook.github.io
       target: _blank
 ---
