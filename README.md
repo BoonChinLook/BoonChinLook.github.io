@@ -11,13 +11,13 @@ This project involved building a professional ePortfolio using Quarto, HTML, SCS
 
 2. Structure Content
 *  Structured the site using multiple markdown .qmd files:
-  **  index.qmd for landing page
-  **  projects.qmd, cv.qmd, about.qmd, etc. for other key sections.
+  *  index.qmd for landing page
+  *  projects.qmd, cv.qmd, about.qmd, etc. for other key sections.
 
 3. Design & Styling
 *  Customized layout and theming using:
-  **  Quarto YAML configuration
-  **  Custom SCSS for styling (e.g., colors, typography)
+   *  Quarto YAML configuration
+   *  Custom SCSS for styling (e.g., colors, typography)
 
 4. Embed Media & Content
 *  Integrated images, logos, icons, and badges
