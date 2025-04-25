@@ -7,7 +7,11 @@ date: '2025-04-25'
 
 about:
   template: solana
-        
+  links:
+    - icon: save
+      text: Github Repository
+      href: https://github.com/BoonChinLook/BoonChinLook.github.io
+      target: _blank
 ---
 
 ::: {style="text-align: justify;"}
