@@ -146,7 +146,7 @@ plt.show()
 ```
 
 ```{python}
-#| code-summary: code for plot of count of trips by purpose 
+#| code-summary: Code for plot of count of trips by purpose 
 trip_purpose_counts = df["purpose"].value_counts()
 plt.figure(figsize=(9, 5))
 sns.barplot(x=trip_purpose_counts.index, y=trip_purpose_counts.values, hue=trip_purpose_counts.index, palette="Oranges", legend=False) 
@@ -160,7 +160,7 @@ plt.show()
 ```
 
 ```{python}
-#| code-summary: code for plot of average trip distance by purpose
+#| code-summary: Code for plot of average trip distance by purpose
 avg_miles_purpose = df.groupby("purpose")["miles"].mean().sort_values()
 plt.figure(figsize=(9, 5))
 sns.barplot(x=avg_miles_purpose.index, y=avg_miles_purpose.values, hue=avg_miles_purpose.index, dodge=False, palette="Blues", legend=False)  
