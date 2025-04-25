@@ -31,7 +31,7 @@ I'm a final-year Business Studies student specializing in Data Analytics.</div>
 
 I thrive on problem‑solving, drawing data‑driven insights, and continuous learning.
 
-[Beyond Academics:]{.mark .underline}
+#### [Beyond Academics:]{.mark .underline}
 
 ::: {style="text-align: justify;"}
 Outside the lecture hall, I’m passionate about rock climbing, fitness, and the arts, activities that push my boundaries mentally and physically. 
@@ -41,12 +41,12 @@ I’m also a keen cook and baker; experimenting in the kitchen fuels my creativi
 :::
 
 ::: {.fade-in}
-[My Skills:]{.mark}
+##### [My Skills:]{.mark}
 
 * Programming Languages: Python, HTML, CSS, JavaScript, SQL.
 * Software & Tools: Microsoft Office, GitHub, Alteryx, Tableau, Power BI, Quarto, Jira.
 
-[Music I Love:]{.mark}
+##### [Music I Love:]{.mark}
 
 ::: {style="text-align: center;"}
 Classical and ambient music helps me unwind while reading. Here are a few. Below are some pieces I typically listen to:

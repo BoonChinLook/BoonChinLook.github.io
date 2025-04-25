@@ -82,6 +82,7 @@ The following is a list of certificates and professional development courses Iâ€
 | Excel                           | Formulas and Functions                         | October 26th, 2022  |
 | Excel                           | Data Manipulation and Formatting               | October 8th, 2022   |
 | Data Literacy                   | Introduction to Data and Databases             | October 7th, 2022   |
+: {.striped .hover}
 
 ## LinkedIn
 
@@ -96,7 +97,7 @@ The following is a list of certificates and professional development courses Iâ€
 | Business Analytics           |  Introduction to Business Analytics                | January 24th, 2024    |
 | SEO                          |  SEO Foundations                                   | January 23th, 2024    |
 
-
+: {.striped .hover}
 :::
 
 [Check out my Experiences & Growth page to explore my certifications, involvements and interests! &rarr;](experience.qmd){.btn .btn-outline-warning style="padding: 10px 20px; font-size: 16px; border-radius: 5px; color: #3a3931; display: inline-block;"}
