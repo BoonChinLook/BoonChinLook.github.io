@@ -7,6 +7,7 @@ author: "Boon Chin Look"
 categories: [Python]
 image: "/code_projects/product_proposal/proposal.jpg"
 date: '2025-04-11'
+lightbox: auto
 
 about:
   template: solana

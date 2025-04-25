@@ -7,6 +7,7 @@ author: "Boon Chin Look"
 categories: [SQL]
 image: "/code_projects/sql_project/restaurant.jpg"
 date: '2023-11-20'
+lightbox: auto
 
 about:
   template: solana
@@ -32,11 +33,9 @@ This project was developed as part of an 8-week introduction to the structured q
 * Project presentation and reporting
 ::: 
 
-<div class="sql-erd">
-  <a href="/code_projects/sql_project/erd.png" target="_blank">
-    ![SQL ERD](/code_projects/sql_project/erd.png){.gallery}
-  </a>
-</div>
+::: {style="text-align: center;"}
+![](/code_projects/sql_project/erd.png){.gallery}
+:::
 
 ####  Final Project: SQL ERD – Restaurant Order Management
 For my final project, I designed a relational database centered around restaurant order management. This involved implementing key database concepts such as primary and foreign keys, and developing an Enhanced Entity-Relationship (EER) diagram to visually represent the system structure.
