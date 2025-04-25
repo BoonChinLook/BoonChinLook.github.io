@@ -106,7 +106,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
 
+
+
 <script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+
 
 
 </head>
@@ -173,6 +176,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </i> 
 <span class="menu-text"></span></a>
   </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/boon-chin-l-13b104193/" target="_blank"> <i class="bi bi-linkedin" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../assets/portfolio_cv.pdf" target="_blank"> <i class="bi bi-file-earmark-pdf" role="img">
 </i> 
@@ -220,16 +228,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <i class="bi bi-file-earmark-pdf"></i>
      <span class="about-link-text">Product proposal report pdf</span>
   </a>
+  <a href="https://drive.google.com/drive/folders/1cmEi2ItJ7IODs-yOW2dH6LsIlgldy8sT?usp=sharing" class="about-link" rel="" target="_blank">
+    <i class="bi bi-file-earmark-code"></i>
+     <span class="about-link-text">Link to code &amp; datasets used</span>
+  </a>
 </div>
       <div class="about-contents"><main class="content column-page" id="quarto-document-content">
 <div style="text-align: justify;">
 <p>This project encompassed both collaborative and individual components. As a team, we developed a product concept and identified a dataset relevant to our idea. The task involved pitching our application, designed specifically for students, focusing on finance, innovation, and enterprise. Our pitch was presented as a video, which I’ve embedded on the first page of the PDF above containing my individual report.</p>
 <p>Individually, we were responsible for diving deeper into the technical side of our pitch. This included conducting data analysis, identifying the market gap, understanding target customers, and outlining a strategic approach to product sales. While teamwork was encouraged, each member was expected to make a unique and meaningful contribution in their final report.</p>
-<p>Below are key snippets of code I developed during the data analysis phase, which played a critical role in shaping our product’s direction. I led this part of the project, as it closely aligned with my strengths. I used a preliminary dataset to inform our pricing strategy and another to identify market gaps and opportunities. Snippets from the latter dataset are included below to illustrate how it supported our decision-making process.</p>
+<p>Below are key snippets of code I developed during the data analysis phase, which played a critical role in shaping our product’s direction. I led this part of the project, as it closely aligned with my strengths. I used a preliminary dataset to inform our pricing strategy and another (UberDataset) to identify market gaps and opportunities. Snippets from the latter dataset are included below to illustrate how it supported our decision-making process.</p>
 </div>
 <section id="importing-data-and-intial-analysis" class="level1">
 <h1>Importing Data and Intial Analysis</h1>
-<div id="299be975" class="cell" data-execution_count="1">
+<div id="5bafbe1d" class="cell" data-execution_count="1">
 <details class="code-fold">
 <summary>Importing librarys</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
@@ -238,7 +250,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<div id="7c915c66" class="cell" data-execution_count="2">
+<div id="350a7903" class="cell" data-execution_count="2">
 <details class="code-fold">
 <summary>Importing dataset</summary>
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="st">"UberDataset.csv"</span>)</span>
@@ -316,7 +328,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<div id="1e2592eb" class="cell" data-execution_count="3">
+<div id="e3420d6e" class="cell" data-execution_count="3">
 <details class="code-fold">
 <summary>Looking at data types of columns</summary>
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>df.info()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -338,7 +350,7 @@ dtypes: float64(1), object(6)
 memory usage: 63.3+ KB</code></pre>
 </div>
 </div>
-<div id="641f7d80" class="cell" data-execution_count="4">
+<div id="198bbfb6" class="cell" data-execution_count="4">
 <details class="code-fold">
 <summary>Standardize column names to lowercase for consistency</summary>
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>df.columns <span class="op">=</span> df.columns.<span class="bu">str</span>.lower()</span>
@@ -416,7 +428,7 @@ memory usage: 63.3+ KB</code></pre>
 </div>
 </div>
 </div>
-<div id="a9e01486" class="cell" data-execution_count="5">
+<div id="a8a03a0b" class="cell" data-execution_count="5">
 <details class="code-fold">
 <summary>Checking for missing values in the dataset</summary>
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>df.isnull().<span class="bu">sum</span>()</span>
@@ -433,7 +445,7 @@ purpose       502
 dtype: int64</code></pre>
 </div>
 </div>
-<div id="9b6f990f" class="cell" data-execution_count="6">
+<div id="ed0bfee8" class="cell" data-execution_count="6">
 <details class="code-fold">
 <summary>Simple descriptive statistics of each numerical column</summary>
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>df.describe()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -489,7 +501,7 @@ dtype: int64</code></pre>
 </section>
 <section id="data-cleaning" class="level1">
 <h1>Data Cleaning</h1>
-<div id="9734212d" class="cell" data-execution_count="7">
+<div id="539ca929" class="cell" data-execution_count="7">
 <details class="code-fold">
 <summary>Checked &amp; removed duplicates</summary>
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>duplicated_data <span class="op">=</span> df[df.duplicated()]</span>
@@ -501,20 +513,20 @@ dtype: int64</code></pre>
 <pre><code>(1, 7)</code></pre>
 </div>
 </div>
-<div id="81e34105" class="cell" data-execution_count="8">
+<div id="fd0f179d" class="cell" data-execution_count="8">
 <details class="code-fold">
 <summary>Encode categorical variables using one-hot encoding</summary>
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>data_encoded <span class="op">=</span> pd.get_dummies(df, columns<span class="op">=</span>[<span class="st">'category'</span>, <span class="st">'purpose'</span>], drop_first<span class="op">=</span><span class="va">True</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<div id="f92c83cc" class="cell" data-execution_count="9">
+<div id="1c72fa3f" class="cell" data-execution_count="9">
 <details class="code-fold">
 <summary>Converted date columns into date time</summary>
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"start_date"</span>] <span class="op">=</span> pd.to_datetime(df[<span class="st">"start_date"</span>], errors<span class="op">=</span><span class="st">"coerce"</span>)</span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"end_date"</span>] <span class="op">=</span> pd.to_datetime(df[<span class="st">"end_date"</span>], errors<span class="op">=</span><span class="st">"coerce"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<div id="1d18b226" class="cell" data-execution_count="10">
+<div id="0ef1be30" class="cell" data-execution_count="10">
 <details class="code-fold">
 <summary>Handling missing values</summary>
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Handle missing values by dropping rows with missing 'start' or 'stop' and filling 'purpose' with 'unknown'</span></span>
@@ -522,13 +534,13 @@ dtype: int64</code></pre>
 <span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>df[<span class="st">'purpose'</span>] <span class="op">=</span> df[<span class="st">'purpose'</span>].fillna(<span class="st">"Unknown"</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<div id="00378163" class="cell" data-execution_count="11">
+<div id="2df1041e" class="cell" data-execution_count="11">
 <details class="code-fold">
 <summary>Feature engineering, created new column for trip date</summary>
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"date"</span>] <span class="op">=</span> df[<span class="st">"start_date"</span>].dt.date</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<div id="c44e0daf" class="cell" data-execution_count="12">
+<div id="4764ab96" class="cell" data-execution_count="12">
 <details class="code-fold">
 <summary>Ensured the dataset is sorted by date</summary>
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> df.sort_values(<span class="st">'start_date'</span>)</span>
@@ -538,7 +550,7 @@ dtype: int64</code></pre>
 </section>
 <section id="analysis" class="level1">
 <h1>Analysis</h1>
-<div id="bea0672b" class="cell" data-execution_count="13">
+<div id="35ecc97f" class="cell" data-execution_count="13">
 <details class="code-fold">
 <summary>Returns first few rows of dataset to check</summary>
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>df.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -625,7 +637,7 @@ dtype: int64</code></pre>
 </div>
 </div>
 </div>
-<div id="257ca1f2" class="cell" data-execution_count="14">
+<div id="e50e17b3" class="cell" data-execution_count="14">
 <details class="code-fold">
 <summary>Plot trip frequency over time plot code</summary>
 <div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">11</span>, <span class="dv">7</span>))</span>
@@ -645,7 +657,7 @@ dtype: int64</code></pre>
 </div>
 </div>
 </div>
-<div id="b07d3958" class="cell" data-execution_count="15">
+<div id="60317cc5" class="cell" data-execution_count="15">
 <details class="code-fold">
 <summary>Top 10 most common pickup and drop-off locations plot code</summary>
 <div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>top_pickups <span class="op">=</span> df[<span class="st">"start"</span>].value_counts().head(<span class="dv">10</span>)</span>
@@ -673,7 +685,7 @@ dtype: int64</code></pre>
 </div>
 </div>
 </div>
-<div id="880c398e" class="cell" data-execution_count="16">
+<div id="bb816bd8" class="cell" data-execution_count="16">
 <details class="code-fold">
 <summary>code for plot of count of trips by purpose</summary>
 <div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>trip_purpose_counts <span class="op">=</span> df[<span class="st">"purpose"</span>].value_counts()</span>
@@ -695,7 +707,7 @@ dtype: int64</code></pre>
 </div>
 </div>
 </div>
-<div id="b944c39c" class="cell" data-execution_count="17">
+<div id="44dd73bb" class="cell" data-execution_count="17">
 <details class="code-fold">
 <summary>code for plot of average trip distance by purpose</summary>
 <div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>avg_miles_purpose <span class="op">=</span> df.groupby(<span class="st">"purpose"</span>)[<span class="st">"miles"</span>].mean().sort_values()</span>
@@ -715,7 +727,7 @@ dtype: int64</code></pre>
 </div>
 </div>
 </div>
-<div id="8da9a966" class="cell" data-execution_count="18">
+<div id="5926d52f" class="cell" data-execution_count="18">
 <details class="code-fold">
 <summary>Plot for hourly trip analysis of the day</summary>
 <div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"hour"</span>] <span class="op">=</span> df.index.hour</span>
@@ -735,7 +747,7 @@ dtype: int64</code></pre>
 </div>
 </div>
 </div>
-<div id="ab846802" class="cell" data-execution_count="19">
+<div id="0699ced8" class="cell" data-execution_count="19">
 <details class="code-fold">
 <summary>Code for plot of Trip category to number of trips distribution</summary>
 <div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">9</span>, <span class="dv">5</span>))</span>
