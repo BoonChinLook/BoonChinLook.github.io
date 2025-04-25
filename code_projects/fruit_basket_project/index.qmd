@@ -1,7 +1,9 @@
 ---
 title: "JavaScript Project: Interactive Fruit Shop Basket"
-author: "Boon Chin Look"
-categories: [Javascript]
+author: 
+    - "Boon Chin Look"
+    - "Unknown"
+categories: [JavaScript]
 image: "/code_projects/fruit_basket_project/fruitshop.jpg"
 date: '2023-12-10'
 

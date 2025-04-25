@@ -13,8 +13,12 @@ about:
   template: solana
   links:
     - icon: file-earmark-pdf
-      text: Product proposal report pdf
+      text: Product proposal report PDF
       href: code_projects/product_proposal/individual_report.pdf
+      target: _blank
+    - icon: file-earmark-code
+      text: Link to code & datasets used
+      href: https://drive.google.com/drive/folders/1cmEi2ItJ7IODs-yOW2dH6LsIlgldy8sT?usp=sharing
       target: _blank
 ---
 
@@ -23,7 +27,7 @@ This project encompassed both collaborative and individual components. As a team
 
 Individually, we were responsible for diving deeper into the technical side of our pitch. This included conducting data analysis, identifying the market gap, understanding target customers, and outlining a strategic approach to product sales. While teamwork was encouraged, each member was expected to make a unique and meaningful contribution in their final report.
 
-Below are key snippets of code I developed during the data analysis phase, which played a critical role in shaping our product’s direction. I led this part of the project, as it closely aligned with my strengths. I used a preliminary dataset to inform our pricing strategy and another to identify market gaps and opportunities. Snippets from the latter dataset are included below to illustrate how it supported our decision-making process.
+Below are key snippets of code I developed during the data analysis phase, which played a critical role in shaping our product’s direction. I led this part of the project, as it closely aligned with my strengths. Using a preliminary dataset, I informed our pricing strategy, while an Uber Analysis Dataset enabled me to identify market gaps and opportunities. Below, I’ve included snippets from the latter dataset to demonstrate its role in our decision-making process.
 ::: 
 
 # Importing Data and Intial Analysis

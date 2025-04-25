@@ -48,6 +48,10 @@ website:
         href: https://github.com/BoonChinLook
         target: _blank
         
+      - icon: linkedin
+        href: https://www.linkedin.com/in/boon-chin-l-13b104193/
+        target: _blank
+        
       - icon: file-earmark-pdf
         text: CV
         href: assets/portfolio_cv.pdf

@@ -8,7 +8,7 @@ about:
     template: solana
     links:
         - icon: linkedin
-          text: Contact me on Linkedin
+          text: Contact me on LinkedIn
           href: https://www.linkedin.com/in/boon-chin-l-13b104193/
           target: _blank
 

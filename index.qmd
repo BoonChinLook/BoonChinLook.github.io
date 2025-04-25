@@ -17,7 +17,7 @@ about:
           href: https://github.com/BoonChinLook
           target: _blank
         - icon: linkedin
-          text: Linkedin
+          text: LinkedIn
           href: https://www.linkedin.com/in/boon-chin-l-13b104193/
           target: _blank
 page-layout: article
