@@ -319,3 +319,5 @@ for (let i = 0; i < acc.length; i++) {
 </script>
 
 ```
+
+[Learn more about my future goals &rarr;](experience.qmd){.btn .btn-outline-warning style="padding: 10px 20px; font-size: 16px; border-radius: 5px; color: #3a3931; display: inline-block;"}
