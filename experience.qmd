@@ -216,6 +216,23 @@ Driven by a passion for continuous learning, I participated in Dell Technologies
         </div>
       </div>
 
+     <div class="timeline-item">
+        <div class="timeline-icon">
+          <img src="/assets/cupcakes.PNG" alt="Red Velvet Cupcakes">
+        </div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <h2>Ballymunch</h2>
+            <h3>Volunteering</h3>
+          </div>
+          <p>Participating in Ballymunch, a cooking class initiative for parents in Ballymun, has been an invaluable experience. Supported by DCU's Raising & Giving (RAG) Society, this volunteering opportunity has not only deepened my understanding of how to prepare affordable, nutritious meals but has also equipped me with essential skills such as effective communication, teamwork, and collaboration.</p>
+          <p>This opportunity has allowed me to engage with my community, share knowledge, and develop practical skills that extend beyond the kitchen and college.</p>
+          <span class="timeline-date">November 2023–Present, Dublin, Ireland</span>
+        </div>
+      </div>
+
+    
+
       <div class="timeline-item">
         <div class="timeline-icon">
           <img src="assets/dcu_logo.png" alt="DCU Logo">
@@ -228,21 +245,6 @@ Driven by a passion for continuous learning, I participated in Dell Technologies
           <p>Engaging with the college community as a DCU Access Mentor and Class Representative enriched my college experience in numerous ways. These roles not only allowed me to immerse myself in various aspects of college life but also helped me develop a balance between academic responsibilities and collaborative contributions to the student body.</p>
           <p>Working alongside and interacting with fellow students provided a rewarding opportunity to connect on a deeper level, especially as I could empathize with their journey, having once been in their position.</p>
           <span class="timeline-date">September 2023–April 2024, Dublin, Ireland</span>
-        </div>
-      </div>
-
-       <div class="timeline-item">
-        <div class="timeline-icon">
-          <img src="/assets/cupcakes.PNG" alt="Red Velvet Cupcakes">
-        </div>
-        <div class="timeline-content">
-          <div class="timeline-header">
-            <h2>Ballymunch</h2>
-            <h3>Volunteering</h3>
-          </div>
-          <p>Participating in Ballymunch, a cooking class initiative for parents in Ballymun, has been an invaluable experience. Supported by DCU's Raising & Giving (RAG) Society, this volunteering opportunity has not only deepened my understanding of how to prepare affordable, nutritious meals but has also equipped me with essential skills such as effective communication, teamwork, and collaboration.</p>
-          <p>This opportunity has allowed me to engage with my community, share knowledge, and develop practical skills that extend beyond the kitchen and college.</p>
-          <span class="timeline-date">November 2023–Present, Dublin, Ireland</span>
         </div>
       </div>
   </div>
